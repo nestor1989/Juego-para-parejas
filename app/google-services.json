@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545456580419",
+    "project_id": "juego-para-parejas-3ea2c",
+    "storage_bucket": "juego-para-parejas-3ea2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545456580419:android:21d6ab3fdb1045b33671f6",
+        "android_client_info": {
+          "package_name": "com.idea3d.juegoparaparejas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545456580419-82fpholoqedrraucq905huep0e3e84eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4QGu3sctFsEiU6D1PePm-ypAt8x8wAp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545456580419-82fpholoqedrraucq905huep0e3e84eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
