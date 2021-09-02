@@ -11,6 +11,7 @@
         android:roundIcon="@drawable/doscorazonesmdpi"
         android:supportsRtl="true"
         android:theme="@style/Theme.JuegoParaParejas">
+
         <activity android:name=".seleccionarAdultos"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Respuestas"

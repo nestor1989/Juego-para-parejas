@@ -68,6 +68,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.85" />
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/banner"
         android:layout_width="0dp"
@@ -78,7 +79,6 @@
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
         ads:layout_constraintTop_toTopOf="@+id/guideline10">
-
 
     </com.google.android.gms.ads.AdView>
 </androidx.constraintlayout.widget.ConstraintLayout>

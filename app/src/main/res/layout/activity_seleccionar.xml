@@ -68,12 +68,11 @@
         android:id="@+id/dosBoton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         android:backgroundTint="#E91E63"
         android:text="PRIMERA CITA"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+
         app:layout_constraintStart_toStartOf="@+id/guideline16"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 

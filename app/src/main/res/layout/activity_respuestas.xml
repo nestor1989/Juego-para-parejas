@@ -69,8 +69,6 @@
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
         ads:layout_constraintTop_toTopOf="@+id/guideline37">
-
-
     </com.google.android.gms.ads.AdView>
 
     <androidx.constraintlayout.widget.Guideline

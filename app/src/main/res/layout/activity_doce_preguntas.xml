@@ -69,6 +69,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
+
         android:id="@+id/respuestaDos"
         android:layout_width="0dp"
         android:layout_height="0dp"
