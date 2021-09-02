@@ -3,6 +3,7 @@ package com.idea3d.juegoparaparejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.databinding.ActivityJugadorDosBinding
 import com.idea3d.juegoparaparejas.databinding.JugadorUnoBinding
 
@@ -10,10 +11,13 @@ class jugadorDos : AppCompatActivity() {
 
     private lateinit var binding: ActivityJugadorDosBinding
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityJugadorDosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initLoadAds()
 
         val jug1 = intent.getStringExtra("jugador1")
         val jug2 = intent.getStringExtra("jugador2")
@@ -35,4 +39,10 @@ class jugadorDos : AppCompatActivity() {
         binding.empiezaBoton.setOnClickListener { aJugar() }
 
     }
+
+    private fun initLoadAds(){
+        val adRequest: AdRequest =AdRequest.Builder().build()
+        binding.banner.loadAd(adRequest)
+    }
+
 }

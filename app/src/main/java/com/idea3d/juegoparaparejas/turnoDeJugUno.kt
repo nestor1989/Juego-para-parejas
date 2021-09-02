@@ -4,6 +4,7 @@ package com.idea3d.juegoparaparejas
 import android.os.Bundle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.databinding.JugadorUnoBinding
 
 
@@ -15,6 +16,8 @@ class turnoDeJugUno : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = JugadorUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initLoadAds()
 
         val jug1= intent.getStringExtra("jugador1")
         val jug2= intent.getStringExtra("jugador2")
@@ -74,6 +77,9 @@ class turnoDeJugUno : AppCompatActivity() {
 
     }
 
-
+    private fun initLoadAds(){
+        val adRequest: AdRequest =AdRequest.Builder().build()
+        binding.banner.loadAd(adRequest)
+    }
 
 }

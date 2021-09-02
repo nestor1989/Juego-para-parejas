@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat
 import com.idea3d.juegoparaparejas.databinding.ActivityDoceRespuestasBinding
 import java.util.Timer
 import kotlin.concurrent.schedule
+import com.google.android.gms.ads.AdRequest
 
 
 class doceRespuestas : AppCompatActivity() {
@@ -16,6 +17,8 @@ class doceRespuestas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDoceRespuestasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initLoadAds()
 
         var i=1
         val respuestasDos:ArrayList<Int?> = arrayListOf<Int?>()
@@ -1562,5 +1565,9 @@ class doceRespuestas : AppCompatActivity() {
         initEvent(prueba, i)
 
 
+    }
+    private fun initLoadAds(){
+        val adRequest: AdRequest =AdRequest.Builder().build()
+        binding.banner.loadAd(adRequest)
     }
 }

@@ -3,6 +3,7 @@ package com.idea3d.juegoparaparejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.databinding.ActivityDoceRespuestasBinding
 import com.idea3d.juegoparaparejas.databinding.ActivityRespuestasBinding
 
@@ -14,6 +15,8 @@ class Respuestas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRespuestasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initLoadAds()
 
         val jug1 = intent.getStringExtra("jugador1")
         val jug2 = intent.getStringExtra("jugador2")
@@ -47,5 +50,9 @@ class Respuestas : AppCompatActivity() {
         binding.rolesBoton.setOnClickListener { roles() }
         binding.volverBoton.setOnClickListener { volver() }
 
+    }
+    private fun initLoadAds(){
+        val adRequest: AdRequest =AdRequest.Builder().build()
+        binding.banner.loadAd(adRequest)
     }
 }

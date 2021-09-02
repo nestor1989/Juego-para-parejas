@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.idea3d.juegoparaparejas.databinding.ActivityDocePreguntasBinding
 import android.content.Intent
+import com.google.android.gms.ads.AdRequest
 
 
 class docePreguntas : AppCompatActivity() {
@@ -15,6 +16,8 @@ class docePreguntas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDocePreguntasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initLoadAds()
 
         val respuestas:ArrayList<Int?> = arrayListOf<Int?>()
         var i=1
@@ -1522,7 +1525,10 @@ class docePreguntas : AppCompatActivity() {
 
     }
 
-
+    private fun initLoadAds(){
+        val adRequest: AdRequest =AdRequest.Builder().build()
+        binding.banner.loadAd(adRequest)
+    }
 
 
 
