@@ -8,17 +8,24 @@ import com.idea3d.juegoparaparejas.databinding.ActivityDoceRespuestasBinding
 import java.util.Timer
 import kotlin.concurrent.schedule
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 
 
 class doceRespuestas : AppCompatActivity() {
     private lateinit var binding: ActivityDoceRespuestasBinding
+    private var interstitial: InterstitialAd? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDoceRespuestasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initIntAds()
         initLoadAds()
+
 
         var i=1
         val respuestasDos:ArrayList<Int?> = arrayListOf<Int?>()
@@ -1463,7 +1470,6 @@ class doceRespuestas : AppCompatActivity() {
 
         }
 
-
         fun initEvent(prueba:Int, i:Int){
 
             binding.respuestaUno.background.setTint(ContextCompat.getColor(this, R.color.rosa))
@@ -1506,6 +1512,17 @@ class doceRespuestas : AppCompatActivity() {
                 pruebaDiesiseis(i)
             }
         }
+
+        fun nosVamos(){
+            promedio=comparaResp.toDouble()/12*100
+            val intent = Intent(this, Respuestas::class.java)
+            intent.putExtra("jugador1", jug1) //envio de datos a activities
+            intent.putExtra("jugador2", jug2)
+            intent.putExtra("prueba", prueba)
+            intent.putExtra("promedio", promedio)
+            startActivity(intent)//nos vamos
+        }
+
         fun respuestaEvent(respuesta:Int){
 
             respuestasDos.add(respuesta)
@@ -1531,18 +1548,13 @@ class doceRespuestas : AppCompatActivity() {
                 }
             }
 
-
-
-
-
             if (i==13){
-                promedio=comparaResp.toDouble()/12*100
-                val intent = Intent(this, Respuestas::class.java)
-                intent.putExtra("jugador1", jug1) //envio de datos a activities
-                intent.putExtra("jugador2", jug2)
-                intent.putExtra("prueba", prueba)
-                intent.putExtra("promedio", promedio)
-                startActivity(intent)//nos vamos
+                showAds()
+                interstitial?.fullScreenContentCallback = object: FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        nosVamos()
+                    }
+                }
             }else {
                 Timer("SettingUp", false).schedule(750) {
                     initEvent(prueba, i)
@@ -1558,16 +1570,32 @@ class doceRespuestas : AppCompatActivity() {
         binding.respuestaCuatro.setOnClickListener {respuestaEvent(4) }
 
 
-
-
-
-
         initEvent(prueba, i)
 
 
     }
+
     private fun initLoadAds(){
         val adRequest: AdRequest =AdRequest.Builder().build()
         binding.banner.loadAd(adRequest)
+    }
+    private fun initIntAds() {
+        var adRequest = AdRequest.Builder().build()
+
+        InterstitialAd.load(this, "ca-app-pub-4930505659937183/6385055420",
+            adRequest, object : InterstitialAdLoadCallback(){
+                override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                    interstitial = interstitialAd
+                }
+
+                override fun onAdFailedToLoad(p0: LoadAdError) {
+                    interstitial = null
+                }
+            })
+    }
+
+    private fun showAds(){
+        interstitial?.show(this)
+
     }
 }

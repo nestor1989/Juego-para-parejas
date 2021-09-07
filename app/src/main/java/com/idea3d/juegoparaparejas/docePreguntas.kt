@@ -6,17 +6,23 @@ import android.os.Bundle
 import com.idea3d.juegoparaparejas.databinding.ActivityDocePreguntasBinding
 import android.content.Intent
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 
 
 class docePreguntas : AppCompatActivity() {
 
     private lateinit var binding: ActivityDocePreguntasBinding
+    private var interstitial: InterstitialAd? = null
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDocePreguntasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initIntAds()
         initLoadAds()
 
         val respuestas:ArrayList<Int?> = arrayListOf<Int?>()
@@ -1462,53 +1468,66 @@ class docePreguntas : AppCompatActivity() {
 
         fun initEvent(prueba:Int, i:Int){
             if (prueba ==1){
-                pruebaUno(i)
-                 }else if (prueba ==2){
+                     pruebaUno(i)
+            }else if (prueba ==2){
                      pruebaDos(i)
-                }else if (prueba ==3){
+            }else if (prueba ==3){
                     pruebaTres(i)
-                }else if (prueba ==4){
+            }else if (prueba ==4){
                     pruebaCuatro(i)
-                }else if (prueba ==5){
+            }else if (prueba ==5){
                     pruebaCinco(i)
-                }else if (prueba ==6){
+            }else if (prueba ==6){
                     pruebaSeis(i)
-                }else if (prueba ==7){
+            }else if (prueba ==7){
                     pruebaSiete(i)
-                }else if (prueba ==8){
+            }else if (prueba ==8){
                     pruebaOcho(i)
-                }else if (prueba ==9){
+            }else if (prueba ==9){
                     pruebaNueve(i)
-                }else if (prueba ==10){
+            }else if (prueba ==10){
                     pruebaDiez(i)
-                }else if (prueba ==11){
+            }else if (prueba ==11) {
                 pruebaOnce(i)
-                }else if (prueba ==12){
+            }else if (prueba ==12) {
                 pruebaDoce(i)
-                }else if (prueba ==13){
+            }else if (prueba ==13){
                 pruebaTrece(i)
-                }else if (prueba ==14){
+            }else if (prueba ==14){
                 pruebaCatorce(i)
-                }else if (prueba ==15){
+            }else if (prueba ==15){
                 pruebaQuince(i)
-                }else if (prueba ==16){
+            }else if (prueba ==16){
                 pruebaDiesiseis(i)
-                }
+            }
         }
+
+        fun nosVamos(){
+            val intent = Intent(this, jugadorDos::class.java)
+            intent.putExtra("jugador1", jug1) //envio de datos a activities
+            intent.putExtra("jugador2", jug2)
+            intent.putExtra("prueba", prueba)
+            intent.putIntegerArrayListExtra("respuestas", respuestas)
+            startActivity(intent)//nos vamos
+        }
+
         fun respuestaEvent(respuesta:Int){
             i++
             respuestas.add(respuesta)
 
             if (i==13){
-                val intent = Intent(this, jugadorDos::class.java)
-                intent.putExtra("jugador1", jug1) //envio de datos a activities
-                intent.putExtra("jugador2", jug2)
-                intent.putExtra("prueba", prueba)
-                intent.putIntegerArrayListExtra("respuestas", respuestas)
-                startActivity(intent)//nos vamos
-            }else {
+
+                showAds()
+
+                interstitial?.fullScreenContentCallback = object: FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                    nosVamos()
+                    }
+                }
+            }else  {
                 initEvent(prueba, i)
-                binding.contView.text="Pregunta $i/12"
+                binding.contView.text = "Pregunta $i/12"
+
             }
         }
 
@@ -1530,6 +1549,24 @@ class docePreguntas : AppCompatActivity() {
         binding.banner.loadAd(adRequest)
     }
 
+    private fun initIntAds() {
+        var adRequest = AdRequest.Builder().build()
 
+        InterstitialAd.load(this, "ca-app-pub-4930505659937183/7471331417",
+            adRequest, object : InterstitialAdLoadCallback(){
+                override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                    interstitial = interstitialAd
+                }
+
+                override fun onAdFailedToLoad(p0: LoadAdError) {
+                    interstitial = null
+                }
+            })
+    }
+
+    private fun showAds(){
+        interstitial?.show(this)
+
+    }
 
 }

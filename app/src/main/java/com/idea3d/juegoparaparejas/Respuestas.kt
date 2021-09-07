@@ -4,12 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.gms.ads.AdRequest
-import com.idea3d.juegoparaparejas.databinding.ActivityDoceRespuestasBinding
 import com.idea3d.juegoparaparejas.databinding.ActivityRespuestasBinding
 
 class Respuestas : AppCompatActivity() {
 
     private lateinit var binding: ActivityRespuestasBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +26,7 @@ class Respuestas : AppCompatActivity() {
         binding.textResult.text= "El resultado es ${promedio.toInt()} % 🤣😅"
 
         fun roles(){
+
             val intent = Intent(this, turnoDeJugUno::class.java)
             intent.putExtra("jugador2", jug1) //envio de datos a activities
             intent.putExtra("jugador1", jug2)
@@ -34,6 +35,7 @@ class Respuestas : AppCompatActivity() {
         }
 
         fun volver(){
+
             if (prueba<=10) {
                 val intent = Intent(this, seleccionarActivity::class.java)
                 intent.putExtra("jugador1", jug1) //envio de datos a activities
@@ -55,4 +57,5 @@ class Respuestas : AppCompatActivity() {
         val adRequest: AdRequest =AdRequest.Builder().build()
         binding.banner.loadAd(adRequest)
     }
+
 }

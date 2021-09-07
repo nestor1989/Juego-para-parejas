@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.databinding.ActivityJugadorDosBinding
-import com.idea3d.juegoparaparejas.databinding.JugadorUnoBinding
+
 
 class jugadorDos : AppCompatActivity() {
 
@@ -17,6 +17,8 @@ class jugadorDos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityJugadorDosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
         initLoadAds()
 
         val jug1 = intent.getStringExtra("jugador1")
@@ -28,15 +30,18 @@ class jugadorDos : AppCompatActivity() {
         binding.textView5.text= "Responde las mismas preguntas que $jug1 y trata de que tus respuestas coincidan con las suyas"
 
         fun aJugar(){
+
             val intent = Intent(this, doceRespuestas::class.java)
             intent.putExtra("jugador1", jug1) //envio de datos a activities
             intent.putExtra("jugador2", jug2)
             intent.putExtra("prueba", prueba)
             intent.putIntegerArrayListExtra("respuestas", respuestas)
             startActivity(intent)
+
         }
 
         binding.empiezaBoton.setOnClickListener { aJugar() }
+
 
     }
 
@@ -44,5 +49,7 @@ class jugadorDos : AppCompatActivity() {
         val adRequest: AdRequest =AdRequest.Builder().build()
         binding.banner.loadAd(adRequest)
     }
+
+
 
 }

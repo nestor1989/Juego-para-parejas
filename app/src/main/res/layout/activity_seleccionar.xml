@@ -55,14 +55,14 @@
         android:layout_height="0dp"
 
 
-        android:backgroundTint= "@color/teal_200"
-        android:text="ME GUSTAS"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="sans-serif-medium"
 
+        android:text="ME GUSTAS"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toStartOf="@+id/guideline16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline11"
-        />
+        app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <Button
         android:id="@+id/dosBoton"
