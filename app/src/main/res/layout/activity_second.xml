@@ -15,7 +15,7 @@
         android:fontFamily="@font/roboto_slab"
         android:text="ELIGE EL MODO DEL JUEGO"
         android:textColor="#FDDD618B"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline26"
         app:layout_constraintEnd_toEndOf="parent"

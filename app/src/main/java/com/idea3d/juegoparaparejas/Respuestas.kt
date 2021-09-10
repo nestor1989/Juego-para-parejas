@@ -23,7 +23,7 @@ class Respuestas : AppCompatActivity() {
         val promedio = intent.getDoubleExtra("promedio", 0.0)
         val prueba= intent.getIntExtra("prueba", 0)
 
-        binding.textResult.text= "El resultado es ${promedio.toInt()} % 🤣😅"
+        binding.textResult.text= "El resultado es ${promedio.toInt()} % \n🤣😅"
 
         fun roles(){
 

@@ -1525,42 +1525,43 @@ class doceRespuestas : AppCompatActivity() {
 
         fun respuestaEvent(respuesta:Int){
 
-            respuestasDos.add(respuesta)
-            i++
-            when(respuestas!![i-2]){
-                1-> binding.respuestaUno.background.setTint(ContextCompat.getColor(this, R.color.verde))
-                2-> binding.respuestaDos.background.setTint(ContextCompat.getColor(this, R.color.verde))
-                3-> binding.respuestaTres.background.setTint(ContextCompat.getColor(this, R.color.verde))
-                4-> binding.respuestaCuatro.background.setTint(ContextCompat.getColor(this, R.color.verde))
-            }
-
-
-
-            if (respuestas!![i-2] == respuestasDos!![i-2]){
-                comparaResp++
-
-            }else {
-                when(respuestasDos!![i-2]){
-                    1-> binding.respuestaUno.background.setTint(ContextCompat.getColor(this, R.color.rojo))
-                    2-> binding.respuestaDos.background.setTint(ContextCompat.getColor(this, R.color.rojo))
-                    3-> binding.respuestaTres.background.setTint(ContextCompat.getColor(this, R.color.rojo))
-                    4-> binding.respuestaCuatro.background.setTint(ContextCompat.getColor(this, R.color.rojo))
+                respuestasDos.add(respuesta)
+                i++
+                when(respuestas!![i-2]){
+                    1-> binding.respuestaUno.background.setTint(ContextCompat.getColor(this, R.color.verde))
+                    2-> binding.respuestaDos.background.setTint(ContextCompat.getColor(this, R.color.verde))
+                    3-> binding.respuestaTres.background.setTint(ContextCompat.getColor(this, R.color.verde))
+                    4-> binding.respuestaCuatro.background.setTint(ContextCompat.getColor(this, R.color.verde))
                 }
-            }
 
-            if (i==13){
-                showAds()
-                interstitial?.fullScreenContentCallback = object: FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        nosVamos()
+
+
+                if (respuestas!![i-2] == respuestasDos!![i-2]){
+                    comparaResp++
+
+                }else {
+                    when(respuestasDos!![i-2]){
+                        1-> binding.respuestaUno.background.setTint(ContextCompat.getColor(this, R.color.rojo))
+                        2-> binding.respuestaDos.background.setTint(ContextCompat.getColor(this, R.color.rojo))
+                        3-> binding.respuestaTres.background.setTint(ContextCompat.getColor(this, R.color.rojo))
+                        4-> binding.respuestaCuatro.background.setTint(ContextCompat.getColor(this, R.color.rojo))
                     }
                 }
-            }else {
-                Timer("SettingUp", false).schedule(750) {
-                    initEvent(prueba, i)
-                    binding.contView.text = "Pregunta $i/12"
+
+                if (i==13){
+                    showAds()
+                    interstitial?.fullScreenContentCallback = object: FullScreenContentCallback() {
+                        override fun onAdDismissedFullScreenContent() {
+                            nosVamos()
+                        }
+                    }
+                }else {
+                    Timer("SettingUp", false).schedule(750) {
+                        initEvent(prueba, i)
+                        binding.contView.text = "Pregunta $i/12"
+                    }
                 }
-            }
+
         }
 
 
