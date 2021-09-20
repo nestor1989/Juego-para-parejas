@@ -36,7 +36,13 @@ class Respuestas : AppCompatActivity() {
 
         fun volver(){
 
-            if (prueba<=10) {
+            val intent = Intent(this, secondActivity::class.java)
+            intent.putExtra("jugador1", jug1) //envio de datos a activities
+            intent.putExtra("jugador2", jug2)
+            startActivity(intent)//nos vamo
+
+
+        /*if (prueba<=10) {
                 val intent = Intent(this, seleccionarActivity::class.java)
                 intent.putExtra("jugador1", jug1) //envio de datos a activities
                 intent.putExtra("jugador2", jug2)
@@ -46,7 +52,7 @@ class Respuestas : AppCompatActivity() {
                 intent.putExtra("jugador1", jug1) //envio de datos a activities
                 intent.putExtra("jugador2", jug2)
                 startActivity(intent)//nos vamo
-            }
+            }*/
         }
 
         binding.rolesBoton.setOnClickListener { roles() }
