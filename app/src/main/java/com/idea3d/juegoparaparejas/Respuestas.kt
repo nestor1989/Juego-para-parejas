@@ -1,5 +1,6 @@
 package com.idea3d.juegoparaparejas
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,7 +24,9 @@ class Respuestas : AppCompatActivity() {
         val promedio = intent.getDoubleExtra("promedio", 0.0)
         val prueba= intent.getIntExtra("prueba", 0)
 
-        binding.textResult.text= "El resultado es ${promedio.toInt()} % \n🤣😅"
+        binding.textResult.text= "Conoces a tu amor\n en un ${promedio.toInt()}%"
+
+
 
         fun roles(){
 
@@ -41,22 +44,22 @@ class Respuestas : AppCompatActivity() {
             intent.putExtra("jugador2", jug2)
             startActivity(intent)//nos vamo
 
+        }
 
-        /*if (prueba<=10) {
-                val intent = Intent(this, seleccionarActivity::class.java)
-                intent.putExtra("jugador1", jug1) //envio de datos a activities
-                intent.putExtra("jugador2", jug2)
-                startActivity(intent)//nos vamo
-            }else if(prueba>10){
-                val intent = Intent(this, seleccionarAdultos::class.java)
-                intent.putExtra("jugador1", jug1) //envio de datos a activities
-                intent.putExtra("jugador2", jug2)
-                startActivity(intent)//nos vamo
-            }*/
+        fun setAnimation(promedio:Int) {
+            when (promedio){
+                in 0..19 -> binding.estrellas.setMaxFrame(40)
+                in 20..39 -> binding.estrellas.setMaxFrame(70)
+                in 40..59 -> binding.estrellas.setMaxFrame(130)
+                in 60..79 -> binding.estrellas.setMaxFrame(200)
+                else -> binding.estrellas.setMaxFrame(270)
+            }
+            binding.estrellas.playAnimation()
         }
 
         binding.rolesBoton.setOnClickListener { roles() }
         binding.volverBoton.setOnClickListener { volver() }
+        setAnimation(promedio.toInt())
 
     }
     private fun initLoadAds(){

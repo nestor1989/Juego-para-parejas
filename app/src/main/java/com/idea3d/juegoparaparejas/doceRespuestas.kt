@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
+import com.google.android.gms.ads.AdError
 import com.idea3d.juegoparaparejas.databinding.ActivityDoceRespuestasBinding
 import java.util.Timer
 import kotlin.concurrent.schedule
@@ -1554,12 +1555,20 @@ class doceRespuestas : AppCompatActivity() {
                         override fun onAdDismissedFullScreenContent() {
                             nosVamos()
                         }
+                        override fun onAdFailedToShowFullScreenContent(adError: AdError?) {
+                            nosVamos()
+                        }
                     }
-                }else {
+                    if (interstitial == null){
+                        nosVamos()
+                    }
+                }else if (i<13) {
                     Timer("SettingUp", false).schedule(750) {
                         initEvent(prueba, i)
                         binding.contView.text = "Pregunta $i/12"
                     }
+                }else if(i>13){
+                    nosVamos()
                 }
 
         }
@@ -1599,4 +1608,5 @@ class doceRespuestas : AppCompatActivity() {
         interstitial?.show(this)
 
     }
+
 }

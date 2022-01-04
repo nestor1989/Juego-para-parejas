@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.idea3d.juegoparaparejas.databinding.ActivityDocePreguntasBinding
 import android.content.Intent
+import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
@@ -1521,13 +1522,24 @@ class docePreguntas : AppCompatActivity() {
 
                 interstitial?.fullScreenContentCallback = object: FullScreenContentCallback() {
                     override fun onAdDismissedFullScreenContent() {
-                    nosVamos()
+                        nosVamos()
+                    }
+
+                    override fun onAdFailedToShowFullScreenContent(adError: AdError?) {
+                        nosVamos()
                     }
                 }
-            }else  {
+
+                if (interstitial==null){
+                    nosVamos()
+                }
+
+            }else if (i<13)  {
                 initEvent(prueba, i)
                 binding.contView.text = "Pregunta $i/12"
 
+            }else if (i>13){
+                nosVamos()
             }
         }
 
