@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
 import com.idea3d.juegoparaparejas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         var jug1:String
         var jug2:String
-        val text = "Ingresar el nombre de los jugadores" //texto
+        val text = getString(R.string.enter_player_names) //texto
         val duration = Toast.LENGTH_SHORT // y duracion de toast
 
 

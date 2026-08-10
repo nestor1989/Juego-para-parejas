@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_slab"
-        android:text="ELIGE EL MODO DEL JUEGO"
+        android:text="@string/mode_selection_title"
         android:textColor="#FDDD618B"
         android:textSize="26sp"
         android:textStyle="bold"
@@ -48,7 +48,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto_slab"
-        android:text="NORMAL"
+        android:text="@string/button_normal_mode"
         android:textSize="20sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
@@ -69,7 +69,7 @@
         android:background="@drawable/style_button"
         android:fontFamily="@font/roboto_slab"
 
-        android:text="ADULTOS"
+        android:text="@string/button_adult_mode"
 
 
         android:textSize="20sp"

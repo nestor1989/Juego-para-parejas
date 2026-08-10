@@ -24,7 +24,7 @@ class Respuestas : AppCompatActivity() {
         val promedio = intent.getDoubleExtra("promedio", 0.0)
         val prueba= intent.getIntExtra("prueba", 0)
 
-        binding.textResult.text= "Conoces a tu amor\n en un ${promedio.toInt()}%"
+        binding.textResult.text = getString(R.string.result_percentage, promedio.toInt())
 
 
 

@@ -26,8 +26,8 @@ class jugadorDos : AppCompatActivity() {
         val prueba = intent.getIntExtra("prueba", 0)
         val respuestas= intent.getIntegerArrayListExtra("respuestas")
 
-        binding.turnoView.text= "Turno de $jug2 🥰   "
-        binding.textView5.text= "Responde las mismas preguntas que $jug1 y trata de que tus respuestas coincidan con las suyas"
+        binding.turnoView.text = getString(R.string.turn_player, jug2 ?: "")
+        binding.textView5.text = getString(R.string.player_two_instruction, jug1 ?: "")
 
         fun aJugar(){
 

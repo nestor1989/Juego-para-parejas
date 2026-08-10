@@ -22,48 +22,38 @@ class turnoDeJugUno : AppCompatActivity() {
         val jug1= intent.getStringExtra("jugador1")
         val jug2= intent.getStringExtra("jugador2")
         val prueba= intent.getIntExtra("prueba", 0)
-        var pruebaNombre=""
+        var pruebaNombre = ""
 
         fun nombrePrueba(prueba:Int){
 
-            if (prueba==1){
-                pruebaNombre= "ME GUSTAS"
-            }else if (prueba ==2){
-                pruebaNombre="PRIMERA CITA"
-            }else if (prueba ==3) {
-                pruebaNombre = "ENAMORADOS"
-            }else if (prueba ==4) {
-                pruebaNombre = "SEAMOS NOVIOS"
-            }else if (prueba ==5) {
-                pruebaNombre = "DE NOVIOS"
-            }else if (prueba ==6) {
-                pruebaNombre = "CÁSATE CONMIGO"
-            }else if (prueba ==7) {
-                pruebaNombre = "LA BODA"
-            }else if (prueba ==8) {
-                pruebaNombre = "BODAS DE PLATA"
-            }else if (prueba ==9) {
-                pruebaNombre = "BODAS DE ORO"
-            }else if (prueba ==10) {
-                pruebaNombre = "BODAS DE PLATINO"
-            }else if (prueba ==11) {
-                pruebaNombre = "JUGUETES"
-            }else if (prueba ==12) {
-                pruebaNombre = "DISFRACES"
-            }else if (prueba ==13) {
-                pruebaNombre = "FANTASIAS"
-            }else if (prueba ==14) {
-                pruebaNombre = "FRAGANCIAS"
-            }else if (prueba ==15) {
-                pruebaNombre = "ROMANCE"
-            }else if (prueba ==16) {
-                pruebaNombre = "FETICHES"
+            pruebaNombre = when (prueba) {
+                1 -> getString(R.string.pack_1_name)
+                2 -> getString(R.string.pack_2_name)
+                3 -> getString(R.string.pack_3_name)
+                4 -> getString(R.string.pack_4_name)
+                5 -> getString(R.string.pack_5_name)
+                6 -> getString(R.string.pack_6_name)
+                7 -> getString(R.string.pack_7_name)
+                8 -> getString(R.string.pack_8_name)
+                9 -> getString(R.string.pack_9_name)
+                10 -> getString(R.string.pack_10_name)
+                11 -> getString(R.string.pack_11_name)
+                12 -> getString(R.string.pack_12_name)
+                13 -> getString(R.string.pack_13_name)
+                14 -> getString(R.string.pack_14_name)
+                15 -> getString(R.string.pack_15_name)
+                16 -> getString(R.string.pack_16_name)
+                else -> ""
             }
         }
         nombrePrueba(prueba)
 
-        binding.turnoView.text= "Turno de $jug1 🥰 \n Prueba $pruebaNombre  "
-        binding.textView5.text= "Responde las siguientes 12 preguntas con honestidad. Luego $jug2 intentará adivinar tus respuestas 😍"
+        binding.turnoView.text = getString(
+            R.string.turn_player_with_test,
+            jug1 ?: "",
+            pruebaNombre
+        )
+        binding.textView5.text = getString(R.string.player_one_instruction, jug2 ?: "")
 
         fun aJugar(){
             val intent = Intent(this, docePreguntas::class.java)

@@ -1,3 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App Name -->
     <string name="app_name">Juego para parejas</string>
+
+    <!-- Main Activity - Titles and Hints -->
+    <string name="main_title">¿Realmente me conoces?</string>
+    <string name="hint_player_one_name">Nombre del jugador uno</string>
+    <string name="hint_player_two_name">Nombre del jugador dos</string>
+
+    <!-- Main Activity - Buttons -->
+    <string name="button_start">EMPEZAR!</string>
+
+    <!-- Main Activity - Messages -->
+    <string name="enter_player_names">Ingresar el nombre de los jugadores</string>
+
+    <!-- Second Activity - Mode Selection -->
+    <string name="mode_selection_title">ELIGE EL MODO DEL JUEGO</string>
+    <string name="button_normal_mode">NORMAL</string>
+    <string name="button_adult_mode">ADULTOS</string>
+
+    <!-- Pack Selection - Normal Packs (1-10) -->
+    <string name="pack_1_name">ME GUSTAS</string>
+    <string name="pack_2_name">PRIMERA CITA</string>
+    <string name="pack_3_name">ENAMORADOS</string>
+    <string name="pack_4_name">SEAMOS NOVIOS</string>
+    <string name="pack_5_name">DE NOVIOS</string>
+    <string name="pack_6_name">CÁSATE CONMIGO</string>
+    <string name="pack_7_name">LA BODA</string>
+    <string name="pack_8_name">BODAS DE PLATA</string>
+    <string name="pack_9_name">BODAS DE ORO</string>
+    <string name="pack_10_name">BODAS DE PLATINO</string>
+
+    <!-- Pack Selection - Adult Packs (11-16) -->
+    <string name="pack_11_name">JUGUETES</string>
+    <string name="pack_12_name">DISFRACES</string>
+    <string name="pack_13_name">FANTASIA</string>
+    <string name="pack_14_name">FRAGANCIAS</string>
+    <string name="pack_15_name">ROMANCE</string>
+    <string name="pack_16_name">FETICHES</string>
+
+    <!-- Player Instruction Messages -->
+    <string name="player_one_instruction">Responde las siguientes 12 preguntas con honestidad. Luego %s intentará adivinar tus respuestas 😍</string>
+    <string name="player_two_instruction">Responde las mismas preguntas que %s y trata de que tus respuestas coincidan con las suyas</string>
+
+    <!-- Turn Buttons -->
+    <string name="button_start_test">EMPEZAR PRUEBA</string>
+    <string name="placeholder_turn">NADA</string>
+
+    <!-- Questions and Sample Answers -->
+    <string name="sample_question">¿Cual es tu estación favorita?</string>
+    <string name="answer_autumn">OTOÑO</string>
+    <string name="answer_winter">INVIERNO</string>
+    <string name="answer_spring">PRIMAVERA</string>
+    <string name="answer_summer">VERANO</string>
+
+    <!-- Question Counter -->
+    <string name="question_counter">Pregunta %d/12</string>
+    <string name="question_counter_initial">Pregunta 1/12</string>
+
+    <!-- Dynamic Labels -->
+    <string name="turn_player">Turno de %1$s 🥰</string>
+    <string name="turn_player_with_test">Turno de %1$s 🥰\nPrueba %2$s</string>
+    <string name="result_percentage">Conoces a tu amor\n en un %1$d%%</string>
+
+    <!-- Results Screen -->
+    <string name="result_perfect_match">Conoces a tu amor en un 100%%</string>
+    <string name="button_switch_roles">Invertir Roles</string>
+    <string name="button_different_test">Hacer una prueba diferente</string>
 </resources>

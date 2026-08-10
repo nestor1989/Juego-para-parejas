@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Game for Couples</string>
+
+    <!-- Main Activity - Titles and Hints -->
+    <string name="main_title">Do You Really Know Me?</string>
+    <string name="hint_player_one_name">Player one name</string>
+    <string name="hint_player_two_name">Player two name</string>
+
+    <!-- Main Activity - Buttons -->
+    <string name="button_start">START!</string>
+
+    <!-- Main Activity - Messages -->
+    <string name="enter_player_names">Enter the players\' names</string>
+
+    <!-- Second Activity - Mode Selection -->
+    <string name="mode_selection_title">CHOOSE GAME MODE</string>
+    <string name="button_normal_mode">NORMAL</string>
+    <string name="button_adult_mode">ADULTS</string>
+
+    <!-- Pack Selection - Normal Packs (1-10) -->
+    <string name="pack_1_name">I LIKE YOU</string>
+    <string name="pack_2_name">FIRST DATE</string>
+    <string name="pack_3_name">IN LOVE</string>
+    <string name="pack_4_name">LET\'S BE TOGETHER</string>
+    <string name="pack_5_name">TOGETHER</string>
+    <string name="pack_6_name">MARRY ME</string>
+    <string name="pack_7_name">THE WEDDING</string>
+    <string name="pack_8_name">SILVER ANNIVERSARY</string>
+    <string name="pack_9_name">GOLDEN ANNIVERSARY</string>
+    <string name="pack_10_name">PLATINUM ANNIVERSARY</string>
+
+    <!-- Pack Selection - Adult Packs (11-16) -->
+    <string name="pack_11_name">TOYS</string>
+    <string name="pack_12_name">COSTUMES</string>
+    <string name="pack_13_name">FANTASY</string>
+    <string name="pack_14_name">FRAGRANCES</string>
+    <string name="pack_15_name">ROMANCE</string>
+    <string name="pack_16_name">FETISHES</string>
+
+    <!-- Player Instruction Messages -->
+    <string name="player_one_instruction">Answer the following 12 questions honestly. Then %s will try to guess your answers 😍</string>
+    <string name="player_two_instruction">Answer the same questions as %s and try to match their answers</string>
+
+    <!-- Turn Buttons -->
+    <string name="button_start_test">START TEST</string>
+    <string name="placeholder_turn">NOTHING</string>
+
+    <!-- Questions and Sample Answers -->
+    <string name="sample_question">What is your favorite season?</string>
+    <string name="answer_autumn">AUTUMN</string>
+    <string name="answer_winter">WINTER</string>
+    <string name="answer_spring">SPRING</string>
+    <string name="answer_summer">SUMMER</string>
+
+    <!-- Question Counter -->
+    <string name="question_counter">Question %d/12</string>
+    <string name="question_counter_initial">Question 1/12</string>
+
+    <!-- Dynamic Labels -->
+    <string name="turn_player">%1$s\'s turn 🥰</string>
+    <string name="turn_player_with_test">%1$s\'s turn 🥰\nTest %2$s</string>
+    <string name="result_percentage">You know your love\n %1$d%%</string>
+
+    <!-- Results Screen -->
+    <string name="result_perfect_match">You know your love 100%%</string>
+    <string name="button_switch_roles">Switch Roles</string>
+    <string name="button_different_test">Take a Different Test</string>
+</resources>
+
+

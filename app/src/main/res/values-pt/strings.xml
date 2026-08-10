@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Jogo para Casais</string>
+
+    <!-- Main Activity - Titles and Hints -->
+    <string name="main_title">Você Realmente Me Conhece?</string>
+    <string name="hint_player_one_name">Nome do jogador um</string>
+    <string name="hint_player_two_name">Nome do jogador dois</string>
+
+    <!-- Main Activity - Buttons -->
+    <string name="button_start">COMEÇAR!</string>
+
+    <!-- Main Activity - Messages -->
+    <string name="enter_player_names">Digite o nome dos jogadores</string>
+
+    <!-- Second Activity - Mode Selection -->
+    <string name="mode_selection_title">ESCOLHA O MODO DE JOGO</string>
+    <string name="button_normal_mode">NORMAL</string>
+    <string name="button_adult_mode">ADULTOS</string>
+
+    <!-- Pack Selection - Normal Packs (1-10) -->
+    <string name="pack_1_name">EU GOSTO DE VOCÊ</string>
+    <string name="pack_2_name">PRIMEIRO ENCONTRO</string>
+    <string name="pack_3_name">APAIXONADOS</string>
+    <string name="pack_4_name">VAMOS FICAR JUNTOS</string>
+    <string name="pack_5_name">JUNTOS</string>
+    <string name="pack_6_name">CASE COMIGO</string>
+    <string name="pack_7_name">O CASAMENTO</string>
+    <string name="pack_8_name">BODAS DE PRATA</string>
+    <string name="pack_9_name">BODAS DE OURO</string>
+    <string name="pack_10_name">BODAS DE PLATINA</string>
+
+    <!-- Pack Selection - Adult Packs (11-16) -->
+    <string name="pack_11_name">BRINQUEDOS</string>
+    <string name="pack_12_name">FANTASIAS</string>
+    <string name="pack_13_name">FANTASIA</string>
+    <string name="pack_14_name">FRAGRÂNCIAS</string>
+    <string name="pack_15_name">ROMANCE</string>
+    <string name="pack_16_name">FETICHISMO</string>
+
+    <!-- Player Instruction Messages -->
+    <string name="player_one_instruction">Responda as seguintes 12 perguntas com honestidade. Depois %s tentará adivinhar suas respostas 😍</string>
+    <string name="player_two_instruction">Responda as mesmas perguntas de %s e tente fazer as respostas coincidirem</string>
+
+    <!-- Turn Buttons -->
+    <string name="button_start_test">COMEÇAR TESTE</string>
+    <string name="placeholder_turn">NADA</string>
+
+    <!-- Questions and Sample Answers -->
+    <string name="sample_question">Qual é sua estação favorita?</string>
+    <string name="answer_autumn">OUTONO</string>
+    <string name="answer_winter">INVERNO</string>
+    <string name="answer_spring">PRIMAVERA</string>
+    <string name="answer_summer">VERÃO</string>
+
+    <!-- Question Counter -->
+    <string name="question_counter">Pergunta %d/12</string>
+    <string name="question_counter_initial">Pergunta 1/12</string>
+
+    <!-- Dynamic Labels -->
+    <string name="turn_player">Vez de %1$s 🥰</string>
+    <string name="turn_player_with_test">Vez de %1$s 🥰\nProva %2$s</string>
+    <string name="result_percentage">Voce conhece seu amor\n em %1$d%%</string>
+
+    <!-- Results Screen -->
+    <string name="result_perfect_match">Você conhece seu amor 100%%</string>
+    <string name="button_switch_roles">Trocar de Papéis</string>
+    <string name="button_different_test">Fazer um Teste Diferente</string>
+</resources>
+
