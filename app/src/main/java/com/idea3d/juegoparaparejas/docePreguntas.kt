@@ -1525,7 +1525,7 @@ class docePreguntas : AppCompatActivity() {
                         nosVamos()
                     }
 
-                    override fun onAdFailedToShowFullScreenContent(adError: AdError?) {
+                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
                         nosVamos()
                     }
                 }

@@ -3,12 +3,7 @@ package com.idea3d.juegoparaparejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.android.billingclient.api.BillingClient
-import com.android.billingclient.api.BillingClientStateListener
-import com.android.billingclient.api.BillingResult
-import com.android.billingclient.api.PurchasesUpdatedListener
 import com.google.android.gms.ads.AdRequest
-import com.idea3d.juegoparaparejas.databinding.ActivitySeleccionarBinding
 import com.idea3d.juegoparaparejas.databinding.SeleccionarAdultosBinding
 
 class seleccionarAdultos : AppCompatActivity() {

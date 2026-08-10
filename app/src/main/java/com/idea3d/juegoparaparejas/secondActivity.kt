@@ -3,14 +3,8 @@ package com.idea3d.juegoparaparejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-import com.android.billingclient.api.*
-import com.android.billingclient.api.BillingClient.SkuType.INAPP
 import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.databinding.ActivitySecondBinding
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class secondActivity : AppCompatActivity() {
 
