@@ -40,11 +40,11 @@ class doceRespuestas : AppCompatActivity() {
         fun renderQuestion() {
             resetButtons()
             val item = pack.questionAt(currentIndex)
-            binding.preguntaView.text = item.question
-            binding.respuestaUno.text = item.answers[0]
-            binding.respuestaDos.text = item.answers[1]
-            binding.respuestaTres.text = item.answers[2]
-            binding.respuestaCuatro.text = item.answers[3]
+            binding.preguntaView.text = getString(item.questionRes)
+            binding.respuestaUno.text = getString(item.answerRes[0])
+            binding.respuestaDos.text = getString(item.answerRes[1])
+            binding.respuestaTres.text = getString(item.answerRes[2])
+            binding.respuestaCuatro.text = getString(item.answerRes[3])
             binding.contView.text = getString(R.string.question_counter, currentIndex + 1)
         }
         fun goToResults() {
