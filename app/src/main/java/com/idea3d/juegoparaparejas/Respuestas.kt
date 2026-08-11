@@ -4,18 +4,23 @@ package com.idea3d.juegoparaparejas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.google.android.gms.ads.AdRequest
+import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivityRespuestasBinding
 
 class Respuestas : AppCompatActivity() {
 
     private lateinit var binding: ActivityRespuestasBinding
-
+    private lateinit var subscriptionManager: SubscriptionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRespuestasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        subscriptionManager = SubscriptionManager(this)
+        subscriptionManager.setupBillingClient()
 
         initLoadAds()
 
@@ -62,9 +67,18 @@ class Respuestas : AppCompatActivity() {
         setAnimation(promedio.toInt())
 
     }
+    
     private fun initLoadAds(){
-        val adRequest: AdRequest =AdRequest.Builder().build()
-        binding.banner.loadAd(adRequest)
+        if (!subscriptionManager.isPremiumUser()) {
+            val adRequest: AdRequest =AdRequest.Builder().build()
+            binding.banner.loadAd(adRequest)
+        } else {
+            binding.banner.visibility = View.GONE
+        }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        subscriptionManager.disconnect()
+    }
 }

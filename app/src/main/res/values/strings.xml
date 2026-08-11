@@ -63,6 +63,12 @@
     <string name="turn_player_with_test">Turno de %1$s 🥰\nPrueba %2$s</string>
     <string name="result_percentage">Conoces a tu amor\n en un %1$d%%</string>
 
+    <!-- Premium/Subscription Strings -->
+    <string name="paywall_title">🔒 Acceso Premium</string>
+    <string name="paywall_message">Desbloquea 6 packs adultos con contenido exclusivo:\n\n• 🎭 Disfraces\n• 🧸 Juguetes\n• 💭 Fantasía\n• 🌸 Fragancias\n• 💕 Romance\n• 🔞 Fetiches\n\nSuscripción mensual - Cancela cuando quieras</string>
+    <string name="paywall_subscribe">Suscribirse Ahora</string>
+    <string name="paywall_cancel">Cancelar</string>
+
     <!-- Results Screen -->
     <string name="result_perfect_match">Conoces a tu amor en un 100%%</string>
     <string name="button_switch_roles">Invertir Roles</string>

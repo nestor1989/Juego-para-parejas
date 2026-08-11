@@ -1,6 +1,7 @@
 package com.idea3d.juegoparaparejas
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
@@ -8,14 +9,22 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivityDocePreguntasBinding
+
 class docePreguntas : AppCompatActivity() {
     private lateinit var binding: ActivityDocePreguntasBinding
     private var interstitial: InterstitialAd? = null
+    private lateinit var subscriptionManager: SubscriptionManager
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDocePreguntasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        subscriptionManager = SubscriptionManager(this)
+        subscriptionManager.setupBillingClient()
+        
         initIntAds()
         initLoadAds()
         val jug1 = intent.getStringExtra("jugador1")
@@ -70,27 +79,41 @@ class docePreguntas : AppCompatActivity() {
         binding.respuestaCuatro.setOnClickListener { answerSelected(4) }
         renderQuestion()
     }
+    
     private fun initLoadAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.banner.loadAd(adRequest)
+        if (!subscriptionManager.isPremiumUser()) {
+            val adRequest = AdRequest.Builder().build()
+            binding.banner.loadAd(adRequest)
+        } else {
+            binding.banner.visibility = View.GONE
+        }
     }
+    
     private fun initIntAds() {
-        val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(
-            this,
-            "ca-app-pub-4930505659937183/7471331417",
-            adRequest,
-            object : InterstitialAdLoadCallback() {
-                override fun onAdLoaded(interstitialAd: InterstitialAd) {
-                    interstitial = interstitialAd
+        if (!subscriptionManager.isPremiumUser()) {
+            val adRequest = AdRequest.Builder().build()
+            InterstitialAd.load(
+                this,
+                "ca-app-pub-4930505659937183/7471331417",
+                adRequest,
+                object : InterstitialAdLoadCallback() {
+                    override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                        interstitial = interstitialAd
+                    }
+                    override fun onAdFailedToLoad(p0: LoadAdError) {
+                        interstitial = null
+                    }
                 }
-                override fun onAdFailedToLoad(p0: LoadAdError) {
-                    interstitial = null
-                }
-            }
-        )
+            )
+        }
     }
+    
     private fun showAds() {
         interstitial?.show(this)
+    }
+    
+    override fun onDestroy() {
+        super.onDestroy()
+        subscriptionManager.disconnect()
     }
 }
