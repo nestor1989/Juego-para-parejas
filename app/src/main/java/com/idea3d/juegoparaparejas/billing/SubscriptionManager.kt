@@ -60,9 +60,19 @@ class SubscriptionManager(private val context: Context) {
         try {
             Log.d(TAG, "Launching subscription flow")
             
-            // Intentar con SKU principal
+            // Para testing sin SKUs configurados en Google Play
+            // Simular compra exitosa inmediatamente
+            Log.d(TAG, "Test mode: Simulating successful purchase")
+            preferenceManager.setIsPremium(true)
+            preferenceManager.setLastSync(System.currentTimeMillis())
+
+            // En producción, descomentar para intentar con Google Play real:
+            /*
             queryAndLaunchBillingFlow(activity, SUBSCRIPTION_SKU_MONTHLY, onResult)
-            
+            */
+
+            onResult(true)
+
         } catch (e: Exception) {
             Log.e(TAG, "Error launching billing flow: ${e.message}")
             e.printStackTrace()

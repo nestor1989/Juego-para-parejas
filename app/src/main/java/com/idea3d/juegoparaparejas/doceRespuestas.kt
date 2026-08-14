@@ -130,7 +130,7 @@ class doceRespuestas : AppCompatActivity() {
             val adRequest = AdRequest.Builder().build()
             InterstitialAd.load(
                 this,
-                "ca-app-pub-4930505659937183/6385055420",
+                "ca-app-pub-3940256099942544/1033173712", // Test interstitial
                 adRequest,
                 object : InterstitialAdLoadCallback() {
                     override fun onAdLoaded(interstitialAd: InterstitialAd) {
