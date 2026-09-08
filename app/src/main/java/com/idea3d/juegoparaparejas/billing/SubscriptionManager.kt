@@ -11,14 +11,17 @@ class SubscriptionManager(private val context: Context) {
     private val preferenceManager = PreferenceManager(context)
     private val entitlementClient = EntitlementClient(context)
 
+    /**
+     * Se invoca cuando se resuelve el estado premium real contra Google Play.
+     * Útil para que las Activities recarguen los anuncios una vez confirmado
+     * si el usuario es (o no) premium. Devuelve el valor final de isPremium.
+     */
+    var onPremiumStatusResolved: ((Boolean) -> Unit)? = null
+
     companion object {
         private const val SUBSCRIPTION_SKU_MONTHLY = "premium_monthly"
         private const val SUBSCRIPTION_SKU_YEARLY = "premium_yearly"
-        
-        // SKUs alternativos para testing (si los principales no funcionan)
-        private const val TEST_SKU_MONTHLY = "android.test.purchased"
-        private const val TEST_SKU_YEARLY = "android.test.purchased"
-        
+
         private const val TAG = "SubscriptionManager"
     }
 
@@ -34,16 +37,30 @@ class SubscriptionManager(private val context: Context) {
             override fun onBillingSetupFinished(billingResult: BillingResult) {
                 if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
                     Log.d(TAG, "Billing client connected successfully")
+                    Log.d(TAG, "✓ Billing service is ready - app is properly configured for Google Play Billing")
                     verifySubscriptionStatus()
                     onReady(true)
                 } else {
-                    Log.e(TAG, "Billing setup failed: ${billingResult.debugMessage}")
+                    val errorMessage = when (billingResult.responseCode) {
+                        BillingClient.BillingResponseCode.SERVICE_UNAVAILABLE ->
+                            "Billing service unavailable - app may not be configured in Google Play Console"
+                        BillingClient.BillingResponseCode.BILLING_UNAVAILABLE ->
+                            "Billing not available - ensure app is in internal testing track or released"
+                        BillingClient.BillingResponseCode.DEVELOPER_ERROR ->
+                            "Developer error - verify app configuration in Google Play Console"
+                        else -> billingResult.debugMessage
+                    }
+                    Log.e(TAG, "✗ Billing setup failed: $errorMessage (Code: ${billingResult.responseCode})")
+                    Log.e(TAG, "  To fix this, you must:")
+                    Log.e(TAG, "  1. Register your certificate SHA1 in Google Play Console")
+                    Log.e(TAG, "  2. Create subscription SKUs: premium_monthly, premium_yearly")
+                    Log.e(TAG, "  3. Upload app to Internal testing track")
                     onReady(false)
                 }
             }
 
             override fun onBillingServiceDisconnected() {
-                Log.d(TAG, "Billing service disconnected")
+                Log.d(TAG, "Billing service disconnected - attempting to reconnect")
             }
         })
     }
@@ -60,22 +77,11 @@ class SubscriptionManager(private val context: Context) {
         try {
             Log.d(TAG, "Launching subscription flow")
             
-            // Para testing sin SKUs configurados en Google Play
-            // Simular compra exitosa inmediatamente
-            Log.d(TAG, "Test mode: Simulating successful purchase")
-            preferenceManager.setIsPremium(true)
-            preferenceManager.setLastSync(System.currentTimeMillis())
-
-            // En producción, descomentar para intentar con Google Play real:
-            /*
+            // Usar Google Play real - descomentar cuando SKUs estén configurados
             queryAndLaunchBillingFlow(activity, SUBSCRIPTION_SKU_MONTHLY, onResult)
-            */
-
-            onResult(true)
 
         } catch (e: Exception) {
             Log.e(TAG, "Error launching billing flow: ${e.message}")
-            e.printStackTrace()
             onResult(false)
         }
     }
@@ -99,20 +105,16 @@ class SubscriptionManager(private val context: Context) {
             
             billingClient.queryProductDetailsAsync(params) { billingResult, productDetailsList ->
                 when {
-                    billingResult.responseCode == BillingClient.BillingResponseCode.OK && 
+                    billingResult.responseCode == BillingClient.BillingResponseCode.OK &&
                     productDetailsList != null && productDetailsList.isNotEmpty() -> {
                         launchBillingFlowWithDetails(activity, productDetailsList[0], onResult)
                     }
-                    skuId == SUBSCRIPTION_SKU_MONTHLY -> {
-                        // Si falla, intentar con TEST SKU
-                        Log.w(TAG, "Main SKU failed, trying test SKU...")
-                        queryAndLaunchBillingFlow(activity, TEST_SKU_MONTHLY, onResult)
-                    }
                     else -> {
-                        Log.e(TAG, "Product details not found: ${billingResult.debugMessage}")
-                        Log.w(TAG, "Simulating purchase for testing...")
-                        // Para testing: simular compra exitosa
-                        simulateSuccessfulPurchase(onResult)
+                        // NO usar SKU de test ni simular compras en producción.
+                        // El SKU de test (android.test.purchased) provoca el diálogo
+                        // "This version of the application is not configured for billing".
+                        Log.e(TAG, "Product details not found for '$skuId': ${billingResult.debugMessage} (code: ${billingResult.responseCode})")
+                        onResult(false)
                     }
                 }
             }
@@ -158,11 +160,10 @@ class SubscriptionManager(private val context: Context) {
     }
     
     private fun simulateSuccessfulPurchase(onResult: (Boolean) -> Unit) {
-        // Para ambiente de testing sin configuración real de Google Play
-        Log.d(TAG, "Simulating purchase (no real SKU configured)")
-        preferenceManager.setIsPremium(true)
-        preferenceManager.setLastSync(System.currentTimeMillis())
-        onResult(true)
+        // Eliminado: la simulación marcaba premium=true de forma permanente,
+        // ocultando los anuncios para siempre. En producción el estado premium
+        // solo debe provenir de compras reales de Google Play.
+        onResult(false)
     }
 
     fun verifySubscriptionStatus() {
@@ -173,23 +174,38 @@ class SubscriptionManager(private val context: Context) {
 
             billingClient.queryPurchasesAsync(params) { billingResult, purchases ->
                 if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
-                    // Verify each purchase with backend
-                    for (purchase in purchases) {
-                        if (isSubscriptionProduct(purchase.products)) {
+                    val activeSubs = purchases.filter { isSubscriptionProduct(it.products) }
+
+                    if (activeSubs.isNotEmpty()) {
+                        // Hay suscripciones reales: verificar cada una con el backend
+                        for (purchase in activeSubs) {
                             verifyWithBackend(purchase)
                         }
-                    }
-
-                    // Also fetch current entitlement from backend
-                    if (purchases.isEmpty()) {
+                        preferenceManager.setIsPremium(true)
+                        notifyPremiumResolved(true)
+                    } else {
+                        // No hay ninguna suscripción real activa en Google Play.
+                        // Resetear cualquier estado premium local obsoleto (por ej.
+                        // el que dejó la antigua simulación) para que los ads vuelvan.
+                        preferenceManager.setIsPremium(false)
+                        notifyPremiumResolved(false)
                         entitlementClient.getCurrentEntitlement { isPremium ->
-                            Log.d(TAG, "Current entitlement status: $isPremium")
+                            Log.d(TAG, "No active Google Play subscription. Backend entitlement: $isPremium")
+                            preferenceManager.setIsPremium(isPremium)
+                            notifyPremiumResolved(isPremium)
                         }
                     }
                 }
             }
         } catch (e: Exception) {
             Log.e(TAG, "Error verifying subscription: ${e.message}")
+        }
+    }
+
+    private fun notifyPremiumResolved(isPremium: Boolean) {
+        // Asegurar callback en el hilo principal para tocar la UI (recargar ads)
+        android.os.Handler(android.os.Looper.getMainLooper()).post {
+            onPremiumStatusResolved?.invoke(isPremium)
         }
     }
 
@@ -256,6 +272,20 @@ class SubscriptionManager(private val context: Context) {
         if (::billingClient.isInitialized) {
             billingClient.endConnection()
         }
+    }
+
+    /**
+     * Debug helper to print billing configuration status
+     * Call this from your activity to see billing setup status in logcat
+     */
+    fun printBillingStatus(tag: String = "SubscriptionManager") {
+        Log.d(tag, "=== Google Play Billing Configuration Status ===")
+        Log.d(tag, "Primary Subscription SKUs:")
+        Log.d(tag, "  - Monthly: $SUBSCRIPTION_SKU_MONTHLY")
+        Log.d(tag, "  - Yearly: $SUBSCRIPTION_SKU_YEARLY")
+        Log.d(tag, "Current Premium Status: ${isPremiumUser()}")
+        Log.d(tag, "App Package: com.idea3d.juegoparaparejas")
+        Log.d(tag, "================================================")
     }
 }
 

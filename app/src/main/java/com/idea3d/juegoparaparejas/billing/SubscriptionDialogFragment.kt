@@ -4,34 +4,34 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
+import com.idea3d.juegoparaparejas.R
 
 class SubscriptionDialogFragment(
     private val onSubscribeClick: () -> Unit,
-    private val onDismiss: () -> Unit
+    private val onDismiss: () -> Unit,
+    private val onWatchAdClick: (() -> Unit)? = null
 ) : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return AlertDialog.Builder(requireContext())
-            .setTitle("🔒 Acceso Premium")
-            .setMessage(
-                "Desbloquea 6 packs adultos con contenido exclusivo:\n\n" +
-                        "• 🎭 Disfraces\n" +
-                        "• 🧸 Juguetes\n" +
-                        "• 💭 Fantasía\n" +
-                        "• 🌸 Fragancias\n" +
-                        "• 💕 Romance\n" +
-                        "• 🔞 Fetiches\n\n" +
-                        "Suscripción mensual - Cancela cuando quieras"
-            )
-            .setPositiveButton("Suscribirse Ahora") { _, _ ->
+        val builder = AlertDialog.Builder(requireContext())
+            .setTitle(getString(R.string.sub_dialog_title))
+            .setMessage(getString(R.string.sub_dialog_message))
+            .setPositiveButton(getString(R.string.sub_dialog_subscribe)) { _, _ ->
                 onSubscribeClick()
             }
-            .setNegativeButton("Cancelar") { dialog, _ ->
+            .setNegativeButton(getString(R.string.sub_dialog_cancel)) { dialog, _ ->
                 dialog.dismiss()
                 onDismiss()
             }
             .setCancelable(false)
-            .create()
+
+        if (onWatchAdClick != null) {
+            builder.setNeutralButton(getString(R.string.sub_dialog_watch_ad)) { _, _ ->
+                onWatchAdClick.invoke()
+            }
+        }
+
+        return builder.create()
     }
 }
 

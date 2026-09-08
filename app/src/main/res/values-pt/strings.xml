@@ -1059,5 +1059,13 @@
     <string name="q_p16_q12_a2">Interracial</string>
     <string name="q_p16_q12_a3">Orgias</string>
     <string name="q_p16_q12_a4">Sadomasoquismo</string>
+
+    <!-- Subscription Dialog -->
+    <string name="sub_dialog_title">🔒 Acesso Premium</string>
+    <string name="sub_dialog_message">Desbloqueie 6 packs adultos com conteúdo exclusivo:\n\n• 🎭 Fantasias\n• 🧸 Brinquedos\n• 💭 Fantasia\n• 🌸 Fragrâncias\n• 💕 Romance\n• 🔞 Fetiches\n\nAssinatura mensal - Cancele quando quiser</string>
+    <string name="sub_dialog_subscribe">Assinar Agora</string>
+    <string name="sub_dialog_watch_ad">Ver anúncio e desbloquear</string>
+    <string name="sub_dialog_cancel">Cancelar</string>
+    <string name="rewarded_ad_not_ready">O anúncio ainda não está pronto, tente novamente em alguns segundos</string>
 </resources>
 

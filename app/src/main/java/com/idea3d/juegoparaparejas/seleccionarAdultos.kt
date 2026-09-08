@@ -18,6 +18,7 @@ class seleccionarAdultos : AppCompatActivity() {
         setContentView(binding.root)
 
         subscriptionManager = SubscriptionManager(this)
+        subscriptionManager.onPremiumStatusResolved = { initLoadAds() }
         subscriptionManager.setupBillingClient()
         
         initLoadAds()
@@ -43,6 +44,7 @@ class seleccionarAdultos : AppCompatActivity() {
 
     private fun initLoadAds(){
         if (!subscriptionManager.isPremiumUser()) {
+            binding.banner.visibility = View.VISIBLE
             val adRequest = AdRequest.Builder().build()
             binding.banner.loadAd(adRequest)
         } else {

@@ -3,19 +3,26 @@ package com.idea3d.juegoparaparejas
 
 import android.os.Bundle
 import android.content.Intent
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdRequest
+import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.JugadorUnoBinding
 
 
 class turnoDeJugUno : AppCompatActivity() {
 
     private lateinit var binding:JugadorUnoBinding
+    private lateinit var subscriptionManager: SubscriptionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = JugadorUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        subscriptionManager = SubscriptionManager(this)
+        subscriptionManager.onPremiumStatusResolved = { initLoadAds() }
+        subscriptionManager.setupBillingClient()
 
         initLoadAds()
 
@@ -68,8 +75,18 @@ class turnoDeJugUno : AppCompatActivity() {
     }
 
     private fun initLoadAds(){
-        val adRequest: AdRequest =AdRequest.Builder().build()
-        binding.banner.loadAd(adRequest)
+        if (!subscriptionManager.isPremiumUser()) {
+            binding.banner.visibility = View.VISIBLE
+            val adRequest: AdRequest = AdRequest.Builder().build()
+            binding.banner.loadAd(adRequest)
+        } else {
+            binding.banner.visibility = View.GONE
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        subscriptionManager.disconnect()
     }
 
 }
