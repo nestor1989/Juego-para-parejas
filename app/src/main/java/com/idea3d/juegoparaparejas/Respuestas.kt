@@ -8,6 +8,7 @@ import android.view.View
 import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivityRespuestasBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 
 class Respuestas : AppCompatActivity() {
 
@@ -18,6 +19,7 @@ class Respuestas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRespuestasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
 
         subscriptionManager = SubscriptionManager(this)
         subscriptionManager.setupBillingClient()

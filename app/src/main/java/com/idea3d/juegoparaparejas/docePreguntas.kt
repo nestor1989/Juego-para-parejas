@@ -11,6 +11,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivityDocePreguntasBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 
 class docePreguntas : AppCompatActivity() {
     private lateinit var binding: ActivityDocePreguntasBinding
@@ -21,6 +22,7 @@ class docePreguntas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDocePreguntasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
         
         subscriptionManager = SubscriptionManager(this)
         subscriptionManager.setupBillingClient()

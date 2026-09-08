@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.idea3d.juegoparaparejas.databinding.ActivitySeleccionarBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 
 class seleccionarActivity : AppCompatActivity() {
 
@@ -15,8 +16,12 @@ class seleccionarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySeleccionarBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
 
-
+        val jug1 = intent.getStringExtra("jugador1")
+        val jug2 = intent.getStringExtra("jugador2")
+        binding.subtitleNames.text = getString(R.string.player_names_pair, jug1 ?: "", jug2 ?: "")
+        binding.backButton.setOnClickListener { finish() }
 
         binding.unoBoton.setOnClickListener { elegirPrueba(1) }
         binding.dosBoton.setOnClickListener { elegirPrueba(2) }

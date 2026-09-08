@@ -7,6 +7,7 @@ import android.view.View
 import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.SeleccionarAdultosBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 
 class seleccionarAdultos : AppCompatActivity() {
     private lateinit var binding: SeleccionarAdultosBinding
@@ -16,12 +17,18 @@ class seleccionarAdultos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = SeleccionarAdultosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
 
         subscriptionManager = SubscriptionManager(this)
         subscriptionManager.onPremiumStatusResolved = { initLoadAds() }
         subscriptionManager.setupBillingClient()
-        
+
         initLoadAds()
+
+        val jug1 = intent.getStringExtra("jugador1")
+        val jug2 = intent.getStringExtra("jugador2")
+        binding.subtitleNames.text = getString(R.string.player_names_pair, jug1 ?: "", jug2 ?: "")
+        binding.backButton.setOnClickListener { finish() }
 
         binding.onceBoton.setOnClickListener { elegirPrueba(11) }
         binding.doceBoton.setOnClickListener { elegirPrueba(12) }

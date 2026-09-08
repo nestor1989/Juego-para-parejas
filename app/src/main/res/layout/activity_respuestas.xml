@@ -5,96 +5,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/paper"
     tools:context=".Respuestas">
 
-
-    <TextView
-        android:id="@+id/text_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/roboto_slab"
-        android:gravity="center"
-        android:paddingLeft="10sp"
-        android:paddingRight="10sp"
-        android:text="@string/result_perfect_match"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        ads:layout_constraintBottom_toTopOf="@+id/guideline24"
-        ads:layout_constraintVertical_bias="0.0"
-
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline25"
+        android:id="@+id/gCardTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
-
-    <Button
-        android:id="@+id/roles_boton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/style_button"
-        android:text="@string/button_switch_roles"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/guideline40"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline25" />
-
-    <Button
-        android:id="@+id/volver_boton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/style_button"
-        android:text="@string/button_different_test"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+        app:layout_constraintGuide_percent="0.10" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.58" />
 
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/banner"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        ads:adSize="LARGE_BANNER"
-        ads:adUnitId="ca-app-pub-4930505659937183/9300376266"
-        ads:layout_constraintBottom_toBottomOf="@+id/guideline25"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="@+id/guideline37">
-    </com.google.android.gms.ads.AdView>
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/card_pink_bg"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gCardTop">
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/roboto_slab"
+            android:gravity="center"
+            android:text="@string/result_perfect_match"
+            android:textAlignment="center"
+            android:textColor="@color/card_pink_fg"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline40"
+        android:id="@+id/guideline24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        ads:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_begin="181dp" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/estrellas"
@@ -105,16 +67,69 @@
         ads:layout_constraintStart_toStartOf="parent"
         ads:layout_constraintTop_toTopOf="@+id/guideline24"
         app:lottie_rawRes="@raw/estrellas"
-
         app:lottie_loop="false"
         app:lottie_autoPlay="false" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline24"
+        android:id="@+id/guideline25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        ads:layout_constraintGuide_begin="181dp" />
+        app:layout_constraintGuide_percent="0.7" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        ads:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/roles_boton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style_button"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="@string/button_switch_roles"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline25" />
+
+    <Button
+        android:id="@+id/volver_boton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_pill_outline_pink"
+        android:fontFamily="@font/roboto_slab"
+        android:text="@string/button_different_test"
+        android:textColor="@color/pink"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-4930505659937183/9300376266"
+        ads:layout_constraintBottom_toBottomOf="@+id/guideline25"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="@+id/guideline37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/paper"
     tools:context=".secondActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_slab"
         android:text="@string/mode_selection_title"
-        android:textColor="#FDDD618B"
+        android:textColor="@color/pink"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline26"
@@ -38,7 +38,7 @@
 
         app:layout_constraintGuide_percent="0.85" />
 
-    <Button
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/normalBoton"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -46,18 +46,51 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/style_button"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/button_normal_mode"
-        android:textSize="20sp"
-        app:backgroundTint="@null"
+        app:cardBackgroundColor="@color/card_pink_bg"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:rippleColor="@color/pink"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+        app:layout_constraintTop_toTopOf="@+id/guideline6">
 
-    <Button
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
 
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_icon_badge_light">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_heart_outline"
+                    app:tint="@color/pink"
+                    android:contentDescription="@null" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/button_normal_mode"
+                android:textColor="@color/card_pink_fg"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/adultosBoton"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -65,21 +98,62 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="16dp"
-
-        android:background="@drawable/style_button"
-        android:fontFamily="@font/roboto_slab"
-
-        android:text="@string/button_adult_mode"
-
-
-        android:textSize="20sp"
-        ads:layout_constraintBottom_toBottomOf="parent"
-        ads:layout_constraintHorizontal_bias="0.0"
-        ads:layout_constraintVertical_bias="0.0"
-        app:backgroundTint="@null"
+        app:cardBackgroundColor="@color/adult_bg_end"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:rippleColor="@color/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_badge_translucent">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_lock"
+                    app:tint="@color/gold"
+                    android:contentDescription="@null" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/button_adult_mode"
+                android:textColor="@color/adult_label"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip_gold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="+18"
+                android:textColor="@color/gold_chip_fg"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline26"

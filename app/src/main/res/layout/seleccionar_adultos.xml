@@ -1,166 +1,352 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:fillViewport="true"
     tools:context=".seleccionarAdultos">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline27"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        <!-- top bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="6dp">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="-3dp" />
+            <FrameLayout
+                android:id="@+id/backButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_card_pink_round"
+                android:layout_marginEnd="12dp">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/pink"
+                    android:contentDescription="@null" />
+            </FrameLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.45" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.75" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="@string/pack_selection_section_adult"
+                    android:textColor="@color/ink"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/onceBoton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:drawableStart="@drawable/dildo_anal"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/pack_11_name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline31"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/subtitleNames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pink_dust"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    tools:text="Ana &amp; Bea" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/doceBoton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:drawableStart="@drawable/antifaz"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/pack_12_name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        ads:layout_constraintHorizontal_bias="0.0"
-        ads:layout_constraintVertical_bias="0.0"
-        app:layout_constraintBottom_toTopOf="@+id/guideline27"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline31" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip_gold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="+18"
+                android:textColor="@color/gold_chip_fg"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/treceBoton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:drawableStart="@drawable/pompa"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/pack_13_name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline32"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline27" />
+        <!-- grid: 6 cards, 2 columns -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
 
-    <Button
-        android:id="@+id/catorceBoton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:drawableStart="@drawable/zapato"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/pack_14_name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline32" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
 
-    <Button
-        android:id="@+id/quinceBoton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:drawableStart="@drawable/collar"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/pack_15_name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline33"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline28" />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onceBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/adult_bg_end"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/gold">
 
-    <Button
-        android:id="@+id/diesiseisBoton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:drawableStart="@drawable/esposas"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/pack_16_name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline33" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="52dp"
+                            android:layout_gravity="end|top"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:alpha="0.9"
+                            android:src="@drawable/dildo_anal"
+                            android:contentDescription="@null" />
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/banner"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        ads:adSize="LARGE_BANNER"
-        ads:adUnitId="ca-app-pub-4930505659937183/1086489100"
-        ads:layout_constraintBottom_toBottomOf="parent"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="@+id/guideline8">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="14dp"
+                            android:fontFamily="@font/roboto_slab"
+                            android:text="@string/pack_11_name"
+                            android:textColor="@color/adult_label"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
 
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/doceBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/adult_bg_end"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/gold">
 
-    </com.google.android.gms.ads.AdView>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="52dp"
+                            android:layout_gravity="end|top"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:alpha="0.9"
+                            android:src="@drawable/antifaz"
+                            android:contentDescription="@null" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="14dp"
+                            android:fontFamily="@font/roboto_slab"
+                            android:text="@string/pack_12_name"
+                            android:textColor="@color/adult_label"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/treceBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/adult_bg_end"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/gold">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="52dp"
+                            android:layout_gravity="end|top"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:alpha="0.9"
+                            android:src="@drawable/pompa"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="14dp"
+                            android:fontFamily="@font/roboto_slab"
+                            android:text="@string/pack_13_name"
+                            android:textColor="@color/adult_label"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/catorceBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/adult_bg_end"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/gold">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="52dp"
+                            android:layout_gravity="end|top"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:alpha="0.9"
+                            android:src="@drawable/zapato"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="14dp"
+                            android:fontFamily="@font/roboto_slab"
+                            android:text="@string/pack_14_name"
+                            android:textColor="@color/adult_label"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/quinceBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/adult_bg_end"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/gold">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="52dp"
+                            android:layout_gravity="end|top"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:alpha="0.9"
+                            android:src="@drawable/collar"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="14dp"
+                            android:fontFamily="@font/roboto_slab"
+                            android:text="@string/pack_15_name"
+                            android:textColor="@color/adult_label"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/diesiseisBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/adult_bg_end"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/gold">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="52dp"
+                            android:layout_gravity="end|top"
+                            android:layout_margin="10dp"
+                            android:adjustViewBounds="true"
+                            android:alpha="0.9"
+                            android:src="@drawable/esposas"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="14dp"
+                            android:fontFamily="@font/roboto_slab"
+                            android:text="@string/pack_16_name"
+                            android:textColor="@color/adult_label"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            ads:adSize="LARGE_BANNER"
+            ads:adUnitId="ca-app-pub-4930505659937183/1086489100" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

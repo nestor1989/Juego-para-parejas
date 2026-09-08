@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_sheet_top_rounded"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="28dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_sheet_handle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:text="@string/sub_dialog_title"
+        android:textAlignment="center"
+        android:textColor="@color/ink"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sub_dialog_message"
+        android:textAlignment="center"
+        android:textColor="@color/pink_dust"
+        android:textSize="13.5sp"
+        android:lineSpacingExtra="2dp" />
+
+    <!-- preview grid: 6 locked categories -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="6dp">
+
+        <include layout="@layout/item_locked_preview"
+            android:id="@+id/preview1"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+
+        <include layout="@layout/item_locked_preview"
+            android:id="@+id/preview2"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+
+        <include layout="@layout/item_locked_preview"
+            android:id="@+id/preview3"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <include layout="@layout/item_locked_preview"
+            android:id="@+id/preview4"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+
+        <include layout="@layout/item_locked_preview"
+            android:id="@+id/preview5"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+
+        <include layout="@layout/item_locked_preview"
+            android:id="@+id/preview6"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/subscribeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_button"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto_slab"
+        android:padding="16dp"
+        android:text="@string/sub_dialog_subscribe"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/watchAdButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_pill_outline_pink"
+        android:fontFamily="@font/roboto_slab"
+        android:padding="15dp"
+        android:text="@string/sub_dialog_watch_ad"
+        android:textColor="@color/pink"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/sub_dialog_cancel"
+        android:textColor="@color/pink_dust" />
+
+</LinearLayout>

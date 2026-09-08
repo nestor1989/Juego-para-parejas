@@ -1,79 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/paper"
     tools:context=".doceRespuestas">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline17"
+        android:id="@+id/gBadgeBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.09" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
-
-    <TextView
-        android:id="@+id/preguntaView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/roboto_slab"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/sample_question"
-        android:textAlignment="gravity"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline19"
+        android:id="@+id/gQuestionBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.35" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline20"
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.385" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.615" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.65" />
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.845" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <TextView
+        android:id="@+id/contView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_pink_round"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="@string/question_counter_initial"
+        android:textColor="@color/pink_dark"
+        android:textSize="12.5sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gBadgeBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/card_pink_bg"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@id/gQuestionBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gBadgeBottom">
+
+        <TextView
+            android:id="@+id/preguntaView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            android:fontFamily="@font/roboto_slab"
+            android:gravity="center"
+            android:text="@string/sample_question"
+            android:textAlignment="gravity"
+            android:textColor="@color/card_pink_fg"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
 
     <Button
-
         android:id="@+id/respuestaUno"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/answer_autumn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
         app:cornerRadius="50dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto_slab"
+        android:letterSpacing="0.02"
+        android:text="@string/answer_autumn"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
@@ -81,13 +132,15 @@
         android:id="@+id/respuestaDos"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/answer_winter"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
         app:cornerRadius="50dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto_slab"
+        android:letterSpacing="0.02"
+        android:text="@string/answer_winter"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,13 +150,15 @@
         android:id="@+id/respuestaTres"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/answer_spring"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
         app:cornerRadius="50dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto_slab"
+        android:letterSpacing="0.02"
+        android:text="@string/answer_spring"
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,40 +168,19 @@
         android:id="@+id/respuestaCuatro"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/roboto_slab"
-
-        android:text="@string/answer_summer"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
         app:cornerRadius="50dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto_slab"
+        android:letterSpacing="0.02"
+        android:text="@string/answer_summer"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline21" />
-
-    <TextView
-        android:id="@+id/contView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/roboto_slab"
-        android:gravity="center|center_horizontal"
-        android:text="@string/question_counter_initial"
-        android:textAlignment="gravity"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline35" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/banner"
@@ -154,12 +188,9 @@
         android:layout_height="0dp"
         ads:adSize="LARGE_BANNER"
         ads:adUnitId="ca-app-pub-4930505659937183/8819647071"
-        ads:layout_constraintBottom_toBottomOf="@+id/guideline35"
+        ads:layout_constraintBottom_toBottomOf="parent"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="@+id/guideline18">
-
-
-    </com.google.android.gms.ads.AdView>
+        ads:layout_constraintTop_toTopOf="@+id/guideline35" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

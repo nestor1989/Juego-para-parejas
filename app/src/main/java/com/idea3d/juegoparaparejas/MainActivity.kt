@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivityMainBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +18,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val onboardingSeen = getSharedPreferences(OnboardingActivity.PREFS_NAME, MODE_PRIVATE)
+            .getBoolean(OnboardingActivity.KEY_SEEN, false)
+        if (!onboardingSeen) {
+            startActivity(Intent(this, OnboardingActivity::class.java))
+            finish()
+            return
+        }
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
 
         subscriptionManager = SubscriptionManager(this)
         subscriptionManager.onPremiumStatusResolved = { initLoadAds() }
@@ -67,7 +78,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        subscriptionManager.disconnect()
+        if (::subscriptionManager.isInitialized) {
+            subscriptionManager.disconnect()
+        }
     }
 
 }

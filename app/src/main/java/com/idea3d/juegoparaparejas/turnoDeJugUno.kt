@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdRequest
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.JugadorUnoBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
+import com.idea3d.juegoparaparejas.util.startPulseRing
 
 
 class turnoDeJugUno : AppCompatActivity() {
@@ -19,6 +21,7 @@ class turnoDeJugUno : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = JugadorUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
 
         subscriptionManager = SubscriptionManager(this)
         subscriptionManager.onPremiumStatusResolved = { initLoadAds() }
@@ -72,6 +75,14 @@ class turnoDeJugUno : AppCompatActivity() {
 
         binding.empiezaBoton.setOnClickListener { aJugar() }
 
+        binding.howToPlayLink.setOnClickListener {
+            val onboardingIntent = Intent(this, OnboardingActivity::class.java)
+            onboardingIntent.putExtra(OnboardingActivity.EXTRA_REVIEW_MODE, true)
+            startActivity(onboardingIntent)
+        }
+
+        binding.ctaRing1.startPulseRing()
+        binding.ctaRing2.startPulseRing(startDelay = 800L)
     }
 
     private fun initLoadAds(){

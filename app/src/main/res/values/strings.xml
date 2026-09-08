@@ -1073,4 +1073,22 @@
     <string name="sub_dialog_watch_ad">Ver anuncio y desbloquear</string>
     <string name="sub_dialog_cancel">Cancelar</string>
     <string name="rewarded_ad_not_ready">El anuncio no está listo, intenta de nuevo en unos segundos</string>
+    <string name="pass_phone_caption">No mires la pantalla</string>
+    <string name="pass_phone_hidden_hint">Contenido oculto hasta que sea tu turno</string>
+    <string name="pass_phone_cta">Toco para continuar</string>
+    <string name="pack_selection_title">Elegí una categoría</string>
+    <string name="pack_selection_section_normal">Etapas de la relación</string>
+    <string name="pack_selection_section_adult">Solo adultos</string>
+    <string name="player_names_pair">%1$s &amp; %2$s</string>
+    <string name="onboarding_skip">Saltar</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_start">Empezar</string>
+    <string name="onboarding_close">Cerrar</string>
+    <string name="how_to_play">¿Cómo se juega?</string>
+    <string name="onboarding_page1_title">Un juego para parejas</string>
+    <string name="onboarding_page1_body">Respondan preguntas sobre ustedes mismos y descubran qué tan bien se conocen.</string>
+    <string name="onboarding_page2_title">Por turnos, en privado</string>
+    <string name="onboarding_page2_body">Un jugador responde sin que el otro mire. Después le toca adivinar sus respuestas.</string>
+    <string name="onboarding_page3_title">Para todos los gustos</string>
+    <string name="onboarding_page3_body">Elegí packs normales o desbloqueá contenido +18 pensado para parejas.</string>
 </resources>

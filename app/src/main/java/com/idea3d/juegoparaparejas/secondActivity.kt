@@ -14,6 +14,7 @@ import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.idea3d.juegoparaparejas.billing.SubscriptionDialogFragment
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivitySecondBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 
 class secondActivity : AppCompatActivity() {
 
@@ -32,6 +33,7 @@ class secondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
 
         // ...existing code...
         subscriptionManager = SubscriptionManager(this)

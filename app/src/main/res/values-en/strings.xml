@@ -1067,6 +1067,24 @@
     <string name="sub_dialog_watch_ad">Watch ad to unlock</string>
     <string name="sub_dialog_cancel">Cancel</string>
     <string name="rewarded_ad_not_ready">Ad isn\'t ready yet, try again in a few seconds</string>
+    <string name="pass_phone_caption">Don\'t look at the screen</string>
+    <string name="pass_phone_hidden_hint">Hidden until it\'s your turn</string>
+    <string name="pass_phone_cta">Tap to continue</string>
+    <string name="pack_selection_title">Choose a category</string>
+    <string name="pack_selection_section_normal">Relationship stages</string>
+    <string name="pack_selection_section_adult">Adults only</string>
+    <string name="player_names_pair">%1$s &amp; %2$s</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Start</string>
+    <string name="onboarding_close">Close</string>
+    <string name="how_to_play">How to play?</string>
+    <string name="onboarding_page1_title">A game for couples</string>
+    <string name="onboarding_page1_body">Answer questions about yourselves and find out how well you really know each other.</string>
+    <string name="onboarding_page2_title">Turn by turn, in private</string>
+    <string name="onboarding_page2_body">One player answers without the other looking. Then it\'s their turn to guess the answers.</string>
+    <string name="onboarding_page3_title">Something for everyone</string>
+    <string name="onboarding_page3_body">Pick regular packs or unlock +18 content made for couples.</string>
 </resources>
 
 

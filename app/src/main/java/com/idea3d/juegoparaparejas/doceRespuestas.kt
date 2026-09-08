@@ -12,6 +12,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.idea3d.juegoparaparejas.billing.SubscriptionManager
 import com.idea3d.juegoparaparejas.databinding.ActivityDoceRespuestasBinding
+import com.idea3d.juegoparaparejas.util.setUpEdgeToEdge
 import java.util.Timer
 import kotlin.concurrent.schedule
 
@@ -24,6 +25,7 @@ class doceRespuestas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDoceRespuestasBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setUpEdgeToEdge(binding.root)
         
         subscriptionManager = SubscriptionManager(this)
         subscriptionManager.setupBillingClient()
@@ -40,7 +42,7 @@ class doceRespuestas : AppCompatActivity() {
         val respuestas = intent.getIntegerArrayListExtra("respuestas") ?: arrayListOf()
         val pack = QuestionBank.getPack(prueba)
         fun resetButtons() {
-            val pink = ContextCompat.getColor(this, R.color.rosa)
+            val pink = ContextCompat.getColor(this, R.color.pink)
             binding.respuestaUno.background.setTint(pink)
             binding.respuestaDos.background.setTint(pink)
             binding.respuestaTres.background.setTint(pink)
@@ -82,8 +84,8 @@ class doceRespuestas : AppCompatActivity() {
         fun answerSelected(answer: Int) {
             respuestasDos.add(answer)
             val expected = respuestas[currentIndex] ?: 0
-            val selectedTint = ContextCompat.getColor(this, R.color.verde)
-            val wrongTint = ContextCompat.getColor(this, R.color.rojo)
+            val selectedTint = ContextCompat.getColor(this, R.color.feedback_correct)
+            val wrongTint = ContextCompat.getColor(this, R.color.feedback_wrong)
             when (expected) {
                 1 -> binding.respuestaUno.background.setTint(selectedTint)
                 2 -> binding.respuestaDos.background.setTint(selectedTint)

@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="rosa">#FDDF789B</color>
     <color name="verde">#FD09F62A</color>
     <color name="rojo">#FDF60909</color>
+
+    <!-- Brand tokens -->
+    <color name="paper">#FFF8F6</color>
+    <color name="ink">#2B1220</color>
+    <color name="pink">#E01B58</color>
+    <color name="pink_dark">#B81348</color>
+    <color name="pink_dust">#DF789B</color>
+    <color name="purple_accent">#7D41D3</color>
+
+    <!-- Normal-pack card tints -->
+    <color name="card_pink_bg">#FDE7EE</color>
+    <color name="card_pink_fg">#7A1238</color>
+    <color name="card_purple_bg">#F1E9FB</color>
+    <color name="card_purple_fg">#4B2380</color>
+    <color name="card_amber_bg">#FDECD9</color>
+    <color name="card_amber_fg">#7A4A10</color>
+    <color name="card_mint_bg">#E3F3EC</color>
+    <color name="card_mint_fg">#14513E</color>
+    <color name="card_cream_bg">#F6EFE4</color>
+    <color name="card_cream_fg">#5C636B</color>
+    <color name="medal_silver">#8B939B</color>
+    <color name="medal_gold">#B8862E</color>
+    <color name="medal_platinum">#8189A6</color>
+
+    <!-- Adult zone -->
+    <color name="adult_bg_start">#3B1428</color>
+    <color name="adult_bg_end">#2A0E1C</color>
+    <color name="adult_label">#F3E4C6</color>
+    <color name="adult_sub">#C9A9A0</color>
+    <color name="gold">#D4A24C</color>
+    <color name="gold_chip_bg">#F3E4C6</color>
+    <color name="gold_chip_fg">#946B37</color>
+
+    <!-- Pass-the-phone gradient -->
+    <color name="pass_grad_start">#F6C6D2</color>
+    <color name="pass_grad_center">#D65C86</color>
+    <color name="pass_grad_end">#3E1029</color>
+
+    <!-- Answer feedback (doceRespuestas) -->
+    <color name="feedback_correct">#1E8F6B</color>
+    <color name="feedback_wrong">#D64545</color>
 
 </resources>
