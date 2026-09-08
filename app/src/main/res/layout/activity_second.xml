@@ -176,7 +176,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline26"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/corazongay" />
+        app:lottie_rawRes="@raw/animation" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/banner"
