@@ -1,0 +1,6125 @@
+{
+ "version": 1,
+ "packs": [
+  {
+   "id": 1,
+   "category": "couple",
+   "premium": false,
+   "emoji": "💘",
+   "name": {
+    "es": "Me gustas",
+    "en": "I Like You",
+    "pt": "Gosto de você"
+   },
+   "subtitle": {
+    "es": "Para conocerse desde cero",
+    "en": "Getting to know each other",
+    "pt": "Para se conhecer do zero"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "Tu estación favorita es...",
+      "en": "Your favorite season is...",
+      "pt": "Sua estação favorita é..."
+     },
+     "a": [
+      {
+       "es": "Otoño",
+       "en": "Autumn",
+       "pt": "Outono"
+      },
+      {
+       "es": "Invierno",
+       "en": "Winter",
+       "pt": "Inverno"
+      },
+      {
+       "es": "Primavera",
+       "en": "Spring",
+       "pt": "Primavera"
+      },
+      {
+       "es": "Verano",
+       "en": "Summer",
+       "pt": "Verão"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "Si tu vida fuera un video juego ¿de qué tipo sería?",
+      "en": "If your life were a video game, what type would it be?",
+      "pt": "Se sua vida fosse um videogame, que tipo seria?"
+     },
+     "a": [
+      {
+       "es": "Acción",
+       "en": "Action",
+       "pt": "Ação"
+      },
+      {
+       "es": "Aventura",
+       "en": "Adventure",
+       "pt": "Aventura"
+      },
+      {
+       "es": "Deportes",
+       "en": "Sports",
+       "pt": "Esportes"
+      },
+      {
+       "es": "Fiesta",
+       "en": "Party",
+       "pt": "Festa"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Cuál es tu tipo de música preferida?",
+      "en": "What is your favorite type of music?",
+      "pt": "Qual é seu tipo de música favorito?"
+     },
+     "a": [
+      {
+       "es": "Pop",
+       "en": "Pop",
+       "pt": "Pop"
+      },
+      {
+       "es": "Rock",
+       "en": "Rock",
+       "pt": "Rock"
+      },
+      {
+       "es": "Reggaeton",
+       "en": "Reggaeton",
+       "pt": "Reggaeton"
+      },
+      {
+       "es": "Electrónica",
+       "en": "Electronic",
+       "pt": "Eletrônica"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿A qué animal te pareces más?",
+      "en": "Which animal are you most like?",
+      "pt": "A qual animal você mais se parece?"
+     },
+     "a": [
+      {
+       "es": "Perro",
+       "en": "Dog",
+       "pt": "Cachorro"
+      },
+      {
+       "es": "Gato",
+       "en": "Cat",
+       "pt": "Gato"
+      },
+      {
+       "es": "León",
+       "en": "Lion",
+       "pt": "Leão"
+      },
+      {
+       "es": "Tortuga",
+       "en": "Turtle",
+       "pt": "Tartaruga"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "Es viernes en la noche y tú...",
+      "en": "It's Friday night and you...",
+      "pt": "É sexta à noite e você..."
+     },
+     "a": [
+      {
+       "es": "¡De fiesta!",
+       "en": "Partying!",
+       "pt": "Na festa!"
+      },
+      {
+       "es": "Trabajando...",
+       "en": "Working...",
+       "pt": "Trabalhando..."
+      },
+      {
+       "es": "Durmiendo",
+       "en": "Sleeping",
+       "pt": "Dormindo"
+      },
+      {
+       "es": "Viendo series o películas",
+       "en": "Watching series or movies",
+       "pt": "Assistindo séries ou filmes"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "Si tuvieras un deseo ¿cuál sería?",
+      "en": "If you had one wish, what would it be?",
+      "pt": "Se você tivesse um desejo, qual seria?"
+     },
+     "a": [
+      {
+       "es": "Ser el mejor en todo",
+       "en": "Be the best at everything",
+       "pt": "Ser o melhor em tudo"
+      },
+      {
+       "es": "Superpoderes",
+       "en": "Superpowers",
+       "pt": "Superpoderes"
+      },
+      {
+       "es": "Dinero ¡y mucho!",
+       "en": "Money, lots of it!",
+       "pt": "Dinheiro, muito!"
+      },
+      {
+       "es": "Dominar el mundo",
+       "en": "World domination",
+       "pt": "Dominar o mundo"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿En qué época debiste haber nacido?",
+      "en": "What era should you have been born in?",
+      "pt": "Em que época você deveria ter nascido?"
+     },
+     "a": [
+      {
+       "es": "La edad oscura",
+       "en": "The Dark Ages",
+       "pt": "A Idade das Trevas"
+      },
+      {
+       "es": "Los 60s",
+       "en": "The 60s",
+       "pt": "Os anos 60"
+      },
+      {
+       "es": "La actualidad",
+       "en": "The present",
+       "pt": "A atualidade"
+      },
+      {
+       "es": "El futuro",
+       "en": "The future",
+       "pt": "O futuro"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué te haría más feliz?",
+      "en": "What would make you happiest?",
+      "pt": "O que te deixaria mais feliz?"
+     },
+     "a": [
+      {
+       "es": "Dormir más",
+       "en": "More sleep",
+       "pt": "Dormir mais"
+      },
+      {
+       "es": "Menos trabajo",
+       "en": "Less work",
+       "pt": "Menos trabalho"
+      },
+      {
+       "es": "Más tiempo con amigos y familia",
+       "en": "More time with friends and family",
+       "pt": "Mais tempo com amigos e família"
+      },
+      {
+       "es": "Más dinero",
+       "en": "More money",
+       "pt": "Mais dinheiro"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "Describe tu estilo en una palabra:",
+      "en": "Describe your style in one word",
+      "pt": "Descreva seu estilo em uma palavra"
+     },
+     "a": [
+      {
+       "es": "Fino",
+       "en": "Refined",
+       "pt": "Refinado"
+      },
+      {
+       "es": "Glamuroso",
+       "en": "Glamorous",
+       "pt": "Glamoroso"
+      },
+      {
+       "es": "Elegante",
+       "en": "Elegant",
+       "pt": "Elegante"
+      },
+      {
+       "es": "Hipster",
+       "en": "Hipster",
+       "pt": "Hipster"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué buscas más en un amigo?",
+      "en": "What do you value most in a friend?",
+      "pt": "O que você mais valoriza em um amigo?"
+     },
+     "a": [
+      {
+       "es": "Lealtad",
+       "en": "Loyalty",
+       "pt": "Lealdade"
+      },
+      {
+       "es": "Amabilidad",
+       "en": "Kindness",
+       "pt": "Gentileza"
+      },
+      {
+       "es": "Humor",
+       "en": "Humor",
+       "pt": "Humor"
+      },
+      {
+       "es": "Inteligencia",
+       "en": "Intelligence",
+       "pt": "Inteligência"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "Tu color favorito es...",
+      "en": "Your favorite color is...",
+      "pt": "Sua cor favorita é..."
+     },
+     "a": [
+      {
+       "es": "Verde",
+       "en": "Green",
+       "pt": "Verde"
+      },
+      {
+       "es": "Rojo/Rosa",
+       "en": "Red/Pink",
+       "pt": "Vermelho/Rosa"
+      },
+      {
+       "es": "Azul/Violeta",
+       "en": "Blue/Purple",
+       "pt": "Azul/Violeta"
+      },
+      {
+       "es": "Amarillo",
+       "en": "Yellow",
+       "pt": "Amarelo"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Cuál es tu tipo de película favorita?",
+      "en": "What is your favorite type of movie?",
+      "pt": "Qual é seu tipo favorito de filme?"
+     },
+     "a": [
+      {
+       "es": "Acción",
+       "en": "Action",
+       "pt": "Ação"
+      },
+      {
+       "es": "Comedia",
+       "en": "Comedy",
+       "pt": "Comédia"
+      },
+      {
+       "es": "Romance",
+       "en": "Romance",
+       "pt": "Romance"
+      },
+      {
+       "es": "Ciencia ficción",
+       "en": "Sci-Fi",
+       "pt": "Ficção Científica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "category": "couple",
+   "premium": false,
+   "emoji": "☕",
+   "name": {
+    "es": "Primera cita",
+    "en": "First Date",
+    "pt": "Primeiro encontro"
+   },
+   "subtitle": {
+    "es": "Gustos y costumbres",
+    "en": "Tastes and habits",
+    "pt": "Gostos e costumes"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Cuál es tu deporte favorito?",
+      "en": "What is your favorite sport?",
+      "pt": "Qual é seu esporte favorito?"
+     },
+     "a": [
+      {
+       "es": "Béisbol",
+       "en": "Baseball",
+       "pt": "Beisebol"
+      },
+      {
+       "es": "Fútbol",
+       "en": "Soccer",
+       "pt": "Futebol"
+      },
+      {
+       "es": "Básquet",
+       "en": "Basketball",
+       "pt": "Basquete"
+      },
+      {
+       "es": "Tenis",
+       "en": "Tennis",
+       "pt": "Tênis"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Cuál es la cosa más importante en tu vida?",
+      "en": "What is the most important thing in your life?",
+      "pt": "Qual é a coisa mais importante na sua vida?"
+     },
+     "a": [
+      {
+       "es": "Familia",
+       "en": "Family",
+       "pt": "Família"
+      },
+      {
+       "es": "Amigos",
+       "en": "Friends",
+       "pt": "Amigos"
+      },
+      {
+       "es": "Trabajo",
+       "en": "Work",
+       "pt": "Trabalho"
+      },
+      {
+       "es": "Pasatiempos",
+       "en": "Hobbies",
+       "pt": "Hobbies"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Cuál es tu bebida favorita?",
+      "en": "What is your favorite drink?",
+      "pt": "Qual é sua bebida favorita?"
+     },
+     "a": [
+      {
+       "es": "Agua",
+       "en": "Water",
+       "pt": "Água"
+      },
+      {
+       "es": "Café/Té",
+       "en": "Coffee/Tea",
+       "pt": "Café/Chá"
+      },
+      {
+       "es": "Gaseosa",
+       "en": "Soda",
+       "pt": "Refrigerante"
+      },
+      {
+       "es": "Alcohol",
+       "en": "Alcohol",
+       "pt": "Álcool"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿A qué le tienes más miedo?",
+      "en": "What are you most afraid of?",
+      "pt": "Do que você tem mais medo?"
+     },
+     "a": [
+      {
+       "es": "Insectos",
+       "en": "Insects",
+       "pt": "Insetos"
+      },
+      {
+       "es": "Alturas",
+       "en": "Heights",
+       "pt": "Alturas"
+      },
+      {
+       "es": "Encierro",
+       "en": "Enclosed spaces",
+       "pt": "Espaços fechados"
+      },
+      {
+       "es": "Fracaso",
+       "en": "Failure",
+       "pt": "Fracasso"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Qué prefieres para el desayuno?",
+      "en": "What do you prefer for breakfast?",
+      "pt": "O que você prefere no café da manhã?"
+     },
+     "a": [
+      {
+       "es": "Tostadas",
+       "en": "Toast",
+       "pt": "Torradas"
+      },
+      {
+       "es": "Cereal",
+       "en": "Cereal",
+       "pt": "Cereal"
+      },
+      {
+       "es": "Huevos",
+       "en": "Eggs",
+       "pt": "Ovos"
+      },
+      {
+       "es": "Sólo un café",
+       "en": "Just a coffee",
+       "pt": "Só um café"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Adónde irías en un día libre?",
+      "en": "Where would you go on a free day?",
+      "pt": "Onde você iria em um dia livre?"
+     },
+     "a": [
+      {
+       "es": "El campo",
+       "en": "The countryside",
+       "pt": "O campo"
+      },
+      {
+       "es": "La ciudad",
+       "en": "The city",
+       "pt": "A cidade"
+      },
+      {
+       "es": "La playa",
+       "en": "The beach",
+       "pt": "A praia"
+      },
+      {
+       "es": "Me quedaría en casa",
+       "en": "I'd stay home",
+       "pt": "Ficaria em casa"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿Cuál es tu momento favorito del día?",
+      "en": "What is your favorite time of day?",
+      "pt": "Qual é sua hora favorita do dia?"
+     },
+     "a": [
+      {
+       "es": "La mañana",
+       "en": "Morning",
+       "pt": "Manhã"
+      },
+      {
+       "es": "La tarde",
+       "en": "Afternoon",
+       "pt": "Tarde"
+      },
+      {
+       "es": "La noche",
+       "en": "Night",
+       "pt": "Noite"
+      },
+      {
+       "es": "La madrugada",
+       "en": "Late night",
+       "pt": "Madrugada"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué llevas siempre en tu bolso de viaje?",
+      "en": "What do you always carry in your travel bag?",
+      "pt": "O que você sempre leva na bolsa de viagem?"
+     },
+     "a": [
+      {
+       "es": "Un cargador de teléfono",
+       "en": "A phone charger",
+       "pt": "Um carregador de celular"
+      },
+      {
+       "es": "Dinero extra",
+       "en": "Extra money",
+       "pt": "Dinheiro extra"
+      },
+      {
+       "es": "Una guía de viaje",
+       "en": "A travel guide",
+       "pt": "Um guia de viagem"
+      },
+      {
+       "es": "Un cepillo de dientes",
+       "en": "A toothbrush",
+       "pt": "Uma escova de dentes"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué superpoder te gustaría tener?",
+      "en": "What superpower would you like to have?",
+      "pt": "Que superpoder você gostaria de ter?"
+     },
+     "a": [
+      {
+       "es": "Superfuerza",
+       "en": "Super strength",
+       "pt": "Superforca"
+      },
+      {
+       "es": "Ser invisible",
+       "en": "Invisibility",
+       "pt": "Ser invisível"
+      },
+      {
+       "es": "Detener el tiempo",
+       "en": "Stop time",
+       "pt": "Parar o tempo"
+      },
+      {
+       "es": "Volar",
+       "en": "Fly",
+       "pt": "Voar"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué te gustaría ser?",
+      "en": "What would you like to be?",
+      "pt": "O que você gostaria de ser?"
+     },
+     "a": [
+      {
+       "es": "Un músico famoso",
+       "en": "A famous musician",
+       "pt": "Um músico famoso"
+      },
+      {
+       "es": "Un atleta de élite",
+       "en": "An elite athlete",
+       "pt": "Um atleta de elite"
+      },
+      {
+       "es": "Un político respetado",
+       "en": "A respected politician",
+       "pt": "Um político respeitado"
+      },
+      {
+       "es": "Un gran profesional",
+       "en": "A great professional",
+       "pt": "Um grande profissional"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "Si solo quedaran dos horas para el fin del mundo ¿qué harías?",
+      "en": "If there were only two hours until the end of the world, what would you do?",
+      "pt": "Se faltassem duas horas para o fim do mundo, o que você faria?"
+     },
+     "a": [
+      {
+       "es": "Dormir",
+       "en": "Sleep",
+       "pt": "Dormir"
+      },
+      {
+       "es": "Buscar una buena vista",
+       "en": "Find a good view",
+       "pt": "Encontrar uma boa vista"
+      },
+      {
+       "es": "Cualquier locura que se me ocurra",
+       "en": "Any crazy thing I could think of",
+       "pt": "Qualquer loucura que me ocorra"
+      },
+      {
+       "es": "Decirle adiós a mis seres queridos",
+       "en": "Say goodbye to my loved ones",
+       "pt": "Me despedir das pessoas que amo"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Qué preferirías recibir como regalo?",
+      "en": "What would you prefer to receive as a gift?",
+      "pt": "O que você preferiria ganhar de presente?"
+     },
+     "a": [
+      {
+       "es": "Chocolates",
+       "en": "Chocolates",
+       "pt": "Chocolates"
+      },
+      {
+       "es": "Libros",
+       "en": "Books",
+       "pt": "Livros"
+      },
+      {
+       "es": "Flores",
+       "en": "Flowers",
+       "pt": "Flores"
+      },
+      {
+       "es": "Alcohol",
+       "en": "Alcohol",
+       "pt": "Álcool"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "category": "couple",
+   "premium": false,
+   "emoji": "😍",
+   "name": {
+    "es": "Enamorados",
+    "en": "In Love",
+    "pt": "Apaixonados"
+   },
+   "subtitle": {
+    "es": "Sueños y personalidad",
+    "en": "Dreams and personality",
+    "pt": "Sonhos e personalidade"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Qué te llevarías a una isla desierta?",
+      "en": "What would you take to a desert island?",
+      "pt": "O que você levaria para uma ilha deserta?"
+     },
+     "a": [
+      {
+       "es": "Un libro",
+       "en": "A book",
+       "pt": "Um livro"
+      },
+      {
+       "es": "Una radio",
+       "en": "A radio",
+       "pt": "Um rádio"
+      },
+      {
+       "es": "Un cuchillo",
+       "en": "A knife",
+       "pt": "Uma faca"
+      },
+      {
+       "es": "Un balón",
+       "en": "A ball",
+       "pt": "Uma bola"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Qué prefieres como tema de conversación?",
+      "en": "What do you prefer as a conversation topic?",
+      "pt": "O que você prefere como tema de conversa?"
+     },
+     "a": [
+      {
+       "es": "Deportes",
+       "en": "Sports",
+       "pt": "Esportes"
+      },
+      {
+       "es": "Música",
+       "en": "Music",
+       "pt": "Música"
+      },
+      {
+       "es": "Películas y series",
+       "en": "Movies and series",
+       "pt": "Filmes e séries"
+      },
+      {
+       "es": "Política",
+       "en": "Politics",
+       "pt": "Política"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Qué prefieres hacer un fin de semana?",
+      "en": "What do you prefer to do on a weekend?",
+      "pt": "O que você prefere fazer no fim de semana?"
+     },
+     "a": [
+      {
+       "es": "Pescar",
+       "en": "Fishing",
+       "pt": "Pescar"
+      },
+      {
+       "es": "Escalar montañas",
+       "en": "Mountain climbing",
+       "pt": "Escalar montanhas"
+      },
+      {
+       "es": "Broncearte",
+       "en": "Sunbathing",
+       "pt": "Tomar sol"
+      },
+      {
+       "es": "Ir a conciertos",
+       "en": "Going to concerts",
+       "pt": "Ir a shows"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "Una película sobre tu vida ¿qué tipo de película sería?",
+      "en": "A movie about your life – what type would it be?",
+      "pt": "Um filme sobre sua vida – que tipo seria?"
+     },
+     "a": [
+      {
+       "es": "Una comedia",
+       "en": "A comedy",
+       "pt": "Uma comédia"
+      },
+      {
+       "es": "Un drama",
+       "en": "A drama",
+       "pt": "Um drama"
+      },
+      {
+       "es": "De acción",
+       "en": "An action movie",
+       "pt": "De ação"
+      },
+      {
+       "es": "Romántica",
+       "en": "A romance",
+       "pt": "Romântico"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Cuál de tus sentidos te gustaría mejorar?",
+      "en": "Which of your senses would you like to enhance?",
+      "pt": "Qual dos seus sentidos você gostaria de melhorar?"
+     },
+     "a": [
+      {
+       "es": "Vista",
+       "en": "Sight",
+       "pt": "Visão"
+      },
+      {
+       "es": "Audición",
+       "en": "Hearing",
+       "pt": "Audição"
+      },
+      {
+       "es": "Olfato",
+       "en": "Smell",
+       "pt": "Olfato"
+      },
+      {
+       "es": "Gusto",
+       "en": "Taste",
+       "pt": "Paladar"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Qué adjetivo te define mejor?",
+      "en": "What adjective best defines you?",
+      "pt": "Qual adjetivo melhor te define?"
+     },
+     "a": [
+      {
+       "es": "Infantil",
+       "en": "Childlike",
+       "pt": "Infantil"
+      },
+      {
+       "es": "Alegre",
+       "en": "Cheerful",
+       "pt": "Alegre"
+      },
+      {
+       "es": "Sociable",
+       "en": "Sociable",
+       "pt": "Sociável"
+      },
+      {
+       "es": "Trabajador",
+       "en": "Hardworking",
+       "pt": "Trabalhador"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿A qué lección preferirías inscribirte?",
+      "en": "Which class would you rather sign up for?",
+      "pt": "Em qual aula você preferiria se inscrever?"
+     },
+     "a": [
+      {
+       "es": "Tiro con arco",
+       "en": "Archery",
+       "pt": "Arco e flecha"
+      },
+      {
+       "es": "Cerámica",
+       "en": "Ceramics",
+       "pt": "Cerâmica"
+      },
+      {
+       "es": "Esgrima",
+       "en": "Fencing",
+       "pt": "Esgrima"
+      },
+      {
+       "es": "Baile",
+       "en": "Dance",
+       "pt": "Dança"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Sin qué no podrías vivir?",
+      "en": "What could you not live without?",
+      "pt": "Sem o que você não poderia viver?"
+     },
+     "a": [
+      {
+       "es": "Música",
+       "en": "Music",
+       "pt": "Música"
+      },
+      {
+       "es": "Teléfono móvil",
+       "en": "Mobile phone",
+       "pt": "Celular"
+      },
+      {
+       "es": "Mi mascota",
+       "en": "My pet",
+       "pt": "Meu animal de estimação"
+      },
+      {
+       "es": "Agua caliente",
+       "en": "Hot water",
+       "pt": "Água quente"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué harías si ganaras la lotería?",
+      "en": "What would you do if you won the lottery?",
+      "pt": "O que você faria se ganhasse na loteria?"
+     },
+     "a": [
+      {
+       "es": "Comprar un coche nuevo",
+       "en": "Buy a new car",
+       "pt": "Comprar um carro novo"
+      },
+      {
+       "es": "Invertir el dinero",
+       "en": "Invest the money",
+       "pt": "Investir o dinheiro"
+      },
+      {
+       "es": "Comprar una casa",
+       "en": "Buy a house",
+       "pt": "Comprar uma casa"
+      },
+      {
+       "es": "Ayudar a los necesitados",
+       "en": "Help those in need",
+       "pt": "Ajudar os necessitados"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué harías con 2 horas de tiempo libre?",
+      "en": "What would you do with 2 hours of free time?",
+      "pt": "O que você faria com 2 horas livres?"
+     },
+     "a": [
+      {
+       "es": "Dormir",
+       "en": "Sleep",
+       "pt": "Dormir"
+      },
+      {
+       "es": "Estudiar",
+       "en": "Study",
+       "pt": "Estudar"
+      },
+      {
+       "es": "Entrar en mis redes sociales",
+       "en": "Browse social media",
+       "pt": "Acessar redes sociais"
+      },
+      {
+       "es": "Jugar videojuegos",
+       "en": "Play video games",
+       "pt": "Jogar videogames"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Qué animal preferirías como mascota?",
+      "en": "What animal would you prefer as a pet?",
+      "pt": "Que animal você preferiria como mascote?"
+     },
+     "a": [
+      {
+       "es": "Perro",
+       "en": "Dog",
+       "pt": "Cachorro"
+      },
+      {
+       "es": "Gato",
+       "en": "Cat",
+       "pt": "Gato"
+      },
+      {
+       "es": "Serpiente",
+       "en": "Snake",
+       "pt": "Cobra"
+      },
+      {
+       "es": "Caballo",
+       "en": "Horse",
+       "pt": "Cavalo"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Cuál es el sueño de tu vida?",
+      "en": "What is your life dream?",
+      "pt": "Qual é o sonho da sua vida?"
+     },
+     "a": [
+      {
+       "es": "Ser millonario",
+       "en": "Be a millionaire",
+       "pt": "Ser milionário"
+      },
+      {
+       "es": "Ser famoso",
+       "en": "Be famous",
+       "pt": "Ser famoso"
+      },
+      {
+       "es": "Tener muchos hijos",
+       "en": "Have many children",
+       "pt": "Ter muitos filhos"
+      },
+      {
+       "es": "Viajar por el mundo",
+       "en": "Travel the world",
+       "pt": "Viajar pelo mundo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "category": "couple",
+   "premium": false,
+   "emoji": "💌",
+   "name": {
+    "es": "Seamos novios",
+    "en": "Be Mine",
+    "pt": "Vamos namorar"
+   },
+   "subtitle": {
+    "es": "Qué los mueve",
+    "en": "What drives you",
+    "pt": "O que move vocês"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Qué te atrae más?",
+      "en": "What attracts you most?",
+      "pt": "O que mais te atrai?"
+     },
+     "a": [
+      {
+       "es": "Dinero",
+       "en": "Money",
+       "pt": "Dinheiro"
+      },
+      {
+       "es": "Familia",
+       "en": "Family",
+       "pt": "Família"
+      },
+      {
+       "es": "Estabilidad",
+       "en": "Stability",
+       "pt": "Estabilidade"
+      },
+      {
+       "es": "Aventura",
+       "en": "Adventure",
+       "pt": "Aventura"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Qué preferirías ser?",
+      "en": "What would you prefer to be?",
+      "pt": "O que você preferiria ser?"
+     },
+     "a": [
+      {
+       "es": "Más fuerte",
+       "en": "Stronger",
+       "pt": "Mais forte"
+      },
+      {
+       "es": "Más alto",
+       "en": "Taller",
+       "pt": "Mais alto"
+      },
+      {
+       "es": "Más bajo",
+       "en": "Shorter",
+       "pt": "Mais baixo"
+      },
+      {
+       "es": "Más delgado",
+       "en": "Slimmer",
+       "pt": "Mais magro"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Qué papel te gustaría en una obra de teatro?",
+      "en": "What role would you like in a play?",
+      "pt": "Que papel você gostaria em uma peça de teatro?"
+     },
+     "a": [
+      {
+       "es": "El héroe",
+       "en": "The hero",
+       "pt": "O herói"
+      },
+      {
+       "es": "El amigo del héroe",
+       "en": "The hero's friend",
+       "pt": "O amigo do herói"
+      },
+      {
+       "es": "El villano",
+       "en": "The villain",
+       "pt": "O vilão"
+      },
+      {
+       "es": "Un árbol",
+       "en": "A tree",
+       "pt": "Uma árvore"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿A qué preferirías poner fin?",
+      "en": "What would you rather put an end to?",
+      "pt": "O que você preferiria acabar?"
+     },
+     "a": [
+      {
+       "es": "La Guerra",
+       "en": "War",
+       "pt": "A Guerra"
+      },
+      {
+       "es": "El hambre",
+       "en": "Hunger",
+       "pt": "A Fome"
+      },
+      {
+       "es": "Enfermedades",
+       "en": "Diseases",
+       "pt": "Doenças"
+      },
+      {
+       "es": "Contaminación",
+       "en": "Pollution",
+       "pt": "Poluição"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Qué actividad prefieres?",
+      "en": "What activity do you prefer?",
+      "pt": "Que atividade você prefere?"
+     },
+     "a": [
+      {
+       "es": "Jugar un videojuego",
+       "en": "Play a video game",
+       "pt": "Jogar videogame"
+      },
+      {
+       "es": "Ver la televisión",
+       "en": "Watch TV",
+       "pt": "Assistir televisão"
+      },
+      {
+       "es": "Hacer ejercicio",
+       "en": "Exercise",
+       "pt": "Fazer exercício"
+      },
+      {
+       "es": "Jugar un juego de mesa",
+       "en": "Play a board game",
+       "pt": "Jogar jogo de tabuleiro"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Qué prefieres ver en la televisión?",
+      "en": "What do you prefer to watch on TV?",
+      "pt": "O que você prefere assistir na televisão?"
+     },
+     "a": [
+      {
+       "es": "Deportes",
+       "en": "Sports",
+       "pt": "Esportes"
+      },
+      {
+       "es": "Noticias",
+       "en": "News",
+       "pt": "Notícias"
+      },
+      {
+       "es": "Documentales",
+       "en": "Documentaries",
+       "pt": "Documentários"
+      },
+      {
+       "es": "Reality shows",
+       "en": "Reality Shows",
+       "pt": "Reality Shows"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿Dónde prefieres pasar tus vacaciones?",
+      "en": "Where do you prefer to spend your vacation?",
+      "pt": "Onde você prefere passar suas férias?"
+     },
+     "a": [
+      {
+       "es": "En el caribe",
+       "en": "In the Caribbean",
+       "pt": "No Caribe"
+      },
+      {
+       "es": "En las montañas",
+       "en": "In the mountains",
+       "pt": "Nas montanhas"
+      },
+      {
+       "es": "En una gran ciudad",
+       "en": "In a big city",
+       "pt": "Em uma grande cidade"
+      },
+      {
+       "es": "En un safarí",
+       "en": "On a safari",
+       "pt": "Em um safári"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Cuál es tu medio de transporte favorito?",
+      "en": "What is your favorite means of transport?",
+      "pt": "Qual é seu meio de transporte favorito?"
+     },
+     "a": [
+      {
+       "es": "Tren",
+       "en": "Train",
+       "pt": "Trem"
+      },
+      {
+       "es": "Barco",
+       "en": "Boat",
+       "pt": "Barco"
+      },
+      {
+       "es": "Coche",
+       "en": "Car",
+       "pt": "Carro"
+      },
+      {
+       "es": "Avión",
+       "en": "Airplane",
+       "pt": "Avião"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué tan inteligente eres?",
+      "en": "How intelligent are you?",
+      "pt": "Quão inteligente você é?"
+     },
+     "a": [
+      {
+       "es": "Brillante",
+       "en": "Brilliant",
+       "pt": "Brilhante"
+      },
+      {
+       "es": "Casi un genio",
+       "en": "Almost a genius",
+       "pt": "Quase um gênio"
+      },
+      {
+       "es": "Promedio",
+       "en": "Average",
+       "pt": "Mediano"
+      },
+      {
+       "es": "Algo tonto",
+       "en": "A bit silly",
+       "pt": "Um pouco tolo"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Cuál es tu asignatura favorita?",
+      "en": "What is your favorite subject?",
+      "pt": "Qual é sua matéria favorita?"
+     },
+     "a": [
+      {
+       "es": "Matemática",
+       "en": "Math",
+       "pt": "Matemática"
+      },
+      {
+       "es": "Ciencia",
+       "en": "Science",
+       "pt": "Ciências"
+      },
+      {
+       "es": "Educación Física",
+       "en": "Physical Education",
+       "pt": "Educação Física"
+      },
+      {
+       "es": "Arte",
+       "en": "Art",
+       "pt": "Arte"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Cuándo es tu cumpleaños?",
+      "en": "When is your birthday?",
+      "pt": "Quando é seu aniversário?"
+     },
+     "a": [
+      {
+       "es": "Verano",
+       "en": "Summer",
+       "pt": "Verão"
+      },
+      {
+       "es": "Otoño",
+       "en": "Autumn",
+       "pt": "Outono"
+      },
+      {
+       "es": "Primavera",
+       "en": "Spring",
+       "pt": "Primavera"
+      },
+      {
+       "es": "Invierno",
+       "en": "Winter",
+       "pt": "Inverno"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Cuál es tu animal favorito?",
+      "en": "What is your favorite animal?",
+      "pt": "Qual é seu animal favorito?"
+     },
+     "a": [
+      {
+       "es": "Perro",
+       "en": "Dog",
+       "pt": "Cachorro"
+      },
+      {
+       "es": "Gato",
+       "en": "Cat",
+       "pt": "Gato"
+      },
+      {
+       "es": "Caballo",
+       "en": "Horse",
+       "pt": "Cavalo"
+      },
+      {
+       "es": "Conejo",
+       "en": "Rabbit",
+       "pt": "Coelho"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "category": "couple",
+   "premium": false,
+   "emoji": "💑",
+   "name": {
+    "es": "De novios",
+    "en": "Dating",
+    "pt": "Namorando"
+   },
+   "subtitle": {
+    "es": "El día a día",
+    "en": "Everyday life",
+    "pt": "O dia a dia"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Cuál es tu elemento favorito?",
+      "en": "What is your favorite element?",
+      "pt": "Qual é seu elemento favorito?"
+     },
+     "a": [
+      {
+       "es": "Fuego",
+       "en": "Fire",
+       "pt": "Fogo"
+      },
+      {
+       "es": "Aire",
+       "en": "Air",
+       "pt": "Ar"
+      },
+      {
+       "es": "Tierra",
+       "en": "Earth",
+       "pt": "Terra"
+      },
+      {
+       "es": "Agua",
+       "en": "Water",
+       "pt": "Água"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Cuándo eres más productivo?",
+      "en": "When are you most productive?",
+      "pt": "Quando você é mais produtivo?"
+     },
+     "a": [
+      {
+       "es": "Mañana",
+       "en": "Morning",
+       "pt": "Manhã"
+      },
+      {
+       "es": "Tarde",
+       "en": "Afternoon",
+       "pt": "Tarde"
+      },
+      {
+       "es": "Noche",
+       "en": "Night",
+       "pt": "Noite"
+      },
+      {
+       "es": "Madrugada",
+       "en": "Late night",
+       "pt": "Madrugada"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Quién eres en tu grupo de amigos?",
+      "en": "Who are you in your friend group?",
+      "pt": "Quem você é no seu grupo de amigos?"
+     },
+     "a": [
+      {
+       "es": "El líder",
+       "en": "The leader",
+       "pt": "O líder"
+      },
+      {
+       "es": "El chistoso",
+       "en": "The funny one",
+       "pt": "O engraçado"
+      },
+      {
+       "es": "El creativo",
+       "en": "The creative one",
+       "pt": "O criativo"
+      },
+      {
+       "es": "El leal",
+       "en": "The loyal one",
+       "pt": "O leal"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿Cuál es tu fecha favorita?",
+      "en": "What is your favorite holiday?",
+      "pt": "Qual é sua data favorita?"
+     },
+     "a": [
+      {
+       "es": "Navidad",
+       "en": "Christmas",
+       "pt": "Natal"
+      },
+      {
+       "es": "Pascuas",
+       "en": "Easter",
+       "pt": "Páscoa"
+      },
+      {
+       "es": "San Valentín",
+       "en": "Valentine's Day",
+       "pt": "Dia dos Namorados"
+      },
+      {
+       "es": "Halloween",
+       "en": "Halloween",
+       "pt": "Halloween"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Cuál es el trabajo de tus sueños?",
+      "en": "What is your dream job?",
+      "pt": "Qual é o emprego dos seus sonhos?"
+     },
+     "a": [
+      {
+       "es": "Médico",
+       "en": "Doctor",
+       "pt": "Médico"
+      },
+      {
+       "es": "Músico",
+       "en": "Musician",
+       "pt": "Músico"
+      },
+      {
+       "es": "Atleta",
+       "en": "Athlete",
+       "pt": "Atleta"
+      },
+      {
+       "es": "Astronauta",
+       "en": "Astronaut",
+       "pt": "Astronauta"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿En qué desearías ser mejor?",
+      "en": "What would you like to be better at?",
+      "pt": "Em que você gostaria de ser melhor?"
+     },
+     "a": [
+      {
+       "es": "Matemáticas",
+       "en": "Math",
+       "pt": "Matemática"
+      },
+      {
+       "es": "Canto",
+       "en": "Singing",
+       "pt": "Canto"
+      },
+      {
+       "es": "Oratoria",
+       "en": "Public speaking",
+       "pt": "Oratória"
+      },
+      {
+       "es": "Deportes",
+       "en": "Sports",
+       "pt": "Esportes"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿De qué te gustaría tener un año de suministro?",
+      "en": "What would you like a year's supply of?",
+      "pt": "De que você gostaria de ter um ano de suprimento?"
+     },
+     "a": [
+      {
+       "es": "Cereal",
+       "en": "Cereal",
+       "pt": "Cereal"
+      },
+      {
+       "es": "Helado",
+       "en": "Ice cream",
+       "pt": "Sorvete"
+      },
+      {
+       "es": "Donas",
+       "en": "Donuts",
+       "pt": "Donuts"
+      },
+      {
+       "es": "Chocolate",
+       "en": "Chocolate",
+       "pt": "Chocolate"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué actividad preferirías intentar?",
+      "en": "Which activity would you rather try?",
+      "pt": "Qual atividade você preferiria experimentar?"
+     },
+     "a": [
+      {
+       "es": "Ir a un safarí",
+       "en": "Go on a safari",
+       "pt": "Ir em um safári"
+      },
+      {
+       "es": "Tirarte en paracaídas",
+       "en": "Go skydiving",
+       "pt": "Saltar de paraquedas"
+      },
+      {
+       "es": "Escalar un volcán",
+       "en": "Climb a volcano",
+       "pt": "Escalar um vulcão"
+      },
+      {
+       "es": "Nadar con delfines",
+       "en": "Swim with dolphins",
+       "pt": "Nadar com golfinhos"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Cuál es tu actividad favorita alrededor de una fogata?",
+      "en": "What is your favorite activity around a campfire?",
+      "pt": "Qual é sua atividade favorita ao redor de uma fogueira?"
+     },
+     "a": [
+      {
+       "es": "Cantar",
+       "en": "Singing",
+       "pt": "Cantar"
+      },
+      {
+       "es": "Contar historias de terror",
+       "en": "Telling scary stories",
+       "pt": "Contar histórias de terror"
+      },
+      {
+       "es": "Asar malvaviscos",
+       "en": "Roasting marshmallows",
+       "pt": "Assar marshmallows"
+      },
+      {
+       "es": "Jugar charadas",
+       "en": "Playing charades",
+       "pt": "Jogar adivinha"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué te gusta más de la navidad?",
+      "en": "What do you like most about Christmas?",
+      "pt": "O que você mais gosta no Natal?"
+     },
+     "a": [
+      {
+       "es": "Estar con tu familia",
+       "en": "Being with your family",
+       "pt": "Estar com sua família"
+      },
+      {
+       "es": "La fiesta",
+       "en": "The party",
+       "pt": "A festa"
+      },
+      {
+       "es": "Comer y beber",
+       "en": "Eating and drinking",
+       "pt": "Comer e beber"
+      },
+      {
+       "es": "Los regalos",
+       "en": "The gifts",
+       "pt": "Os presentes"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Qué prefieres jugar?",
+      "en": "What do you prefer to play?",
+      "pt": "O que você prefere jogar?"
+     },
+     "a": [
+      {
+       "es": "Videojuegos",
+       "en": "Video games",
+       "pt": "Videogames"
+      },
+      {
+       "es": "Juegos de mesa",
+       "en": "Board games",
+       "pt": "Jogos de tabuleiro"
+      },
+      {
+       "es": "Cartas",
+       "en": "Cards",
+       "pt": "Cartas"
+      },
+      {
+       "es": "Deportes",
+       "en": "Sports",
+       "pt": "Esportes"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Cómo sería tu salida nocturna ideal?",
+      "en": "What would your ideal night out be like?",
+      "pt": "Como seria sua saída noturna ideal?"
+     },
+     "a": [
+      {
+       "es": "Ver un partido de fútbol",
+       "en": "Watching a soccer game",
+       "pt": "Ver um jogo de futebol"
+      },
+      {
+       "es": "Ir al teatro",
+       "en": "Going to the theater",
+       "pt": "Ir ao teatro"
+      },
+      {
+       "es": "Ir a un concierto",
+       "en": "Going to a concert",
+       "pt": "Ir a um show"
+      },
+      {
+       "es": "Ir a un club",
+       "en": "Going to a club",
+       "pt": "Ir a uma boate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "category": "couple",
+   "premium": false,
+   "emoji": "💍",
+   "name": {
+    "es": "Cásate conmigo",
+    "en": "Marry Me",
+    "pt": "Casa comigo"
+   },
+   "subtitle": {
+    "es": "Planes y fantasías",
+    "en": "Plans and daydreams",
+    "pt": "Planos e fantasias"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Qué habilidad extraordinaria te gustaría tener?",
+      "en": "What extraordinary ability would you like to have?",
+      "pt": "Que habilidade extraordinária você gostaria de ter?"
+     },
+     "a": [
+      {
+       "es": "Volar",
+       "en": "Fly",
+       "pt": "Voar"
+      },
+      {
+       "es": "Respirar bajo el agua",
+       "en": "Breathe underwater",
+       "pt": "Respirar embaixo d'água"
+      },
+      {
+       "es": "Caminar por las paredes",
+       "en": "Walk on walls",
+       "pt": "Andar pelas paredes"
+      },
+      {
+       "es": "Visión de rayos X",
+       "en": "X-ray vision",
+       "pt": "Visão de raio-X"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿A quién te gustaría tener de amigo?",
+      "en": "Who would you like to have as a friend?",
+      "pt": "Quem você gostaria de ter como amigo?"
+     },
+     "a": [
+      {
+       "es": "Mi estrella de cine favorita",
+       "en": "My favorite movie star",
+       "pt": "Minha estrela de cinema favorita"
+      },
+      {
+       "es": "Mi músico favorito",
+       "en": "My favorite musician",
+       "pt": "Meu músico favorito"
+      },
+      {
+       "es": "Mi deportista favorito",
+       "en": "My favorite athlete",
+       "pt": "Meu atleta favorito"
+      },
+      {
+       "es": "Mi político favorito",
+       "en": "My favorite politician",
+       "pt": "Meu político favorito"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Qué papel te gustaría en una película?",
+      "en": "What role would you like in a movie?",
+      "pt": "Que papel você gostaria em um filme?"
+     },
+     "a": [
+      {
+       "es": "Un apuesto héroe",
+       "en": "A handsome hero",
+       "pt": "Um herói bonito"
+      },
+      {
+       "es": "Un maligno villano",
+       "en": "A wicked villain",
+       "pt": "Um vilão malvado"
+      },
+      {
+       "es": "El creativo que se roba la escena",
+       "en": "The scene-stealing creative one",
+       "pt": "O criativo que rouba a cena"
+      },
+      {
+       "es": "El mejor amigo del héroe",
+       "en": "The hero's best friend",
+       "pt": "O melhor amigo do herói"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿Cómo serían tus vacaciones ideales?",
+      "en": "What would your ideal vacation be like?",
+      "pt": "Como seriam suas férias ideais?"
+     },
+     "a": [
+      {
+       "es": "De relax en la playa",
+       "en": "Relaxing at the beach",
+       "pt": "Relaxando na praia"
+      },
+      {
+       "es": "En una gran ciudad con muchos museos",
+       "en": "In a big city with many museums",
+       "pt": "Em uma grande cidade com museus"
+      },
+      {
+       "es": "De fiesta en fiesta",
+       "en": "Party after party",
+       "pt": "De festa em festa"
+      },
+      {
+       "es": "De senderismo en las montañas",
+       "en": "Hiking in the mountains",
+       "pt": "Fazendo trilhas nas montanhas"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Cuál de estos países te gustaría visitar más?",
+      "en": "Which of these countries would you most like to visit?",
+      "pt": "Qual destes países você mais gostaria de visitar?"
+     },
+     "a": [
+      {
+       "es": "Perú",
+       "en": "Peru",
+       "pt": "Peru"
+      },
+      {
+       "es": "Japón",
+       "en": "Japan",
+       "pt": "Japão"
+      },
+      {
+       "es": "Francia",
+       "en": "France",
+       "pt": "França"
+      },
+      {
+       "es": "EEUU",
+       "en": "USA",
+       "pt": "EUA"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Cuál es tu red social favorita?",
+      "en": "What is your favorite social network?",
+      "pt": "Qual é sua rede social favorita?"
+     },
+     "a": [
+      {
+       "es": "Instagram",
+       "en": "Instagram",
+       "pt": "Instagram"
+      },
+      {
+       "es": "Tik Tok",
+       "en": "TikTok",
+       "pt": "TikTok"
+      },
+      {
+       "es": "Twitter",
+       "en": "Twitter",
+       "pt": "Twitter"
+      },
+      {
+       "es": "Facebook",
+       "en": "Facebook",
+       "pt": "Facebook"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿Qué tipo de bocadillo prefieres?",
+      "en": "What type of snack do you prefer?",
+      "pt": "Que tipo de lanche você prefere?"
+     },
+     "a": [
+      {
+       "es": "Chocolate",
+       "en": "Chocolate",
+       "pt": "Chocolate"
+      },
+      {
+       "es": "Patatas fritas",
+       "en": "Chips",
+       "pt": "Batata frita"
+      },
+      {
+       "es": "Galletas",
+       "en": "Cookies",
+       "pt": "Biscoitos"
+      },
+      {
+       "es": "Fruta",
+       "en": "Fruit",
+       "pt": "Fruta"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué harías si fueras invisible?",
+      "en": "What would you do if you were invisible?",
+      "pt": "O que você faria se fosse invisível?"
+     },
+     "a": [
+      {
+       "es": "Hacer bromas",
+       "en": "Play pranks",
+       "pt": "Pregar peças"
+      },
+      {
+       "es": "Robar dinero",
+       "en": "Steal money",
+       "pt": "Roubar dinheiro"
+      },
+      {
+       "es": "Espiar a la gente",
+       "en": "Spy on people",
+       "pt": "Espionar pessoas"
+      },
+      {
+       "es": "Hacer buenas cosas para el mundo",
+       "en": "Do good things for the world",
+       "pt": "Fazer coisas boas pelo mundo"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "Si tuvieras que contratar a alguien ¿A qué cualidad le darías mayor valor?",
+      "en": "If you had to hire someone, what quality would you value most?",
+      "pt": "Se você tivesse que contratar alguém, que qualidade valorizaria mais?"
+     },
+     "a": [
+      {
+       "es": "Apariencia",
+       "en": "Appearance",
+       "pt": "Aparência"
+      },
+      {
+       "es": "Experiencia",
+       "en": "Experience",
+       "pt": "Experiência"
+      },
+      {
+       "es": "Educación",
+       "en": "Education",
+       "pt": "Educação"
+      },
+      {
+       "es": "Carisma",
+       "en": "Charisma",
+       "pt": "Carisma"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué situación sería la peor para ti?",
+      "en": "What situation would be worst for you?",
+      "pt": "Qual situação seria a pior para você?"
+     },
+     "a": [
+      {
+       "es": "Apocalipsis Zombie",
+       "en": "Zombie apocalypse",
+       "pt": "Apocalipse Zumbi"
+      },
+      {
+       "es": "Rebelión de las máquinas",
+       "en": "Robot rebellion",
+       "pt": "Rebelião das máquinas"
+      },
+      {
+       "es": "Invasión extraterrestre",
+       "en": "Alien invasion",
+       "pt": "Invasão alienígena"
+      },
+      {
+       "es": "Una gran inundación",
+       "en": "A great flood",
+       "pt": "Uma grande inundação"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Cómo sería tu domingo perfecto?",
+      "en": "What would your perfect Sunday be like?",
+      "pt": "Como seria o seu domingo perfeito?"
+     },
+     "a": [
+      {
+       "es": "Jugar juegos de mesa",
+       "en": "Playing board games",
+       "pt": "Jogar jogos de tabuleiro"
+      },
+      {
+       "es": "Un viaje por la carretera",
+       "en": "A road trip",
+       "pt": "Uma viagem de carro"
+      },
+      {
+       "es": "Beber en bares",
+       "en": "Drinking at bars",
+       "pt": "Beber em bares"
+      },
+      {
+       "es": "Una gran fiesta",
+       "en": "A big party",
+       "pt": "Uma grande festa"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Qué haces para relajarte?",
+      "en": "What do you do to relax?",
+      "pt": "O que você faz para relaxar?"
+     },
+     "a": [
+      {
+       "es": "Tomar sol en el jardín",
+       "en": "Sunbathing in the garden",
+       "pt": "Tomar sol no jardim"
+      },
+      {
+       "es": "Tirarme en el sofá",
+       "en": "Lounging on the sofa",
+       "pt": "Deitar no sofá"
+      },
+      {
+       "es": "Beber con amigos",
+       "en": "Drinking with friends",
+       "pt": "Beber com amigos"
+      },
+      {
+       "es": "Jugar videojuegos",
+       "en": "Playing video games",
+       "pt": "Jogar videogames"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "category": "couple",
+   "premium": false,
+   "emoji": "💒",
+   "name": {
+    "es": "La boda",
+    "en": "The Wedding",
+    "pt": "O casamento"
+   },
+   "subtitle": {
+    "es": "Gustos de pareja",
+    "en": "Couple tastes",
+    "pt": "Gostos de casal"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Cuál es tu comida favorita?",
+      "en": "What is your favorite food?",
+      "pt": "Qual é sua comida favorita?"
+     },
+     "a": [
+      {
+       "es": "Sushi",
+       "en": "Sushi",
+       "pt": "Sushi"
+      },
+      {
+       "es": "Pasta",
+       "en": "Pasta",
+       "pt": "Macarrão"
+      },
+      {
+       "es": "Pizza",
+       "en": "Pizza",
+       "pt": "Pizza"
+      },
+      {
+       "es": "Hamburguesas",
+       "en": "Burgers",
+       "pt": "Hambúrgueres"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Qué ambiente natural es tu favorito?",
+      "en": "What natural setting is your favorite?",
+      "pt": "Qual ambiente natural é seu favorito?"
+     },
+     "a": [
+      {
+       "es": "El bosque",
+       "en": "The forest",
+       "pt": "A floresta"
+      },
+      {
+       "es": "Montañas nevadas",
+       "en": "Snowy mountains",
+       "pt": "Montanhas nevadas"
+      },
+      {
+       "es": "La playa",
+       "en": "The beach",
+       "pt": "A praia"
+      },
+      {
+       "es": "Un lago y montañas",
+       "en": "A lake and mountains",
+       "pt": "Um lago e montanhas"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Qué te motiva más?",
+      "en": "What motivates you most?",
+      "pt": "O que mais te motiva?"
+     },
+     "a": [
+      {
+       "es": "El éxito",
+       "en": "Success",
+       "pt": "O sucesso"
+      },
+      {
+       "es": "La familia",
+       "en": "Family",
+       "pt": "A família"
+      },
+      {
+       "es": "El poder",
+       "en": "Power",
+       "pt": "O poder"
+      },
+      {
+       "es": "La competencia",
+       "en": "Competition",
+       "pt": "A competição"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿Qué instrumento te gustaría poder tocar a la perfección?",
+      "en": "What instrument would you like to play perfectly?",
+      "pt": "Que instrumento você gostaria de tocar perfeitamente?"
+     },
+     "a": [
+      {
+       "es": "Guitarra",
+       "en": "Guitar",
+       "pt": "Guitarra"
+      },
+      {
+       "es": "Bajo",
+       "en": "Bass",
+       "pt": "Baixo"
+      },
+      {
+       "es": "Batería",
+       "en": "Drums",
+       "pt": "Bateria"
+      },
+      {
+       "es": "Piano",
+       "en": "Piano",
+       "pt": "Piano"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Cuál es tu día favorito de la semana?",
+      "en": "What is your favorite day of the week?",
+      "pt": "Qual é seu dia favorito da semana?"
+     },
+     "a": [
+      {
+       "es": "Sábado",
+       "en": "Saturday",
+       "pt": "Sábado"
+      },
+      {
+       "es": "Domingo",
+       "en": "Sunday",
+       "pt": "Domingo"
+      },
+      {
+       "es": "Viernes",
+       "en": "Friday",
+       "pt": "Sexta-feira"
+      },
+      {
+       "es": "Otro",
+       "en": "Other",
+       "pt": "Outro"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Cuál es tu comida preferida del día?",
+      "en": "Which meal of the day is your favorite?",
+      "pt": "Qual é sua refeição favorita do dia?"
+     },
+     "a": [
+      {
+       "es": "Desayuno",
+       "en": "Breakfast",
+       "pt": "Café da manhã"
+      },
+      {
+       "es": "Almuerzo",
+       "en": "Lunch",
+       "pt": "Almoço"
+      },
+      {
+       "es": "Merienda",
+       "en": "Snack",
+       "pt": "Lanche"
+      },
+      {
+       "es": "Cena",
+       "en": "Dinner",
+       "pt": "Jantar"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿Qué género de tv en tu favorito?",
+      "en": "What is your favorite TV genre?",
+      "pt": "Qual é seu gênero favorito de TV?"
+     },
+     "a": [
+      {
+       "es": "Drama",
+       "en": "Drama",
+       "pt": "Drama"
+      },
+      {
+       "es": "Comedia",
+       "en": "Comedy",
+       "pt": "Comédia"
+      },
+      {
+       "es": "Crimen",
+       "en": "Crime",
+       "pt": "Crime"
+      },
+      {
+       "es": "Deporte",
+       "en": "Sports",
+       "pt": "Esporte"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Cuál crees que es tu cualidad más atractiva?",
+      "en": "What do you think is your most attractive quality?",
+      "pt": "Qual você acha que é sua qualidade mais atraente?"
+     },
+     "a": [
+      {
+       "es": "Apariencia",
+       "en": "Appearance",
+       "pt": "Aparência"
+      },
+      {
+       "es": "Inteligencia",
+       "en": "Intelligence",
+       "pt": "Inteligência"
+      },
+      {
+       "es": "Ambición",
+       "en": "Ambition",
+       "pt": "Ambição"
+      },
+      {
+       "es": "Humor",
+       "en": "Humor",
+       "pt": "Humor"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué deberías mejorar?",
+      "en": "What should you improve?",
+      "pt": "O que você deveria melhorar?"
+     },
+     "a": [
+      {
+       "es": "Tu dieta",
+       "en": "Your diet",
+       "pt": "Sua dieta"
+      },
+      {
+       "es": "Carrera profesional",
+       "en": "Your career",
+       "pt": "Carreira profissional"
+      },
+      {
+       "es": "Finanzas",
+       "en": "Finances",
+       "pt": "Finanças"
+      },
+      {
+       "es": "Cultura",
+       "en": "Culture",
+       "pt": "Cultura"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué superhéroe te gustaría ser?",
+      "en": "What superhero would you like to be?",
+      "pt": "Que super-herói você gostaria de ser?"
+     },
+     "a": [
+      {
+       "es": "Batman",
+       "en": "Batman",
+       "pt": "Batman"
+      },
+      {
+       "es": "Superman",
+       "en": "Superman",
+       "pt": "Superman"
+      },
+      {
+       "es": "Spiderman",
+       "en": "Spiderman",
+       "pt": "Homem-Aranha"
+      },
+      {
+       "es": "La mujer maravilla",
+       "en": "Wonder Woman",
+       "pt": "Mulher Maravilha"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Cómo sería tu primera cita perfecta?",
+      "en": "What would your perfect first date be like?",
+      "pt": "Como seria seu primeiro encontro perfeito?"
+     },
+     "a": [
+      {
+       "es": "Cenar en casa",
+       "en": "Dinner at home",
+       "pt": "Jantar em casa"
+      },
+      {
+       "es": "Bailar y beber en un club",
+       "en": "Dancing and drinking at a club",
+       "pt": "Dançar e beber em uma boate"
+      },
+      {
+       "es": "Ir a un concierto",
+       "en": "Going to a concert",
+       "pt": "Ir a um show"
+      },
+      {
+       "es": "Ir al cine",
+       "en": "Going to the movies",
+       "pt": "Ir ao cinema"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Qué tan seguido haces ejercicio?",
+      "en": "How often do you exercise?",
+      "pt": "Com que frequência você se exercita?"
+     },
+     "a": [
+      {
+       "es": "Todos los días",
+       "en": "Every day",
+       "pt": "Todos os dias"
+      },
+      {
+       "es": "5 veces a la semana",
+       "en": "5 times a week",
+       "pt": "5 vezes por semana"
+      },
+      {
+       "es": "2 o 3 veces por semana",
+       "en": "2 or 3 times a week",
+       "pt": "2 ou 3 vezes por semana"
+      },
+      {
+       "es": "Una vez o nunca",
+       "en": "Once or never",
+       "pt": "Uma vez ou nunca"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "category": "couple",
+   "premium": false,
+   "emoji": "🥈",
+   "name": {
+    "es": "Bodas de plata",
+    "en": "Silver Anniversary",
+    "pt": "Bodas de prata"
+   },
+   "subtitle": {
+    "es": "Prioridades",
+    "en": "Priorities",
+    "pt": "Prioridades"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Cómo prefieres pasar una hora de tiempo libre?",
+      "en": "How do you prefer to spend an hour of free time?",
+      "pt": "Como você prefere passar uma hora de tempo livre?"
+     },
+     "a": [
+      {
+       "es": "Yendo de compras",
+       "en": "Shopping",
+       "pt": "Indo às compras"
+      },
+      {
+       "es": "Durmiendo",
+       "en": "Sleeping",
+       "pt": "Dormindo"
+      },
+      {
+       "es": "En el gimnasio",
+       "en": "At the gym",
+       "pt": "Na academia"
+      },
+      {
+       "es": "Viendo TV",
+       "en": "Watching TV",
+       "pt": "Assistindo TV"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿A quién elegirías para cambiar de vida por un año?",
+      "en": "Whose life would you choose to swap for a year?",
+      "pt": "Com quem você trocaria de vida por um ano?"
+     },
+     "a": [
+      {
+       "es": "Tu jefe",
+       "en": "Your boss",
+       "pt": "Seu chefe"
+      },
+      {
+       "es": "Tu hermano o hermana",
+       "en": "Your brother or sister",
+       "pt": "Seu irmão ou irmã"
+      },
+      {
+       "es": "Un amigo",
+       "en": "A friend",
+       "pt": "Um amigo"
+      },
+      {
+       "es": "Tu pareja",
+       "en": "Your partner",
+       "pt": "Seu parceiro"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "Por lo general ¿Qué sueles usar más a menudo?",
+      "en": "In general, what do you use most often?",
+      "pt": "Em geral, o que você usa com mais frequência?"
+     },
+     "a": [
+      {
+       "es": "El corazón",
+       "en": "Your heart",
+       "pt": "O coração"
+      },
+      {
+       "es": "La lógica",
+       "en": "Logic",
+       "pt": "A lógica"
+      },
+      {
+       "es": "El dinero",
+       "en": "Money",
+       "pt": "O dinheiro"
+      },
+      {
+       "es": "La experiencia",
+       "en": "Experience",
+       "pt": "A experiência"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿Qué te daría mayor felicidad?",
+      "en": "What would give you the most happiness?",
+      "pt": "O que te daria mais felicidade?"
+     },
+     "a": [
+      {
+       "es": "Viajar por el mundo",
+       "en": "Traveling the world",
+       "pt": "Viajar pelo mundo"
+      },
+      {
+       "es": "Hacer más amigos",
+       "en": "Making more friends",
+       "pt": "Fazer mais amigos"
+      },
+      {
+       "es": "Tener más dinero",
+       "en": "Having more money",
+       "pt": "Ter mais dinheiro"
+      },
+      {
+       "es": "Estar en mejor forma",
+       "en": "Being in better shape",
+       "pt": "Estar em melhor forma"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Cuál es tu mayor prioridad ahora mismo?",
+      "en": "What is your biggest priority right now?",
+      "pt": "Qual é sua maior prioridade agora?"
+     },
+     "a": [
+      {
+       "es": "Relación sentimental",
+       "en": "Romantic relationship",
+       "pt": "Relacionamento"
+      },
+      {
+       "es": "Carrera profesional",
+       "en": "Career",
+       "pt": "Carreira"
+      },
+      {
+       "es": "Reputación",
+       "en": "Reputation",
+       "pt": "Reputação"
+      },
+      {
+       "es": "Éxito",
+       "en": "Success",
+       "pt": "Sucesso"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Cuál es tu miedo más grande?",
+      "en": "What is your greatest fear?",
+      "pt": "Qual é seu maior medo?"
+     },
+     "a": [
+      {
+       "es": "La muerte",
+       "en": "Death",
+       "pt": "A morte"
+      },
+      {
+       "es": "Estar solo",
+       "en": "Being alone",
+       "pt": "Ficar sozinho"
+      },
+      {
+       "es": "Los bichos",
+       "en": "Bugs",
+       "pt": "Os insetos"
+      },
+      {
+       "es": "Espacios pequeños",
+       "en": "Small spaces",
+       "pt": "Espaços pequenos"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿Cómo calificarías tu forma de bailar?",
+      "en": "How would you rate your dancing?",
+      "pt": "Como você avaliaria sua dança?"
+     },
+     "a": [
+      {
+       "es": "Desastrosa",
+       "en": "Disastrous",
+       "pt": "Desastrosa"
+      },
+      {
+       "es": "Mala",
+       "en": "Bad",
+       "pt": "Ruim"
+      },
+      {
+       "es": "Promedio",
+       "en": "Average",
+       "pt": "Mediana"
+      },
+      {
+       "es": "Genial",
+       "en": "Great",
+       "pt": "Ótima"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué te gustaría más?",
+      "en": "What would you prefer?",
+      "pt": "O que você preferiria?"
+     },
+     "a": [
+      {
+       "es": "Ser más alto",
+       "en": "Be taller",
+       "pt": "Ser mais alto"
+      },
+      {
+       "es": "Ser más delgado",
+       "en": "Be slimmer",
+       "pt": "Ser mais magro"
+      },
+      {
+       "es": "Ser más joven",
+       "en": "Be younger",
+       "pt": "Ser mais jovem"
+      },
+      {
+       "es": "Ser más bajo",
+       "en": "Be shorter",
+       "pt": "Ser mais baixo"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué preferirías hacer?",
+      "en": "What would you rather do?",
+      "pt": "O que você preferiria fazer?"
+     },
+     "a": [
+      {
+       "es": "Manejar una moto de agua",
+       "en": "Ride a jet ski",
+       "pt": "Andar de jet ski"
+      },
+      {
+       "es": "Bucear",
+       "en": "Scuba dive",
+       "pt": "Mergulhar"
+      },
+      {
+       "es": "Saltar en paracaídas",
+       "en": "Go skydiving",
+       "pt": "Saltar de paraquedas"
+      },
+      {
+       "es": "Pilotar un avión",
+       "en": "Fly a plane",
+       "pt": "Pilotar um avião"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Cómo calificarías tu forma de cantar?",
+      "en": "How would you rate your singing?",
+      "pt": "Como você avaliaria seu canto?"
+     },
+     "a": [
+      {
+       "es": "Excelente",
+       "en": "Excellent",
+       "pt": "Excelente"
+      },
+      {
+       "es": "Promedio",
+       "en": "Average",
+       "pt": "Mediano"
+      },
+      {
+       "es": "Mala",
+       "en": "Bad",
+       "pt": "Ruim"
+      },
+      {
+       "es": "Desastrosa",
+       "en": "Disastrous",
+       "pt": "Desastrosa"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Qué priorizas en tus vacaciones?",
+      "en": "What do you prioritize on vacation?",
+      "pt": "O que você prioriza nas férias?"
+     },
+     "a": [
+      {
+       "es": "La comida",
+       "en": "Food",
+       "pt": "A comida"
+      },
+      {
+       "es": "El alojamiento",
+       "en": "Accommodation",
+       "pt": "A acomodação"
+      },
+      {
+       "es": "Espectáculos",
+       "en": "Shows",
+       "pt": "Espetáculos"
+      },
+      {
+       "es": "La compañía",
+       "en": "Company",
+       "pt": "A companhia"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿En qué eres peor?",
+      "en": "What are you worst at?",
+      "pt": "Em que você é pior?"
+     },
+     "a": [
+      {
+       "es": "Bailando",
+       "en": "Dancing",
+       "pt": "Dançar"
+      },
+      {
+       "es": "Cantando",
+       "en": "Singing",
+       "pt": "Cantar"
+      },
+      {
+       "es": "Dibujando",
+       "en": "Drawing",
+       "pt": "Desenhar"
+      },
+      {
+       "es": "Deportes",
+       "en": "Sports",
+       "pt": "Esportes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "category": "couple",
+   "premium": false,
+   "emoji": "🥇",
+   "name": {
+    "es": "Bodas de oro",
+    "en": "Golden Anniversary",
+    "pt": "Bodas de ouro"
+   },
+   "subtitle": {
+    "es": "Hábitos y manías",
+    "en": "Habits and quirks",
+    "pt": "Hábitos e manias"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "¿Qué preferirías tener en tu casa?",
+      "en": "What would you prefer to have in your house?",
+      "pt": "O que você preferiria ter em sua casa?"
+     },
+     "a": [
+      {
+       "es": "Una sala de juegos",
+       "en": "A game room",
+       "pt": "Uma sala de jogos"
+      },
+      {
+       "es": "Un gimnasio",
+       "en": "A gym",
+       "pt": "Uma academia"
+      },
+      {
+       "es": "Un estudio",
+       "en": "A studio",
+       "pt": "Um estúdio"
+      },
+      {
+       "es": "Una piscina",
+       "en": "A pool",
+       "pt": "Uma piscina"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Cómo calificarías tu puntualidad?",
+      "en": "How would you rate your punctuality?",
+      "pt": "Como você avaliaria sua pontualidade?"
+     },
+     "a": [
+      {
+       "es": "Excelente",
+       "en": "Excellent",
+       "pt": "Excelente"
+      },
+      {
+       "es": "Buena",
+       "en": "Good",
+       "pt": "Boa"
+      },
+      {
+       "es": "Promedio",
+       "en": "Average",
+       "pt": "Mediana"
+      },
+      {
+       "es": "Muy mala",
+       "en": "Very bad",
+       "pt": "Muito ruim"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿Cómo serían unas vacaciones de pesadilla?",
+      "en": "What would a nightmare vacation look like?",
+      "pt": "Como seriam umas férias de pesadelo?"
+     },
+     "a": [
+      {
+       "es": "Caminando mucho",
+       "en": "Walking a lot",
+       "pt": "Caminhando muito"
+      },
+      {
+       "es": "En un campamento",
+       "en": "At a camp",
+       "pt": "Em um acampamento"
+      },
+      {
+       "es": "En la playa",
+       "en": "At the beach",
+       "pt": "Na praia"
+      },
+      {
+       "es": "En una ciudad",
+       "en": "In a city",
+       "pt": "Em uma cidade"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿Cuál es tu género literario favorito?",
+      "en": "What is your favorite literary genre?",
+      "pt": "Qual é seu gênero literário favorito?"
+     },
+     "a": [
+      {
+       "es": "Romance",
+       "en": "Romance",
+       "pt": "Romance"
+      },
+      {
+       "es": "Crimen",
+       "en": "Crime",
+       "pt": "Crime"
+      },
+      {
+       "es": "Historia",
+       "en": "History",
+       "pt": "História"
+      },
+      {
+       "es": "Biográficos",
+       "en": "Biographies",
+       "pt": "Biografias"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "¿Qué empleo se ajusta mejor a tu perfil?",
+      "en": "What job best fits your profile?",
+      "pt": "Que emprego melhor se encaixa no seu perfil?"
+     },
+     "a": [
+      {
+       "es": "Doctor",
+       "en": "Doctor",
+       "pt": "Médico"
+      },
+      {
+       "es": "Maestro",
+       "en": "Teacher",
+       "pt": "Professor"
+      },
+      {
+       "es": "Abogado",
+       "en": "Lawyer",
+       "pt": "Advogado"
+      },
+      {
+       "es": "Vendedor",
+       "en": "Salesperson",
+       "pt": "Vendedor"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Cómo eres en la cocina?",
+      "en": "How are you in the kitchen?",
+      "pt": "Como você é na cozinha?"
+     },
+     "a": [
+      {
+       "es": "Todo un chef",
+       "en": "A real chef",
+       "pt": "Um chef de verdade"
+      },
+      {
+       "es": "Nada mal",
+       "en": "Not bad",
+       "pt": "Nada mal"
+      },
+      {
+       "es": "Todo se quema",
+       "en": "Everything burns",
+       "pt": "Tudo queima"
+      },
+      {
+       "es": "No cocinas",
+       "en": "You don't cook",
+       "pt": "Não cozinha"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "Elige una de estas mascotas:",
+      "en": "Choose one of the following pets",
+      "pt": "Escolha um dos seguintes animais de estimação"
+     },
+     "a": [
+      {
+       "es": "Una cobra",
+       "en": "A cobra",
+       "pt": "Uma cobra"
+      },
+      {
+       "es": "Un chimpancé",
+       "en": "A chimpanzee",
+       "pt": "Um chimpanzé"
+      },
+      {
+       "es": "Un hámster",
+       "en": "A hamster",
+       "pt": "Um hamster"
+      },
+      {
+       "es": "Un elefante",
+       "en": "An elephant",
+       "pt": "Um elefante"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué monumento te gustaría visitar?",
+      "en": "What monument would you like to visit?",
+      "pt": "Que monumento você gostaria de visitar?"
+     },
+     "a": [
+      {
+       "es": "La Estatua de la Libertad",
+       "en": "The Statue of Liberty",
+       "pt": "A Estátua da Liberdade"
+      },
+      {
+       "es": "La Gran Muralla China",
+       "en": "The Great Wall of China",
+       "pt": "A Grande Muralha da China"
+      },
+      {
+       "es": "La Torre Eiffel",
+       "en": "The Eiffel Tower",
+       "pt": "A Torre Eiffel"
+      },
+      {
+       "es": "Las Pirámides de Egipto",
+       "en": "The Egyptian Pyramids",
+       "pt": "As Pirâmides do Egito"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué utilizas más a menudo?",
+      "en": "What do you use most often?",
+      "pt": "O que você usa com mais frequência?"
+     },
+     "a": [
+      {
+       "es": "Netflix",
+       "en": "Netflix",
+       "pt": "Netflix"
+      },
+      {
+       "es": "Amazon Prime",
+       "en": "Amazon Prime",
+       "pt": "Amazon Prime"
+      },
+      {
+       "es": "Disney+",
+       "en": "Disney+",
+       "pt": "Disney+"
+      },
+      {
+       "es": "Youtube",
+       "en": "YouTube",
+       "pt": "YouTube"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué tipo de clima prefieres?",
+      "en": "What type of weather do you prefer?",
+      "pt": "Que tipo de clima você prefere?"
+     },
+     "a": [
+      {
+       "es": "Soleado",
+       "en": "Sunny",
+       "pt": "Ensolarado"
+      },
+      {
+       "es": "Lluvioso",
+       "en": "Rainy",
+       "pt": "Chuvoso"
+      },
+      {
+       "es": "Nevado",
+       "en": "Snowy",
+       "pt": "Nevado"
+      },
+      {
+       "es": "Ventoso",
+       "en": "Windy",
+       "pt": "Ventoso"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Qué prefieres para tarjeta de regalo?",
+      "en": "What do you prefer for a gift card?",
+      "pt": "O que você prefere em um cartão presente?"
+     },
+     "a": [
+      {
+       "es": "Comida",
+       "en": "Food",
+       "pt": "Comida"
+      },
+      {
+       "es": "Viajes",
+       "en": "Travel",
+       "pt": "Viagens"
+      },
+      {
+       "es": "Cosméticos",
+       "en": "Cosmetics",
+       "pt": "Cosméticos"
+      },
+      {
+       "es": "Videojuegos",
+       "en": "Video games",
+       "pt": "Videogames"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "¿Cuál piensas que es tu mayor fortaleza?",
+      "en": "What do you think is your greatest strength?",
+      "pt": "Qual você acha que é sua maior força?"
+     },
+     "a": [
+      {
+       "es": "Buen humor",
+       "en": "Good humor",
+       "pt": "Bom humor"
+      },
+      {
+       "es": "Lealtad",
+       "en": "Loyalty",
+       "pt": "Lealdade"
+      },
+      {
+       "es": "Ambición",
+       "en": "Ambition",
+       "pt": "Ambição"
+      },
+      {
+       "es": "Calidez",
+       "en": "Warmth",
+       "pt": "Calidez"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "category": "couple",
+   "premium": false,
+   "emoji": "💎",
+   "name": {
+    "es": "Bodas de platino",
+    "en": "Platinum Anniversary",
+    "pt": "Bodas de platina"
+   },
+   "subtitle": {
+    "es": "Lo que de verdad importa",
+    "en": "What really matters",
+    "pt": "O que realmente importa"
+   },
+   "questions": [
+    {
+     "id": 1,
+     "q": {
+      "es": "Tienes que renunciar a una cosa por todo un mes ¿Cuál sería?",
+      "en": "You have to give up one thing for a whole month. Which would it be?",
+      "pt": "Você tem que abrir mão de uma coisa por um mês inteiro. Qual seria?"
+     },
+     "a": [
+      {
+       "es": "Teléfono móvil",
+       "en": "Mobile phone",
+       "pt": "Celular"
+      },
+      {
+       "es": "Redes sociales",
+       "en": "Social media",
+       "pt": "Redes sociais"
+      },
+      {
+       "es": "Videojuegos",
+       "en": "Video games",
+       "pt": "Videogames"
+      },
+      {
+       "es": "Chocolate",
+       "en": "Chocolate",
+       "pt": "Chocolate"
+      }
+     ]
+    },
+    {
+     "id": 2,
+     "q": {
+      "es": "¿Cuál es tu mayor preocupación?",
+      "en": "What is your biggest concern?",
+      "pt": "Qual é sua maior preocupação?"
+     },
+     "a": [
+      {
+       "es": "Salud",
+       "en": "Health",
+       "pt": "Saúde"
+      },
+      {
+       "es": "Trabajo",
+       "en": "Work",
+       "pt": "Trabalho"
+      },
+      {
+       "es": "Dinero",
+       "en": "Money",
+       "pt": "Dinheiro"
+      },
+      {
+       "es": "Familia",
+       "en": "Family",
+       "pt": "Família"
+      }
+     ]
+    },
+    {
+     "id": 3,
+     "q": {
+      "es": "¿En donde disfrutas más?",
+      "en": "Where do you enjoy yourself most?",
+      "pt": "Onde você se diverte mais?"
+     },
+     "a": [
+      {
+       "es": "En una boda",
+       "en": "At a wedding",
+       "pt": "Em um casamento"
+      },
+      {
+       "es": "En un cumpleaños",
+       "en": "At a birthday",
+       "pt": "Em um aniversário"
+      },
+      {
+       "es": "En Navidad",
+       "en": "At Christmas",
+       "pt": "No Natal"
+      },
+      {
+       "es": "En Año Nuevo",
+       "en": "At New Year's",
+       "pt": "No Ano Novo"
+      }
+     ]
+    },
+    {
+     "id": 4,
+     "q": {
+      "es": "¿Cuántos libros lees al mes?",
+      "en": "How many books do you read per month?",
+      "pt": "Quantos livros você lê por mês?"
+     },
+     "a": [
+      {
+       "es": "0",
+       "en": "0",
+       "pt": "0"
+      },
+      {
+       "es": "1",
+       "en": "1",
+       "pt": "1"
+      },
+      {
+       "es": "2",
+       "en": "2",
+       "pt": "2"
+      },
+      {
+       "es": "Más de tres",
+       "en": "More than three",
+       "pt": "Mais de três"
+      }
+     ]
+    },
+    {
+     "id": 5,
+     "q": {
+      "es": "Si te hicieran una fiesta ¿Qué sentirías?",
+      "en": "If someone threw you a party, how would you feel?",
+      "pt": "Se alguém fizesse uma festa para você, como se sentiria?"
+     },
+     "a": [
+      {
+       "es": "Emoción",
+       "en": "Excitement",
+       "pt": "Emoção"
+      },
+      {
+       "es": "Agradecimiento",
+       "en": "Gratitude",
+       "pt": "Gratidão"
+      },
+      {
+       "es": "Vergüenza",
+       "en": "Embarrassment",
+       "pt": "Vergonha"
+      },
+      {
+       "es": "Euforia",
+       "en": "Euphoria",
+       "pt": "Euforia"
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "q": {
+      "es": "¿Qué preferirías tener en tu casa?",
+      "en": "What would you prefer to have at home?",
+      "pt": "O que você preferiria ter em casa?"
+     },
+     "a": [
+      {
+       "es": "Un trampolín",
+       "en": "A trampoline",
+       "pt": "Uma cama elástica"
+      },
+      {
+       "es": "Una piscina olímpica",
+       "en": "An Olympic pool",
+       "pt": "Uma piscina olímpica"
+      },
+      {
+       "es": "Una casita del árbol",
+       "en": "A treehouse",
+       "pt": "Uma casa na árvore"
+      },
+      {
+       "es": "Una cancha de tenis",
+       "en": "A tennis court",
+       "pt": "Uma quadra de tênis"
+      }
+     ]
+    },
+    {
+     "id": 7,
+     "q": {
+      "es": "¿Quién es la primera persona a la que cuentas una buena noticia?",
+      "en": "Who is the first person you tell good news to?",
+      "pt": "Quem é a primeira pessoa para quem você conta uma boa notícia?"
+     },
+     "a": [
+      {
+       "es": "Tus padres",
+       "en": "Your parents",
+       "pt": "Seus pais"
+      },
+      {
+       "es": "Tu mejor amigo",
+       "en": "Your best friend",
+       "pt": "Seu melhor amigo"
+      },
+      {
+       "es": "Tu pareja",
+       "en": "Your partner",
+       "pt": "Seu parceiro"
+      },
+      {
+       "es": "Tu hermano",
+       "en": "Your sibling",
+       "pt": "Seu irmão"
+      }
+     ]
+    },
+    {
+     "id": 8,
+     "q": {
+      "es": "¿Qué extravías más a menudo?",
+      "en": "What do you lose most often?",
+      "pt": "O que você perde com mais frequência?"
+     },
+     "a": [
+      {
+       "es": "Teléfono móvil",
+       "en": "Mobile phone",
+       "pt": "Celular"
+      },
+      {
+       "es": "Cartera",
+       "en": "Wallet",
+       "pt": "Carteira"
+      },
+      {
+       "es": "Anteojos",
+       "en": "Glasses",
+       "pt": "Óculos"
+      },
+      {
+       "es": "Llaves",
+       "en": "Keys",
+       "pt": "Chaves"
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "q": {
+      "es": "¿Qué te parece más divertido?",
+      "en": "What do you find most fun?",
+      "pt": "O que você acha mais divertido?"
+     },
+     "a": [
+      {
+       "es": "Una caminata tranquila",
+       "en": "A leisurely walk",
+       "pt": "Uma caminhada tranquila"
+      },
+      {
+       "es": "Salir a bailar",
+       "en": "Going dancing",
+       "pt": "Sair para dançar"
+      },
+      {
+       "es": "Tomar un café con un amigo",
+       "en": "Having coffee with a friend",
+       "pt": "Tomar café com um amigo"
+      },
+      {
+       "es": "Hacer deportes",
+       "en": "Playing sports",
+       "pt": "Praticar esportes"
+      }
+     ]
+    },
+    {
+     "id": 10,
+     "q": {
+      "es": "¿Qué factor es más importante a la hora de comprar algo?",
+      "en": "What factor is most important when buying something?",
+      "pt": "Que fator é mais importante na hora de comprar algo?"
+     },
+     "a": [
+      {
+       "es": "La calidad",
+       "en": "Quality",
+       "pt": "A qualidade"
+      },
+      {
+       "es": "El precio",
+       "en": "Price",
+       "pt": "O preço"
+      },
+      {
+       "es": "La moda",
+       "en": "Fashion",
+       "pt": "A moda"
+      },
+      {
+       "es": "Lo práctico",
+       "en": "Practicality",
+       "pt": "O prático"
+      }
+     ]
+    },
+    {
+     "id": 11,
+     "q": {
+      "es": "¿Cuál de las siguientes cosas ansías más?",
+      "en": "Which of the following do you crave most?",
+      "pt": "Qual das seguintes coisas você mais anseia?"
+     },
+     "a": [
+      {
+       "es": "Conocimientos",
+       "en": "Knowledge",
+       "pt": "Conhecimento"
+      },
+      {
+       "es": "Dinero",
+       "en": "Money",
+       "pt": "Dinheiro"
+      },
+      {
+       "es": "Comida",
+       "en": "Food",
+       "pt": "Comida"
+      },
+      {
+       "es": "Tiempo de relax",
+       "en": "Relaxation time",
+       "pt": "Tempo de descanso"
+      }
+     ]
+    },
+    {
+     "id": 12,
+     "q": {
+      "es": "Si tuvieras que dedicar tiempo a una sola de estas cosas por el resto de tu vida ¿Cuál eliges?",
+      "en": "If you had to dedicate time to only one of these things for the rest of your life, which would you choose?",
+      "pt": "Se tivesse que dedicar tempo a apenas uma dessas coisas pelo resto da vida, qual escolheria?"
+     },
+     "a": [
+      {
+       "es": "Familia",
+       "en": "Family",
+       "pt": "Família"
+      },
+      {
+       "es": "Amigos",
+       "en": "Friends",
+       "pt": "Amigos"
+      },
+      {
+       "es": "Trabajo",
+       "en": "Work",
+       "pt": "Trabalho"
+      },
+      {
+       "es": "Pasatiempos",
+       "en": "Hobbies",
+       "pt": "Hobbies"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "category": "friends",
+   "premium": false,
+   "emoji": "🤝",
+   "name": {
+    "es": "Mejores amigos",
+    "en": "Best Friends",
+    "pt": "Melhores amigos"
+   },
+   "subtitle": {
+    "es": "El test para tu mejor amigo o amiga",
+    "en": "The test for your best friend",
+    "pt": "O teste para seu melhor amigo"
+   },
+   "questions": [
+    {
+     "q": {
+      "es": "¿Cuál es tu plan perfecto para un sábado?",
+      "en": "What's your perfect Saturday plan?",
+      "pt": "Qual é seu plano perfeito para um sábado?"
+     },
+     "a": [
+      {
+       "es": "Salir de fiesta",
+       "en": "Going out partying",
+       "pt": "Sair para a balada"
+      },
+      {
+       "es": "Maratón de series",
+       "en": "A series marathon",
+       "pt": "Maratona de séries"
+      },
+      {
+       "es": "Salir a comer",
+       "en": "Eating out",
+       "pt": "Sair para comer"
+      },
+      {
+       "es": "Deporte o aire libre",
+       "en": "Sports or outdoors",
+       "pt": "Esporte ou ar livre"
+      }
+     ],
+     "id": 1
+    },
+    {
+     "q": {
+      "es": "¿Qué comida pedirías si invito yo?",
+      "en": "What food would you order if I'm paying?",
+      "pt": "Que comida você pediria se eu pagasse?"
+     },
+     "a": [
+      {
+       "es": "Pizza",
+       "en": "Pizza",
+       "pt": "Pizza"
+      },
+      {
+       "es": "Sushi",
+       "en": "Sushi",
+       "pt": "Sushi"
+      },
+      {
+       "es": "Hamburguesa",
+       "en": "Burger",
+       "pt": "Hambúrguer"
+      },
+      {
+       "es": "Comida mexicana",
+       "en": "Mexican food",
+       "pt": "Comida mexicana"
+      }
+     ],
+     "id": 2
+    },
+    {
+     "q": {
+      "es": "¿Qué superpoder elegirías?",
+      "en": "Which superpower would you choose?",
+      "pt": "Que superpoder você escolheria?"
+     },
+     "a": [
+      {
+       "es": "Volar",
+       "en": "Flying",
+       "pt": "Voar"
+      },
+      {
+       "es": "Ser invisible",
+       "en": "Invisibility",
+       "pt": "Ficar invisível"
+      },
+      {
+       "es": "Leer mentes",
+       "en": "Reading minds",
+       "pt": "Ler mentes"
+      },
+      {
+       "es": "Teletransportarme",
+       "en": "Teleporting",
+       "pt": "Me teletransportar"
+      }
+     ],
+     "id": 3
+    },
+    {
+     "q": {
+      "es": "¿Cómo reaccionas ante una película de terror?",
+      "en": "How do you react to a horror movie?",
+      "pt": "Como você reage a um filme de terror?"
+     },
+     "a": [
+      {
+       "es": "Me encanta",
+       "en": "I love it",
+       "pt": "Eu amo"
+      },
+      {
+       "es": "Miro entre los dedos",
+       "en": "I watch through my fingers",
+       "pt": "Assisto por entre os dedos"
+      },
+      {
+       "es": "Me duermo",
+       "en": "I fall asleep",
+       "pt": "Eu durmo"
+      },
+      {
+       "es": "No la veo ni loco/a",
+       "en": "No way I'm watching it",
+       "pt": "Nem pensar em assistir"
+      }
+     ],
+     "id": 4
+    },
+    {
+     "q": {
+      "es": "¿Qué app usas más?",
+      "en": "Which app do you use the most?",
+      "pt": "Qual app você mais usa?"
+     },
+     "a": [
+      {
+       "es": "Instagram",
+       "en": "Instagram",
+       "pt": "Instagram"
+      },
+      {
+       "es": "TikTok",
+       "en": "TikTok",
+       "pt": "TikTok"
+      },
+      {
+       "es": "WhatsApp",
+       "en": "WhatsApp",
+       "pt": "WhatsApp"
+      },
+      {
+       "es": "YouTube",
+       "en": "YouTube",
+       "pt": "YouTube"
+      }
+     ],
+     "id": 5
+    },
+    {
+     "q": {
+      "es": "Si ganas la lotería, ¿qué haces primero?",
+      "en": "If you win the lottery, what do you do first?",
+      "pt": "Se você ganhar na loteria, o que faz primeiro?"
+     },
+     "a": [
+      {
+       "es": "Viajar",
+       "en": "Travel",
+       "pt": "Viajar"
+      },
+      {
+       "es": "Comprar una casa",
+       "en": "Buy a house",
+       "pt": "Comprar uma casa"
+      },
+      {
+       "es": "Invertir",
+       "en": "Invest",
+       "pt": "Investir"
+      },
+      {
+       "es": "Ayudar a mi familia",
+       "en": "Help my family",
+       "pt": "Ajudar minha família"
+      }
+     ],
+     "id": 6
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu mayor miedo?",
+      "en": "What's your biggest fear?",
+      "pt": "Qual é seu maior medo?"
+     },
+     "a": [
+      {
+       "es": "Las alturas",
+       "en": "Heights",
+       "pt": "Altura"
+      },
+      {
+       "es": "Los insectos",
+       "en": "Bugs",
+       "pt": "Insetos"
+      },
+      {
+       "es": "La soledad",
+       "en": "Being alone",
+       "pt": "A solidão"
+      },
+      {
+       "es": "Hablar en público",
+       "en": "Public speaking",
+       "pt": "Falar em público"
+      }
+     ],
+     "id": 7
+    },
+    {
+     "q": {
+      "es": "¿Qué tipo de amigo/a eres en una fiesta?",
+      "en": "What kind of friend are you at a party?",
+      "pt": "Que tipo de amigo você é numa festa?"
+     },
+     "a": [
+      {
+       "es": "El/la que baila toda la noche",
+       "en": "The one dancing all night",
+       "pt": "O que dança a noite toda"
+      },
+      {
+       "es": "El/la que charla en la cocina",
+       "en": "The one chatting in the kitchen",
+       "pt": "O que fica papeando na cozinha"
+      },
+      {
+       "es": "El/la que se va temprano",
+       "en": "The one who leaves early",
+       "pt": "O que vai embora cedo"
+      },
+      {
+       "es": "El/la que elige la música",
+       "en": "The one picking the music",
+       "pt": "O que escolhe a música"
+      }
+     ],
+     "id": 8
+    },
+    {
+     "q": {
+      "es": "¿Qué bebida no puede faltar en tu día?",
+      "en": "Which drink can't be missing from your day?",
+      "pt": "Que bebida não pode faltar no seu dia?"
+     },
+     "a": [
+      {
+       "es": "Café",
+       "en": "Coffee",
+       "pt": "Café"
+      },
+      {
+       "es": "Mate o té",
+       "en": "Mate or tea",
+       "pt": "Chimarrão ou chá"
+      },
+      {
+       "es": "Jugo",
+       "en": "Juice",
+       "pt": "Suco"
+      },
+      {
+       "es": "Refresco",
+       "en": "Soda",
+       "pt": "Refrigerante"
+      }
+     ],
+     "id": 9
+    },
+    {
+     "q": {
+      "es": "Si pudieras, ¿a qué hora te levantarías?",
+      "en": "If you could, what time would you wake up?",
+      "pt": "Se pudesse, a que horas você acordaria?"
+     },
+     "a": [
+      {
+       "es": "A las 7",
+       "en": "At 7",
+       "pt": "Às 7"
+      },
+      {
+       "es": "A las 9",
+       "en": "At 9",
+       "pt": "Às 9"
+      },
+      {
+       "es": "A las 11",
+       "en": "At 11",
+       "pt": "Às 11"
+      },
+      {
+       "es": "Después del mediodía",
+       "en": "After noon",
+       "pt": "Depois do meio-dia"
+      }
+     ],
+     "id": 10
+    },
+    {
+     "q": {
+      "es": "En un viaje sin plan, tú...",
+      "en": "On a trip with no plan, you...",
+      "pt": "Numa viagem sem plano, você..."
+     },
+     "a": [
+      {
+       "es": "Improvisas todo",
+       "en": "Improvise everything",
+       "pt": "Improvisa tudo"
+      },
+      {
+       "es": "Buscas todo en internet",
+       "en": "Look everything up online",
+       "pt": "Pesquisa tudo na internet"
+      },
+      {
+       "es": "Preguntas a la gente del lugar",
+       "en": "Ask the locals",
+       "pt": "Pergunta para o pessoal do lugar"
+      },
+      {
+       "es": "Te quedas en el hotel",
+       "en": "Stay at the hotel",
+       "pt": "Fica no hotel"
+      }
+     ],
+     "id": 11
+    },
+    {
+     "q": {
+      "es": "¿Qué es lo que más te molesta?",
+      "en": "What annoys you the most?",
+      "pt": "O que mais te irrita?"
+     },
+     "a": [
+      {
+       "es": "La impuntualidad",
+       "en": "People being late",
+       "pt": "Atrasos"
+      },
+      {
+       "es": "El ruido",
+       "en": "Noise",
+       "pt": "Barulho"
+      },
+      {
+       "es": "Las mentiras",
+       "en": "Lies",
+       "pt": "Mentiras"
+      },
+      {
+       "es": "Que me interrumpan",
+       "en": "Being interrupted",
+       "pt": "Ser interrompido"
+      }
+     ],
+     "id": 12
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu talento oculto?",
+      "en": "What's your hidden talent?",
+      "pt": "Qual é seu talento escondido?"
+     },
+     "a": [
+      {
+       "es": "Cocinar",
+       "en": "Cooking",
+       "pt": "Cozinhar"
+      },
+      {
+       "es": "Cantar",
+       "en": "Singing",
+       "pt": "Cantar"
+      },
+      {
+       "es": "Dibujar",
+       "en": "Drawing",
+       "pt": "Desenhar"
+      },
+      {
+       "es": "Imitar voces",
+       "en": "Doing voices",
+       "pt": "Imitar vozes"
+      }
+     ],
+     "id": 13
+    },
+    {
+     "q": {
+      "es": "¿Qué género de series prefieres?",
+      "en": "Which kind of series do you prefer?",
+      "pt": "Que gênero de série você prefere?"
+     },
+     "a": [
+      {
+       "es": "Comedia",
+       "en": "Comedy",
+       "pt": "Comédia"
+      },
+      {
+       "es": "Drama",
+       "en": "Drama",
+       "pt": "Drama"
+      },
+      {
+       "es": "Policiales",
+       "en": "Crime",
+       "pt": "Policial"
+      },
+      {
+       "es": "Ciencia ficción",
+       "en": "Sci-fi",
+       "pt": "Ficção científica"
+      }
+     ],
+     "id": 14
+    },
+    {
+     "q": {
+      "es": "¿Cómo sería tu cumpleaños ideal?",
+      "en": "What would your ideal birthday look like?",
+      "pt": "Como seria seu aniversário ideal?"
+     },
+     "a": [
+      {
+       "es": "Una gran fiesta",
+       "en": "A big party",
+       "pt": "Uma grande festa"
+      },
+      {
+       "es": "Una cena con pocos",
+       "en": "A small dinner",
+       "pt": "Um jantar com poucos"
+      },
+      {
+       "es": "Un viaje",
+       "en": "A trip",
+       "pt": "Uma viagem"
+      },
+      {
+       "es": "Que pase desapercibido",
+       "en": "Keeping it low-key",
+       "pt": "Que passe despercebido"
+      }
+     ],
+     "id": 15
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "category": "friends",
+   "premium": false,
+   "emoji": "🙌",
+   "name": {
+    "es": "¿Me conoces de verdad?",
+    "en": "Do You Really Know Me?",
+    "pt": "Você me conhece de verdade?"
+   },
+   "subtitle": {
+    "es": "Para amigos de toda la vida",
+    "en": "For lifelong friends",
+    "pt": "Para amigos de longa data"
+   },
+   "questions": [
+    {
+     "q": {
+      "es": "¿Qué haces cuando estás triste?",
+      "en": "What do you do when you're sad?",
+      "pt": "O que você faz quando está triste?"
+     },
+     "a": [
+      {
+       "es": "Hablo con alguien",
+       "en": "Talk to someone",
+       "pt": "Converso com alguém"
+      },
+      {
+       "es": "Escucho música",
+       "en": "Listen to music",
+       "pt": "Escuto música"
+      },
+      {
+       "es": "Duermo",
+       "en": "Sleep",
+       "pt": "Durmo"
+      },
+      {
+       "es": "Como algo rico",
+       "en": "Eat something tasty",
+       "pt": "Como algo gostoso"
+      }
+     ],
+     "id": 1
+    },
+    {
+     "q": {
+      "es": "¿Qué es lo que más valoras en una amistad?",
+      "en": "What do you value most in a friendship?",
+      "pt": "O que você mais valoriza numa amizade?"
+     },
+     "a": [
+      {
+       "es": "La lealtad",
+       "en": "Loyalty",
+       "pt": "Lealdade"
+      },
+      {
+       "es": "El humor",
+       "en": "Humor",
+       "pt": "Humor"
+      },
+      {
+       "es": "La sinceridad",
+       "en": "Honesty",
+       "pt": "Sinceridade"
+      },
+      {
+       "es": "Que esté siempre",
+       "en": "Always being there",
+       "pt": "Estar sempre presente"
+      }
+     ],
+     "id": 2
+    },
+    {
+     "q": {
+      "es": "¿Cómo eras en la escuela?",
+      "en": "What were you like at school?",
+      "pt": "Como você era na escola?"
+     },
+     "a": [
+      {
+       "es": "Estudioso/a",
+       "en": "Studious",
+       "pt": "Estudioso"
+      },
+      {
+       "es": "El/la payaso/a de la clase",
+       "en": "The class clown",
+       "pt": "O palhaço da turma"
+      },
+      {
+       "es": "Callado/a",
+       "en": "Quiet",
+       "pt": "Quieto"
+      },
+      {
+       "es": "Rebelde",
+       "en": "Rebellious",
+       "pt": "Rebelde"
+      }
+     ],
+     "id": 3
+    },
+    {
+     "q": {
+      "es": "¿Qué cambiarías de tu rutina?",
+      "en": "What would you change about your routine?",
+      "pt": "O que você mudaria na sua rotina?"
+     },
+     "a": [
+      {
+       "es": "Dormir más",
+       "en": "Sleep more",
+       "pt": "Dormir mais"
+      },
+      {
+       "es": "Hacer ejercicio",
+       "en": "Work out",
+       "pt": "Fazer exercício"
+      },
+      {
+       "es": "Usar menos el celular",
+       "en": "Use my phone less",
+       "pt": "Usar menos o celular"
+      },
+      {
+       "es": "Tener más tiempo libre",
+       "en": "Have more free time",
+       "pt": "Ter mais tempo livre"
+      }
+     ],
+     "id": 4
+    },
+    {
+     "q": {
+      "es": "¿Cómo pides perdón?",
+      "en": "How do you apologize?",
+      "pt": "Como você pede desculpas?"
+     },
+     "a": [
+      {
+       "es": "Con palabras",
+       "en": "With words",
+       "pt": "Com palavras"
+      },
+      {
+       "es": "Con un regalo",
+       "en": "With a gift",
+       "pt": "Com um presente"
+      },
+      {
+       "es": "Con un abrazo",
+       "en": "With a hug",
+       "pt": "Com um abraço"
+      },
+      {
+       "es": "Me cuesta mucho",
+       "en": "I find it really hard",
+       "pt": "Tenho muita dificuldade"
+      }
+     ],
+     "id": 5
+    },
+    {
+     "q": {
+      "es": "¿Qué harías con un día libre sorpresa?",
+      "en": "What would you do with a surprise day off?",
+      "pt": "O que você faria com um dia de folga surpresa?"
+     },
+     "a": [
+      {
+       "es": "Dormir",
+       "en": "Sleep",
+       "pt": "Dormir"
+      },
+      {
+       "es": "Salir con amigos",
+       "en": "Hang out with friends",
+       "pt": "Sair com amigos"
+      },
+      {
+       "es": "Ordenar la casa",
+       "en": "Tidy up the house",
+       "pt": "Arrumar a casa"
+      },
+      {
+       "es": "Ir a la naturaleza",
+       "en": "Get out in nature",
+       "pt": "Ir para a natureza"
+      }
+     ],
+     "id": 6
+    },
+    {
+     "q": {
+      "es": "¿Qué te hace reír sin parar?",
+      "en": "What makes you laugh nonstop?",
+      "pt": "O que te faz rir sem parar?"
+     },
+     "a": [
+      {
+       "es": "Videos de animales",
+       "en": "Animal videos",
+       "pt": "Vídeos de animais"
+      },
+      {
+       "es": "Memes",
+       "en": "Memes",
+       "pt": "Memes"
+      },
+      {
+       "es": "Chistes malos",
+       "en": "Bad jokes",
+       "pt": "Piadas ruins"
+      },
+      {
+       "es": "Las caídas",
+       "en": "People falling over",
+       "pt": "Tombos"
+      }
+     ],
+     "id": 7
+    },
+    {
+     "q": {
+      "es": "¿Qué profesión tendrías en otra vida?",
+      "en": "What job would you have in another life?",
+      "pt": "Que profissão você teria em outra vida?"
+     },
+     "a": [
+      {
+       "es": "Artista",
+       "en": "Artist",
+       "pt": "Artista"
+      },
+      {
+       "es": "Médico/a",
+       "en": "Doctor",
+       "pt": "Médico"
+      },
+      {
+       "es": "Chef",
+       "en": "Chef",
+       "pt": "Chef"
+      },
+      {
+       "es": "Viajero/a",
+       "en": "Traveler",
+       "pt": "Viajante"
+      }
+     ],
+     "id": 8
+    },
+    {
+     "q": {
+      "es": "¿Cómo manejas el enojo?",
+      "en": "How do you handle anger?",
+      "pt": "Como você lida com a raiva?"
+     },
+     "a": [
+      {
+       "es": "Exploto y se me pasa",
+       "en": "I blow up and get over it",
+       "pt": "Explodo e passa"
+      },
+      {
+       "es": "Me callo",
+       "en": "I go quiet",
+       "pt": "Fico calado"
+      },
+      {
+       "es": "Lo hablo",
+       "en": "I talk it out",
+       "pt": "Converso sobre isso"
+      },
+      {
+       "es": "Salgo a caminar",
+       "en": "I go for a walk",
+       "pt": "Saio para caminhar"
+      }
+     ],
+     "id": 9
+    },
+    {
+     "q": {
+      "es": "¿Qué no puede faltar en tu mochila?",
+      "en": "What's always in your bag?",
+      "pt": "O que não pode faltar na sua mochila?"
+     },
+     "a": [
+      {
+       "es": "Auriculares",
+       "en": "Headphones",
+       "pt": "Fones de ouvido"
+      },
+      {
+       "es": "Cargador",
+       "en": "Charger",
+       "pt": "Carregador"
+      },
+      {
+       "es": "Algo para comer",
+       "en": "Something to eat",
+       "pt": "Algo para comer"
+      },
+      {
+       "es": "Perfume",
+       "en": "Perfume",
+       "pt": "Perfume"
+      }
+     ],
+     "id": 10
+    },
+    {
+     "q": {
+      "es": "¿Qué te da más nostalgia?",
+      "en": "What makes you most nostalgic?",
+      "pt": "O que te dá mais saudade?"
+     },
+     "a": [
+      {
+       "es": "Mi infancia",
+       "en": "My childhood",
+       "pt": "Minha infância"
+      },
+      {
+       "es": "Un viaje",
+       "en": "A trip",
+       "pt": "Uma viagem"
+      },
+      {
+       "es": "Un amor del pasado",
+       "en": "A past love",
+       "pt": "Um amor do passado"
+      },
+      {
+       "es": "Mis amigos de antes",
+       "en": "Old friends",
+       "pt": "Meus amigos de antes"
+      }
+     ],
+     "id": 11
+    },
+    {
+     "q": {
+      "es": "¿Qué tipo de regalo te gusta más?",
+      "en": "What kind of gift do you like best?",
+      "pt": "Que tipo de presente você mais gosta?"
+     },
+     "a": [
+      {
+       "es": "Algo hecho a mano",
+       "en": "Something handmade",
+       "pt": "Algo feito à mão"
+      },
+      {
+       "es": "Una experiencia",
+       "en": "An experience",
+       "pt": "Uma experiência"
+      },
+      {
+       "es": "Algo útil",
+       "en": "Something useful",
+       "pt": "Algo útil"
+      },
+      {
+       "es": "Una sorpresa",
+       "en": "A surprise",
+       "pt": "Uma surpresa"
+      }
+     ],
+     "id": 12
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu mayor sueño?",
+      "en": "What's your biggest dream?",
+      "pt": "Qual é seu maior sonho?"
+     },
+     "a": [
+      {
+       "es": "Viajar por el mundo",
+       "en": "Travel the world",
+       "pt": "Viajar pelo mundo"
+      },
+      {
+       "es": "Tener mi propio negocio",
+       "en": "Run my own business",
+       "pt": "Ter meu próprio negócio"
+      },
+      {
+       "es": "Formar una familia",
+       "en": "Start a family",
+       "pt": "Formar uma família"
+      },
+      {
+       "es": "Ser famoso/a",
+       "en": "Be famous",
+       "pt": "Ser famoso"
+      }
+     ],
+     "id": 13
+    },
+    {
+     "q": {
+      "es": "¿Cómo te describirían tus amigos?",
+      "en": "How would your friends describe you?",
+      "pt": "Como seus amigos te descreveriam?"
+     },
+     "a": [
+      {
+       "es": "Divertido/a",
+       "en": "Fun",
+       "pt": "Divertido"
+      },
+      {
+       "es": "Leal",
+       "en": "Loyal",
+       "pt": "Leal"
+      },
+      {
+       "es": "Despistado/a",
+       "en": "Absent-minded",
+       "pt": "Distraído"
+      },
+      {
+       "es": "Mandón/a",
+       "en": "Bossy",
+       "pt": "Mandão"
+      }
+     ],
+     "id": 14
+    },
+    {
+     "q": {
+      "es": "Si te enteras de un chisme, tú...",
+      "en": "If you hear some gossip, you...",
+      "pt": "Se você fica sabendo de uma fofoca, você..."
+     },
+     "a": [
+      {
+       "es": "Lo cuentas enseguida",
+       "en": "Tell someone right away",
+       "pt": "Conta na hora"
+      },
+      {
+       "es": "Lo guardas",
+       "en": "Keep it to yourself",
+       "pt": "Guarda para si"
+      },
+      {
+       "es": "Primero lo confirmas",
+       "en": "Check it first",
+       "pt": "Confirma primeiro"
+      },
+      {
+       "es": "Te haces el/la que no sabe",
+       "en": "Act like you don't know",
+       "pt": "Finge que não sabe"
+      }
+     ],
+     "id": 15
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "category": "spicy",
+   "premium": false,
+   "emoji": "😏",
+   "name": {
+    "es": "Coqueteo",
+    "en": "Flirting",
+    "pt": "Paquera"
+   },
+   "subtitle": {
+    "es": "Para empezar a subir la temperatura",
+    "en": "To start turning up the heat",
+    "pt": "Para começar a esquentar"
+   },
+   "questions": [
+    {
+     "q": {
+      "es": "¿Qué es lo primero que te atrae de alguien?",
+      "en": "What's the first thing that attracts you to someone?",
+      "pt": "O que primeiro te atrai em alguém?"
+     },
+     "a": [
+      {
+       "es": "La mirada",
+       "en": "Their eyes",
+       "pt": "O olhar"
+      },
+      {
+       "es": "La sonrisa",
+       "en": "Their smile",
+       "pt": "O sorriso"
+      },
+      {
+       "es": "La forma de hablar",
+       "en": "The way they talk",
+       "pt": "O jeito de falar"
+      },
+      {
+       "es": "El perfume",
+       "en": "Their scent",
+       "pt": "O perfume"
+      }
+     ],
+     "id": 1
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu forma favorita de coquetear?",
+      "en": "What's your favorite way to flirt?",
+      "pt": "Qual é seu jeito favorito de paquerar?"
+     },
+     "a": [
+      {
+       "es": "Con la mirada",
+       "en": "With a look",
+       "pt": "Com o olhar"
+      },
+      {
+       "es": "Con humor",
+       "en": "With humor",
+       "pt": "Com humor"
+      },
+      {
+       "es": "Con mensajes",
+       "en": "By text",
+       "pt": "Por mensagem"
+      },
+      {
+       "es": "Directo al grano",
+       "en": "Straight to the point",
+       "pt": "Direto ao ponto"
+      }
+     ],
+     "id": 2
+    },
+    {
+     "q": {
+      "es": "¿Qué mensaje te encantaría recibir a medianoche?",
+      "en": "Which message would you love to get at midnight?",
+      "pt": "Que mensagem você adoraria receber à meia-noite?"
+     },
+     "a": [
+      {
+       "es": "\"Te extraño\"",
+       "en": "\"I miss you\"",
+       "pt": "\"Saudade de você\""
+      },
+      {
+       "es": "\"¿Estás despierto/a?\"",
+       "en": "\"You up?\"",
+       "pt": "\"Tá acordado?\""
+      },
+      {
+       "es": "Una foto linda",
+       "en": "A cute photo",
+       "pt": "Uma foto bonita"
+      },
+      {
+       "es": "Una canción dedicada",
+       "en": "A song dedicated to me",
+       "pt": "Uma música dedicada"
+      }
+     ],
+     "id": 3
+    },
+    {
+     "q": {
+      "es": "¿Dónde prefieres un beso inesperado?",
+      "en": "Where do you prefer a surprise kiss?",
+      "pt": "Onde você prefere um beijo inesperado?"
+     },
+     "a": [
+      {
+       "es": "En el cuello",
+       "en": "On the neck",
+       "pt": "No pescoço"
+      },
+      {
+       "es": "En la frente",
+       "en": "On the forehead",
+       "pt": "Na testa"
+      },
+      {
+       "es": "En la mano",
+       "en": "On the hand",
+       "pt": "Na mão"
+      },
+      {
+       "es": "En los labios",
+       "en": "On the lips",
+       "pt": "Na boca"
+      }
+     ],
+     "id": 4
+    },
+    {
+     "q": {
+      "es": "¿Qué estilo de ropa te parece más atractivo en tu pareja?",
+      "en": "Which outfit style do you find most attractive on your partner?",
+      "pt": "Que estilo de roupa você acha mais atraente no seu par?"
+     },
+     "a": [
+      {
+       "es": "Camisa blanca",
+       "en": "A white shirt",
+       "pt": "Camisa branca"
+      },
+      {
+       "es": "Ropa deportiva",
+       "en": "Sportswear",
+       "pt": "Roupa esportiva"
+      },
+      {
+       "es": "Algo elegante",
+       "en": "Something elegant",
+       "pt": "Algo elegante"
+      },
+      {
+       "es": "Su pijama",
+       "en": "Their pajamas",
+       "pt": "O pijama"
+      }
+     ],
+     "id": 5
+    },
+    {
+     "q": {
+      "es": "¿Qué te pone más nervioso/a en una cita?",
+      "en": "What makes you most nervous on a date?",
+      "pt": "O que mais te deixa nervoso num encontro?"
+     },
+     "a": [
+      {
+       "es": "El primer beso",
+       "en": "The first kiss",
+       "pt": "O primeiro beijo"
+      },
+      {
+       "es": "Los silencios",
+       "en": "Awkward silences",
+       "pt": "Os silêncios"
+      },
+      {
+       "es": "Elegir qué ponerme",
+       "en": "Choosing what to wear",
+       "pt": "Escolher o que vestir"
+      },
+      {
+       "es": "La cuenta",
+       "en": "The bill",
+       "pt": "A conta"
+      }
+     ],
+     "id": 6
+    },
+    {
+     "q": {
+      "es": "¿Qué apodo cariñoso te encanta?",
+      "en": "Which pet name do you love?",
+      "pt": "Qual apelido carinhoso você adora?"
+     },
+     "a": [
+      {
+       "es": "Amor",
+       "en": "Love",
+       "pt": "Amor"
+      },
+      {
+       "es": "Bebé",
+       "en": "Baby",
+       "pt": "Bebê"
+      },
+      {
+       "es": "Cielo",
+       "en": "Sweetheart",
+       "pt": "Meu bem"
+      },
+      {
+       "es": "Mi nombre, bien dicho",
+       "en": "Just my name, said right",
+       "pt": "Meu nome, bem dito"
+      }
+     ],
+     "id": 7
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu plan ideal para una noche romántica?",
+      "en": "What's your ideal romantic night plan?",
+      "pt": "Qual é seu plano ideal para uma noite romântica?"
+     },
+     "a": [
+      {
+       "es": "Cena con velas",
+       "en": "Candlelit dinner",
+       "pt": "Jantar à luz de velas"
+      },
+      {
+       "es": "Película abrazados",
+       "en": "Cuddling over a movie",
+       "pt": "Filme agarradinhos"
+      },
+      {
+       "es": "Salir a bailar",
+       "en": "Going dancing",
+       "pt": "Sair para dançar"
+      },
+      {
+       "es": "Una escapada sorpresa",
+       "en": "A surprise getaway",
+       "pt": "Uma escapada surpresa"
+      }
+     ],
+     "id": 8
+    },
+    {
+     "q": {
+      "es": "¿Qué tan celoso/a eres?",
+      "en": "How jealous are you?",
+      "pt": "O quanto você é ciumento?"
+     },
+     "a": [
+      {
+       "es": "Nada",
+       "en": "Not at all",
+       "pt": "Nada"
+      },
+      {
+       "es": "Un poquito",
+       "en": "A little",
+       "pt": "Um pouquinho"
+      },
+      {
+       "es": "Bastante",
+       "en": "Quite a bit",
+       "pt": "Bastante"
+      },
+      {
+       "es": "Mucho, pero lo disimulo",
+       "en": "Very, but I hide it",
+       "pt": "Muito, mas disfarço"
+      }
+     ],
+     "id": 9
+    },
+    {
+     "q": {
+      "es": "¿Qué te parece más sexy?",
+      "en": "What do you find sexiest?",
+      "pt": "O que você acha mais sexy?"
+     },
+     "a": [
+      {
+       "es": "La inteligencia",
+       "en": "Intelligence",
+       "pt": "Inteligência"
+      },
+      {
+       "es": "El sentido del humor",
+       "en": "A sense of humor",
+       "pt": "Senso de humor"
+      },
+      {
+       "es": "La seguridad",
+       "en": "Confidence",
+       "pt": "Confiança"
+      },
+      {
+       "es": "La ternura",
+       "en": "Tenderness",
+       "pt": "Carinho"
+      }
+     ],
+     "id": 10
+    },
+    {
+     "q": {
+      "es": "Si te dedican una canción, prefieres que sea...",
+      "en": "If someone dedicates a song to you, you'd want it to be...",
+      "pt": "Se dedicarem uma música para você, prefere que seja..."
+     },
+     "a": [
+      {
+       "es": "Romántica",
+       "en": "Romantic",
+       "pt": "Romântica"
+      },
+      {
+       "es": "Divertida",
+       "en": "Fun",
+       "pt": "Divertida"
+      },
+      {
+       "es": "Sensual",
+       "en": "Sensual",
+       "pt": "Sensual"
+      },
+      {
+       "es": "\"Nuestra canción\"",
+       "en": "\"Our song\"",
+       "pt": "\"Nossa música\""
+      }
+     ],
+     "id": 11
+    },
+    {
+     "q": {
+      "es": "¿Cuánto tardas en responder a alguien que te gusta?",
+      "en": "How long do you take to reply to someone you like?",
+      "pt": "Quanto tempo você demora para responder alguém de quem gosta?"
+     },
+     "a": [
+      {
+       "es": "Al instante",
+       "en": "Instantly",
+       "pt": "Na hora"
+      },
+      {
+       "es": "Unos minutos, para disimular",
+       "en": "A few minutes, to play it cool",
+       "pt": "Alguns minutos, para disfarçar"
+      },
+      {
+       "es": "Horas",
+       "en": "Hours",
+       "pt": "Horas"
+      },
+      {
+       "es": "Depende del mensaje",
+       "en": "Depends on the message",
+       "pt": "Depende da mensagem"
+      }
+     ],
+     "id": 12
+    },
+    {
+     "q": {
+      "es": "¿Qué parte de una cita disfrutas más?",
+      "en": "Which part of a date do you enjoy most?",
+      "pt": "Que parte de um encontro você curte mais?"
+     },
+     "a": [
+      {
+       "es": "La previa",
+       "en": "The build-up",
+       "pt": "A expectativa"
+      },
+      {
+       "es": "La charla",
+       "en": "The conversation",
+       "pt": "A conversa"
+      },
+      {
+       "es": "El final de la noche",
+       "en": "The end of the night",
+       "pt": "O fim da noite"
+      },
+      {
+       "es": "El mensaje del día siguiente",
+       "en": "The text the next day",
+       "pt": "A mensagem no dia seguinte"
+      }
+     ],
+     "id": 13
+    },
+    {
+     "q": {
+      "es": "¿Qué te enamora más?",
+      "en": "What makes you fall in love the most?",
+      "pt": "O que mais te apaixona?"
+     },
+     "a": [
+      {
+       "es": "Los detalles",
+       "en": "Little gestures",
+       "pt": "Os detalhes"
+      },
+      {
+       "es": "Las palabras",
+       "en": "Words",
+       "pt": "As palavras"
+      },
+      {
+       "es": "Los abrazos",
+       "en": "Hugs",
+       "pt": "Os abraços"
+      },
+      {
+       "es": "El tiempo juntos",
+       "en": "Time together",
+       "pt": "O tempo juntos"
+      }
+     ],
+     "id": 14
+    },
+    {
+     "q": {
+      "es": "¿Quién debería dar el primer paso?",
+      "en": "Who should make the first move?",
+      "pt": "Quem deveria dar o primeiro passo?"
+     },
+     "a": [
+      {
+       "es": "Yo",
+       "en": "Me",
+       "pt": "Eu"
+      },
+      {
+       "es": "La otra persona",
+       "en": "The other person",
+       "pt": "A outra pessoa"
+      },
+      {
+       "es": "El que se anime",
+       "en": "Whoever dares",
+       "pt": "Quem tiver coragem"
+      },
+      {
+       "es": "Nos miramos y listo",
+       "en": "We just look at each other and go",
+       "pt": "A gente se olha e pronto"
+      }
+     ],
+     "id": 15
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "category": "spicy",
+   "premium": true,
+   "emoji": "🔥",
+   "name": {
+    "es": "Química",
+    "en": "Chemistry",
+    "pt": "Química"
+   },
+   "subtitle": {
+    "es": "Para parejas con confianza",
+    "en": "For couples who trust each other",
+    "pt": "Para casais com intimidade"
+   },
+   "questions": [
+    {
+     "q": {
+      "es": "¿En qué momento del día te sientes más romántico/a?",
+      "en": "When during the day do you feel most romantic?",
+      "pt": "Em que momento do dia você se sente mais romântico?"
+     },
+     "a": [
+      {
+       "es": "Al despertar",
+       "en": "When I wake up",
+       "pt": "Ao acordar"
+      },
+      {
+       "es": "A la tarde",
+       "en": "In the afternoon",
+       "pt": "À tarde"
+      },
+      {
+       "es": "A la noche",
+       "en": "At night",
+       "pt": "À noite"
+      },
+      {
+       "es": "De madrugada",
+       "en": "Late at night",
+       "pt": "De madrugada"
+      }
+     ],
+     "id": 1
+    },
+    {
+     "q": {
+      "es": "¿Qué tipo de besos prefieres?",
+      "en": "What kind of kisses do you prefer?",
+      "pt": "Que tipo de beijo você prefere?"
+     },
+     "a": [
+      {
+       "es": "Tiernos",
+       "en": "Sweet",
+       "pt": "Carinhosos"
+      },
+      {
+       "es": "Apasionados",
+       "en": "Passionate",
+       "pt": "Apaixonados"
+      },
+      {
+       "es": "Juguetones",
+       "en": "Playful",
+       "pt": "Brincalhões"
+      },
+      {
+       "es": "Largos y lentos",
+       "en": "Long and slow",
+       "pt": "Longos e lentos"
+      }
+     ],
+     "id": 2
+    },
+    {
+     "q": {
+      "es": "¿Luces prendidas o apagadas?",
+      "en": "Lights on or off?",
+      "pt": "Luz acesa ou apagada?"
+     },
+     "a": [
+      {
+       "es": "Prendidas",
+       "en": "On",
+       "pt": "Acesa"
+      },
+      {
+       "es": "Apagadas",
+       "en": "Off",
+       "pt": "Apagada"
+      },
+      {
+       "es": "Velas",
+       "en": "Candles",
+       "pt": "Velas"
+      },
+      {
+       "es": "Luces de colores",
+       "en": "Colored lights",
+       "pt": "Luzes coloridas"
+      }
+     ],
+     "id": 3
+    },
+    {
+     "q": {
+      "es": "¿Qué perfume en tu pareja te vuelve loco/a?",
+      "en": "Which scent on your partner drives you crazy?",
+      "pt": "Que perfume no seu par te deixa louco?"
+     },
+     "a": [
+      {
+       "es": "Dulce",
+       "en": "Sweet",
+       "pt": "Doce"
+      },
+      {
+       "es": "Cítrico",
+       "en": "Citrus",
+       "pt": "Cítrico"
+      },
+      {
+       "es": "Amaderado",
+       "en": "Woody",
+       "pt": "Amadeirado"
+      },
+      {
+       "es": "Su olor natural",
+       "en": "Their natural scent",
+       "pt": "O cheiro natural"
+      }
+     ],
+     "id": 4
+    },
+    {
+     "q": {
+      "es": "¿Te animarías a un juego de roles?",
+      "en": "Would you try role-play?",
+      "pt": "Você toparia um jogo de papéis?"
+     },
+     "a": [
+      {
+       "es": "Me encantaría",
+       "en": "I'd love to",
+       "pt": "Adoraria"
+      },
+      {
+       "es": "Me da curiosidad",
+       "en": "I'm curious",
+       "pt": "Tenho curiosidade"
+      },
+      {
+       "es": "Solo si lo propone mi pareja",
+       "en": "Only if my partner suggests it",
+       "pt": "Só se meu par propuser"
+      },
+      {
+       "es": "Prefiero que no",
+       "en": "I'd rather not",
+       "pt": "Prefiro não"
+      }
+     ],
+     "id": 5
+    },
+    {
+     "q": {
+      "es": "¿Qué plan te parece más atrevido?",
+      "en": "Which plan sounds most daring to you?",
+      "pt": "Que plano parece mais ousado para você?"
+     },
+     "a": [
+      {
+       "es": "Mensajes subidos de tono",
+       "en": "Steamy texting",
+       "pt": "Mensagens picantes"
+      },
+      {
+       "es": "Un baile privado",
+       "en": "A private dance",
+       "pt": "Uma dança particular"
+      },
+      {
+       "es": "Un baño de espuma juntos",
+       "en": "A bubble bath together",
+       "pt": "Um banho de espuma juntos"
+      },
+      {
+       "es": "Un masaje con aceites",
+       "en": "An oil massage",
+       "pt": "Uma massagem com óleo"
+      }
+     ],
+     "id": 6
+    },
+    {
+     "q": {
+      "es": "¿Dónde te gustaría recibir un masaje?",
+      "en": "Where would you like a massage?",
+      "pt": "Onde você gostaria de receber uma massagem?"
+     },
+     "a": [
+      {
+       "es": "En el cuello",
+       "en": "Neck",
+       "pt": "No pescoço"
+      },
+      {
+       "es": "En la espalda",
+       "en": "Back",
+       "pt": "Nas costas"
+      },
+      {
+       "es": "En los pies",
+       "en": "Feet",
+       "pt": "Nos pés"
+      },
+      {
+       "es": "En las manos",
+       "en": "Hands",
+       "pt": "Nas mãos"
+      }
+     ],
+     "id": 7
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu fantasía de escapada?",
+      "en": "What's your dream getaway?",
+      "pt": "Qual é sua fantasia de escapada?"
+     },
+     "a": [
+      {
+       "es": "Una cabaña en la montaña",
+       "en": "A mountain cabin",
+       "pt": "Um chalé na montanha"
+      },
+      {
+       "es": "Un hotel de lujo",
+       "en": "A luxury hotel",
+       "pt": "Um hotel de luxo"
+      },
+      {
+       "es": "Una playa desierta",
+       "en": "A deserted beach",
+       "pt": "Uma praia deserta"
+      },
+      {
+       "es": "Una ciudad desconocida",
+       "en": "A city we don't know",
+       "pt": "Uma cidade desconhecida"
+      }
+     ],
+     "id": 8
+    },
+    {
+     "q": {
+      "es": "¿Qué piensas de las relaciones abiertas?",
+      "en": "What do you think about open relationships?",
+      "pt": "O que você acha de relacionamentos abertos?"
+     },
+     "a": [
+      {
+       "es": "No son para mí",
+       "en": "Not for me",
+       "pt": "Não são para mim"
+      },
+      {
+       "es": "Me dan curiosidad",
+       "en": "I'm curious",
+       "pt": "Tenho curiosidade"
+      },
+      {
+       "es": "Me gustaría probar",
+       "en": "I'd like to try",
+       "pt": "Gostaria de experimentar"
+      },
+      {
+       "es": "Me moriría de celos",
+       "en": "I'd die of jealousy",
+       "pt": "Morreria de ciúmes"
+      }
+     ],
+     "id": 9
+    },
+    {
+     "q": {
+      "es": "¿Qué es lo más romántico que hiciste por alguien?",
+      "en": "What's the most romantic thing you've done for someone?",
+      "pt": "Qual foi a coisa mais romântica que você fez por alguém?"
+     },
+     "a": [
+      {
+       "es": "Una sorpresa",
+       "en": "A surprise",
+       "pt": "Uma surpresa"
+      },
+      {
+       "es": "Una carta",
+       "en": "A letter",
+       "pt": "Uma carta"
+      },
+      {
+       "es": "Un viaje",
+       "en": "A trip",
+       "pt": "Uma viagem"
+      },
+      {
+       "es": "Una serenata",
+       "en": "A serenade",
+       "pt": "Uma serenata"
+      }
+     ],
+     "id": 10
+    },
+    {
+     "q": {
+      "es": "¿Cuál es tu momento favorito para estar a solas con tu pareja?",
+      "en": "What's your favorite time to be alone with your partner?",
+      "pt": "Qual é seu momento favorito para ficar a sós com seu par?"
+     },
+     "a": [
+      {
+       "es": "A la mañana",
+       "en": "Morning",
+       "pt": "De manhã"
+      },
+      {
+       "es": "A la tarde",
+       "en": "Afternoon",
+       "pt": "À tarde"
+      },
+      {
+       "es": "A la noche",
+       "en": "Night",
+       "pt": "À noite"
+      },
+      {
+       "es": "De madrugada",
+       "en": "The small hours",
+       "pt": "De madrugada"
+      }
+     ],
+     "id": 11
+    },
+    {
+     "q": {
+      "es": "Si tu pareja te manda una foto atrevida, tú...",
+      "en": "If your partner sends you a daring photo, you...",
+      "pt": "Se seu par te manda uma foto ousada, você..."
+     },
+     "a": [
+      {
+       "es": "Respondes con otra",
+       "en": "Send one back",
+       "pt": "Responde com outra"
+      },
+      {
+       "es": "Te pones colorado/a",
+       "en": "Blush",
+       "pt": "Fica vermelho"
+      },
+      {
+       "es": "La guardas bajo llave",
+       "en": "Keep it under lock and key",
+       "pt": "Guarda a sete chaves"
+      },
+      {
+       "es": "Llamas al instante",
+       "en": "Call right away",
+       "pt": "Liga na hora"
+      }
+     ],
+     "id": 12
+    },
+    {
+     "q": {
+      "es": "¿Qué música elegirías para una noche especial?",
+      "en": "What music would you pick for a special night?",
+      "pt": "Que música você escolheria para uma noite especial?"
+     },
+     "a": [
+      {
+       "es": "R&B",
+       "en": "R&B",
+       "pt": "R&B"
+      },
+      {
+       "es": "Baladas",
+       "en": "Ballads",
+       "pt": "Baladas românticas"
+      },
+      {
+       "es": "Reggaetón",
+       "en": "Reggaeton",
+       "pt": "Reggaeton"
+      },
+      {
+       "es": "Jazz",
+       "en": "Jazz",
+       "pt": "Jazz"
+      }
+     ],
+     "id": 13
+    },
+    {
+     "q": {
+      "es": "¿Qué tan aventurero/a eres en la intimidad?",
+      "en": "How adventurous are you in private?",
+      "pt": "O quanto você é aventureiro na intimidade?"
+     },
+     "a": [
+      {
+       "es": "Muy clásico/a",
+       "en": "Very classic",
+       "pt": "Bem clássico"
+      },
+      {
+       "es": "Me gusta probar cosas",
+       "en": "I like trying things",
+       "pt": "Gosto de experimentar"
+      },
+      {
+       "es": "Bastante aventurero/a",
+       "en": "Quite adventurous",
+       "pt": "Bem aventureiro"
+      },
+      {
+       "es": "Depende del día",
+       "en": "Depends on the day",
+       "pt": "Depende do dia"
+      }
+     ],
+     "id": 14
+    },
+    {
+     "q": {
+      "es": "¿Qué gesto te derrite?",
+      "en": "Which gesture melts you?",
+      "pt": "Que gesto te derrete?"
+     },
+     "a": [
+      {
+       "es": "Un abrazo por la espalda",
+       "en": "A hug from behind",
+       "pt": "Um abraço por trás"
+      },
+      {
+       "es": "Que me acaricien el pelo",
+       "en": "Someone playing with my hair",
+       "pt": "Cafuné"
+      },
+      {
+       "es": "Una mirada fija",
+       "en": "A long look",
+       "pt": "Um olhar fixo"
+      },
+      {
+       "es": "Un susurro al oído",
+       "en": "A whisper in my ear",
+       "pt": "Um sussurro no ouvido"
+      }
+     ],
+     "id": 15
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "category": "spicy",
+   "premium": true,
+   "emoji": "🌶️",
+   "name": {
+    "es": "Atrevidos",
+    "en": "Daring",
+    "pt": "Ousados"
+   },
+   "subtitle": {
+    "es": "Solo para valientes",
+    "en": "Only for the brave",
+    "pt": "Só para corajosos"
+   },
+   "questions": [
+    {
+     "q": {
+      "es": "¿Cuál es el lugar más atrevido donde diste un beso apasionado?",
+      "en": "What's the boldest place you've had a passionate kiss?",
+      "pt": "Qual o lugar mais ousado onde você deu um beijo apaixonado?"
+     },
+     "a": [
+      {
+       "es": "En el cine",
+       "en": "At the movies",
+       "pt": "No cinema"
+      },
+      {
+       "es": "En la playa",
+       "en": "At the beach",
+       "pt": "Na praia"
+      },
+      {
+       "es": "En un ascensor",
+       "en": "In an elevator",
+       "pt": "No elevador"
+      },
+      {
+       "es": "En una fiesta",
+       "en": "At a party",
+       "pt": "Numa festa"
+      }
+     ],
+     "id": 1
+    },
+    {
+     "q": {
+      "es": "¿Qué tan lejos llegas en verdad o reto?",
+      "en": "How far do you go in truth or dare?",
+      "pt": "Até onde você vai no verdade ou desafio?"
+     },
+     "a": [
+      {
+       "es": "Solo verdades",
+       "en": "Truths only",
+       "pt": "Só verdades"
+      },
+      {
+       "es": "Retos suaves",
+       "en": "Mild dares",
+       "pt": "Desafios leves"
+      },
+      {
+       "es": "Cualquier reto",
+       "en": "Any dare",
+       "pt": "Qualquer desafio"
+      },
+      {
+       "es": "Hasta donde dé",
+       "en": "As far as it goes",
+       "pt": "Até onde der"
+      }
+     ],
+     "id": 2
+    },
+    {
+     "q": {
+      "es": "¿Qué disfraz te gustaría ver en tu pareja?",
+      "en": "Which costume would you like to see on your partner?",
+      "pt": "Que fantasia você gostaria de ver no seu par?"
+     },
+     "a": [
+      {
+       "es": "Superhéroe",
+       "en": "Superhero",
+       "pt": "Super-herói"
+      },
+      {
+       "es": "Policía",
+       "en": "Police officer",
+       "pt": "Policial"
+      },
+      {
+       "es": "Pirata",
+       "en": "Pirate",
+       "pt": "Pirata"
+      },
+      {
+       "es": "Algo de gala",
+       "en": "Something black-tie",
+       "pt": "Algo de gala"
+      }
+     ],
+     "id": 3
+    },
+    {
+     "q": {
+      "es": "¿Qué mensajes te gusta recibir cuando están lejos?",
+      "en": "What messages do you like getting when you're apart?",
+      "pt": "Que mensagens você gosta de receber quando estão longe?"
+     },
+     "a": [
+      {
+       "es": "Románticos",
+       "en": "Romantic",
+       "pt": "Românticas"
+      },
+      {
+       "es": "Picantes",
+       "en": "Spicy",
+       "pt": "Picantes"
+      },
+      {
+       "es": "Divertidos",
+       "en": "Funny",
+       "pt": "Divertidas"
+      },
+      {
+       "es": "Audios larguísimos",
+       "en": "Super long voice notes",
+       "pt": "Áudios enormes"
+      }
+     ],
+     "id": 4
+    },
+    {
+     "q": {
+      "es": "¿Alguna vez mandaste un mensaje atrevido a la persona equivocada?",
+      "en": "Have you ever sent a daring message to the wrong person?",
+      "pt": "Você já mandou uma mensagem ousada para a pessoa errada?"
+     },
+     "a": [
+      {
+       "es": "Sí, qué vergüenza",
+       "en": "Yes, so embarrassing",
+       "pt": "Sim, que vergonha"
+      },
+      {
+       "es": "Casi",
+       "en": "Almost",
+       "pt": "Quase"
+      },
+      {
+       "es": "Nunca",
+       "en": "Never",
+       "pt": "Nunca"
+      },
+      {
+       "es": "Prefiero no responder",
+       "en": "I'd rather not say",
+       "pt": "Prefiro não responder"
+      }
+     ],
+     "id": 5
+    },
+    {
+     "q": {
+      "es": "¿Qué te gustaría que tu pareja te susurre al oído?",
+      "en": "What would you like your partner to whisper in your ear?",
+      "pt": "O que você gostaria que seu par sussurrasse no seu ouvido?"
+     },
+     "a": [
+      {
+       "es": "\"Te amo\"",
+       "en": "\"I love you\"",
+       "pt": "\"Eu te amo\""
+      },
+      {
+       "es": "Un secreto",
+       "en": "A secret",
+       "pt": "Um segredo"
+      },
+      {
+       "es": "El plan de esta noche",
+       "en": "Tonight's plan",
+       "pt": "O plano desta noite"
+      },
+      {
+       "es": "Un piropo atrevido",
+       "en": "A cheeky compliment",
+       "pt": "Um elogio ousado"
+      }
+     ],
+     "id": 6
+    },
+    {
+     "q": {
+      "es": "¿Cuánto aguantas sin un beso de tu pareja?",
+      "en": "How long can you go without a kiss from your partner?",
+      "pt": "Quanto tempo você aguenta sem um beijo do seu par?"
+     },
+     "a": [
+      {
+       "es": "Un día",
+       "en": "A day",
+       "pt": "Um dia"
+      },
+      {
+       "es": "Una semana",
+       "en": "A week",
+       "pt": "Uma semana"
+      },
+      {
+       "es": "Un mes",
+       "en": "A month",
+       "pt": "Um mês"
+      },
+      {
+       "es": "Ni una hora",
+       "en": "Not even an hour",
+       "pt": "Nem uma hora"
+      }
+     ],
+     "id": 7
+    },
+    {
+     "q": {
+      "es": "Para una noche juntos, prefieres algo...",
+      "en": "For a night together, you prefer something...",
+      "pt": "Para uma noite juntos, você prefere algo..."
+     },
+     "a": [
+      {
+       "es": "Tranquilo",
+       "en": "Calm",
+       "pt": "Tranquilo"
+      },
+      {
+       "es": "Intenso",
+       "en": "Intense",
+       "pt": "Intenso"
+      },
+      {
+       "es": "Espontáneo",
+       "en": "Spontaneous",
+       "pt": "Espontâneo"
+      },
+      {
+       "es": "Bien planeado",
+       "en": "Well planned",
+       "pt": "Bem planejado"
+      }
+     ],
+     "id": 8
+    },
+    {
+     "q": {
+      "es": "¿Te animarías a hacerle un baile sensual a tu pareja?",
+      "en": "Would you do a sensual dance for your partner?",
+      "pt": "Você toparia fazer uma dança sensual para seu par?"
+     },
+     "a": [
+      {
+       "es": "Ya lo hice",
+       "en": "Already have",
+       "pt": "Já fiz"
+      },
+      {
+       "es": "Sí, con práctica",
+       "en": "Yes, with practice",
+       "pt": "Sim, com treino"
+      },
+      {
+       "es": "Con las luces apagadas",
+       "en": "With the lights off",
+       "pt": "Com a luz apagada"
+      },
+      {
+       "es": "Jamás",
+       "en": "Never",
+       "pt": "Jamais"
+      }
+     ],
+     "id": 9
+    },
+    {
+     "q": {
+      "es": "¿Qué te da más vergüenza?",
+      "en": "What embarrasses you the most?",
+      "pt": "O que te dá mais vergonha?"
+     },
+     "a": [
+      {
+       "es": "Que me vean bailando",
+       "en": "Being seen dancing",
+       "pt": "Me verem dançando"
+      },
+      {
+       "es": "Que lean mis mensajes",
+       "en": "Someone reading my messages",
+       "pt": "Lerem minhas mensagens"
+      },
+      {
+       "es": "Que me escuchen cantar",
+       "en": "Being heard singing",
+       "pt": "Me ouvirem cantar"
+      },
+      {
+       "es": "Que me descubran mirando",
+       "en": "Getting caught staring",
+       "pt": "Me pegarem olhando"
+      }
+     ],
+     "id": 10
+    },
+    {
+     "q": {
+      "es": "¿Qué usas para dormir?",
+      "en": "What do you wear to bed?",
+      "pt": "O que você usa para dormir?"
+     },
+     "a": [
+      {
+       "es": "Pijama",
+       "en": "Pajamas",
+       "pt": "Pijama"
+      },
+      {
+       "es": "Una camiseta grande",
+       "en": "A big T-shirt",
+       "pt": "Uma camiseta grande"
+      },
+      {
+       "es": "Lo menos posible",
+       "en": "As little as possible",
+       "pt": "O mínimo possível"
+      },
+      {
+       "es": "Ropa interior linda",
+       "en": "Nice underwear",
+       "pt": "Uma lingerie bonita"
+      }
+     ],
+     "id": 11
+    },
+    {
+     "q": {
+      "es": "¿Qué harías con una noche de hotel gratis?",
+      "en": "What would you do with a free hotel night?",
+      "pt": "O que você faria com uma noite de hotel grátis?"
+     },
+     "a": [
+      {
+       "es": "Dormir como nunca",
+       "en": "Sleep like never before",
+       "pt": "Dormir como nunca"
+      },
+      {
+       "es": "Cena y spa",
+       "en": "Dinner and spa",
+       "pt": "Jantar e spa"
+      },
+      {
+       "es": "Una noche muy romántica",
+       "en": "A very romantic night",
+       "pt": "Uma noite bem romântica"
+      },
+      {
+       "es": "Fiesta en la habitación",
+       "en": "Room party",
+       "pt": "Festa no quarto"
+      }
+     ],
+     "id": 12
+    },
+    {
+     "q": {
+      "es": "¿Qué beso te desarma?",
+      "en": "Which kiss disarms you?",
+      "pt": "Que beijo te desmonta?"
+     },
+     "a": [
+      {
+       "es": "En el cuello",
+       "en": "On the neck",
+       "pt": "No pescoço"
+      },
+      {
+       "es": "En la frente",
+       "en": "On the forehead",
+       "pt": "Na testa"
+      },
+      {
+       "es": "Uno sorpresa por la espalda",
+       "en": "A surprise one from behind",
+       "pt": "Um de surpresa por trás"
+      },
+      {
+       "es": "Uno largo bajo la lluvia",
+       "en": "A long one in the rain",
+       "pt": "Um longo na chuva"
+      }
+     ],
+     "id": 13
+    },
+    {
+     "q": {
+      "es": "Si tu pareja te diera permiso, ¿con qué famoso tendrías una cita?",
+      "en": "If your partner allowed it, which celebrity would you date?",
+      "pt": "Se seu par deixasse, com que famoso você sairia?"
+     },
+     "a": [
+      {
+       "es": "Un actor o actriz",
+       "en": "An actor or actress",
+       "pt": "Um ator ou atriz"
+      },
+      {
+       "es": "Un músico o cantante",
+       "en": "A musician or singer",
+       "pt": "Um músico ou cantor"
+      },
+      {
+       "es": "Un deportista",
+       "en": "An athlete",
+       "pt": "Um atleta"
+      },
+      {
+       "es": "Ninguno, solo tengo ojos para mi pareja",
+       "en": "Nobody, I only have eyes for my partner",
+       "pt": "Ninguém, só tenho olhos para meu par"
+      }
+     ],
+     "id": 14
+    },
+    {
+     "q": {
+      "es": "¿Qué tan bien guardas los secretos de pareja?",
+      "en": "How well do you keep couple secrets?",
+      "pt": "O quanto você guarda segredos do casal?"
+     },
+     "a": [
+      {
+       "es": "Soy una tumba",
+       "en": "I'm a vault",
+       "pt": "Sou um túmulo"
+      },
+      {
+       "es": "Se lo cuento a mi mejor amigo/a",
+       "en": "I tell my best friend",
+       "pt": "Conto para meu melhor amigo"
+      },
+      {
+       "es": "Se me escapan",
+       "en": "They slip out",
+       "pt": "Eles escapam"
+      },
+      {
+       "es": "Depende del secreto",
+       "en": "Depends on the secret",
+       "pt": "Depende do segredo"
+      }
+     ],
+     "id": 15
+    }
+   ]
+  }
+ ]
+}

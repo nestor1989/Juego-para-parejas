@@ -3,59 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.android.vending.BILLING" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Para abrir WhatsApp directamente al compartir un desafío (Android 11+). -->
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
 
     <application
+        android:name=".App"
         android:allowBackup="true"
-        android:icon="@drawable/doscorazonesmdpi"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".Juegoparaparejasaddapp"
-        android:roundIcon="@drawable/doscorazonesmdpi"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JuegoParaParejas">
 
-        <activity android:name=".OnboardingActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".seleccionarAdultos"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".Respuestas"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".doceRespuestas"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".jugadorDos"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".docePreguntas"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".seleccionarActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".secondActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".turnoDeJugUno"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!-- Links de desafío: https://<dominio>/j/#<código> (Android App Links) -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="${challengeHost}" />
+                <data android:pathPrefix="/j" />
+            </intent-filter>
+
+            <!-- Respaldo desde la página web: juegoparejas://j?c=<código> -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="j"
+                    android:scheme="juegoparejas" />
+            </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4930505659937183~7538072185"/>
+            android:value="ca-app-pub-4930505659937183~7538072185" />
+
+        <!-- AdMob y Firebase Analytics declaran la misma propiedad con distinto recurso;
+             se usa la de AdMob (igual que en la 3.x). -->
         <property
             android:name="android.adservices.AD_SERVICES_CONFIG"
             android:resource="@xml/gma_ad_services_config"
             tools:replace="android:resource" />
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Te desafiaron · Juego para Parejas</title>
+<meta property="og:title" content="¿Cuánto me conoces? 💘">
+<meta property="og:description" content="Adivina mis respuestas en Juego para Parejas.">
+<meta property="og:image" content="og.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#E01B58">
+<style>
+  :root { --pink:#E01B58; --purple:#7D41D3; --ink:#2B1220; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         color:#fff; background: linear-gradient(135deg, var(--pink), var(--purple));
+         display:flex; align-items:center; justify-content:center; padding:24px 16px; }
+  main { width:100%; max-width:420px; text-align:center; }
+  .emoji { font-size:72px; line-height:1; margin-bottom:16px; }
+  h1 { font-size:28px; margin:0 0 12px; }
+  p { font-size:17px; line-height:1.45; margin:0 0 28px; opacity:.92; }
+  a.btn { display:block; width:100%; padding:16px 20px; border-radius:28px; font-size:17px; font-weight:600;
+          text-decoration:none; margin-bottom:12px; }
+  .primary { background:#fff; color:var(--pink); }
+  .secondary { border:1.5px solid #fff; color:#fff; }
+  small { display:block; margin-top:16px; opacity:.8; font-size:13px; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="emoji">💌</div>
+  <h1 id="title">Te desafiaron</h1>
+  <p id="body">Adivina las respuestas de tu pareja o amigo/a en Juego para Parejas y descubran cuánto se conocen.</p>
+  <a id="open" class="btn primary" href="#">Abrir el desafío</a>
+  <a id="store" class="btn secondary" href="#">Descargar gratis en Google Play</a>
+  <small id="note" class="hidden">El juego está disponible para Android.</small>
+</main>
+<script>
+(function () {
+  var PKG = "com.idea3d.juegoparaparejas";
+  var PLAY = "https://play.google.com/store/apps/details?id=" + PKG;
+  var T = {
+    es: { title: "Te desafiaron", body: "Adivina las respuestas de tu pareja o amigo/a en Juego para Parejas y descubran cuánto se conocen.",
+          open: "Abrir el desafío", store: "Descargar gratis en Google Play", note: "El juego está disponible para Android." },
+    pt: { title: "Você foi desafiado", body: "Adivinhe as respostas do seu amor ou amigo no Jogo para Casais e descubram o quanto se conhecem.",
+          open: "Abrir o desafio", store: "Baixar grátis no Google Play", note: "O jogo está disponível para Android." },
+    en: { title: "You've been challenged", body: "Guess your partner's or friend's answers in Couples Quiz and find out how well you know each other.",
+          open: "Open the challenge", store: "Get it free on Google Play", note: "The game is available for Android." }
+  };
+  var lang = (navigator.language || "es").slice(0, 2);
+  var t = T[lang] || T.en;
+  document.documentElement.lang = lang;
+  document.getElementById("title").textContent = t.title;
+  document.getElementById("body").textContent = t.body;
+  document.getElementById("open").textContent = t.open;
+  document.getElementById("store").textContent = t.store;
+  document.getElementById("note").textContent = t.note;
+
+  function readCode() {
+    var hash = (location.hash || "").replace(/^#/, "");
+    var query = new URLSearchParams(location.search).get("c") || "";
+    var code = hash || query;
+    return /^[A-Za-z0-9_-]{8,200}$/.test(code) ? code : "";
+  }
+
+  var code = readCode();
+  var referrer = "utm_source=desafio&utm_medium=link" + (code ? "&c=" + code : "");
+  var storeUrl = PLAY + "&referrer=" + encodeURIComponent(referrer);
+  var isAndroid = /Android/i.test(navigator.userAgent);
+
+  document.getElementById("store").href = storeUrl;
+  var open = document.getElementById("open");
+  if (isAndroid && code) {
+    // Si la app está instalada la abre en el desafío; si no, Chrome va a Play con el código en el referrer.
+    open.href = "intent://j?c=" + code + "#Intent;scheme=juegoparejas;package=" + PKG +
+      ";S.browser_fallback_url=" + encodeURIComponent(storeUrl) + ";end";
+  } else {
+    open.classList.add("hidden");
+    if (!isAndroid) document.getElementById("note").classList.remove("hidden");
+  }
+})();
+</script>
+</body>
+</html>

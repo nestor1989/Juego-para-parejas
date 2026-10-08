@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Juego para Parejas</string>
+
+    <string name="home_title">¿Cuánto me conoces?</string>
+    <string name="home_subtitle">El juego de preguntas para parejas y amigos</string>
+    <string name="home_play_local">Jugar en este celular</string>
+    <string name="home_play_local_hint">Se pasan el teléfono, sin internet</string>
+    <string name="home_play_remote">Jugar a distancia</string>
+    <string name="home_play_remote_hint">Envía un desafío por WhatsApp</string>
+    <string name="home_how_to">¿Cómo se juega?</string>
+    <string name="home_premium">Premium de por vida</string>
+    <string name="home_premium_active">Premium activo</string>
+
+    <string name="back">Volver</string>
+    <string name="continue_">Continuar</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="setup_title_local">¿Quiénes juegan?</string>
+    <string name="setup_title_remote">Desafío a distancia</string>
+    <string name="setup_local_explain">Uno responde y el otro adivina. Después cambian.</string>
+    <string name="setup_remote_explain">Responde 10 preguntas sobre ti y envía el desafío. Tu pareja o amigo/a adivina tus respuestas desde su celular.</string>
+    <string name="setup_player1">Jugador 1</string>
+    <string name="setup_player2">Jugador 2</string>
+    <string name="setup_your_name">Tu nombre</string>
+    <string name="setup_partner_name">Su nombre</string>
+
+    <string name="packs_title">Elige un pack</string>
+    <string name="packs_section_couple">Etapas de la relación</string>
+    <string name="packs_section_friends">Amigos</string>
+    <string name="packs_section_spicy">Picante · solo adultos</string>
+    <string name="pack_locked">Premium</string>
+    <string name="pack_questions">%1$d preguntas</string>
+
+    <string name="adult_title">Solo para adultos</string>
+    <string name="adult_body">Este pack tiene preguntas atrevidas pensadas para parejas adultas. ¿Confirmas que eres mayor de 18 años?</string>
+    <string name="adult_confirm">Sí, soy mayor de 18</string>
+
+    <string name="paywall_title">Desbloquea todos los packs</string>
+    <string name="paywall_body">Premium de por vida: un solo pago, sin suscripción. Sin anuncios y con todos los packs picantes.</string>
+    <string name="paywall_buy">Comprar por %1$s</string>
+    <string name="paywall_buy_noprice">Comprar premium</string>
+    <string name="paywall_watch_ad">Ver un anuncio y jugar este pack</string>
+    <string name="paywall_later">Ahora no</string>
+    <string name="ad_not_ready">El anuncio no está listo, intenta en unos segundos</string>
+    <string name="purchase_error">No se pudo completar la compra</string>
+    <string name="purchase_thanks">Premium desbloqueado. ¡Gracias!</string>
+
+    <string name="handoff_title">Pásale el teléfono a %1$s</string>
+    <string name="handoff_answer">%1$s responde 10 preguntas sobre sí. ¡%2$s no puede mirar!</string>
+    <string name="handoff_guess">%1$s tiene que adivinar qué respondió %2$s.</string>
+    <string name="handoff_ready">Soy %1$s, empezar</string>
+
+    <string name="play_progress">Pregunta %1$d de %2$d</string>
+    <string name="play_answer_hint">%1$s, responde sobre ti</string>
+    <string name="play_guess_hint">%1$s, ¿qué respondió %2$s?</string>
+    <string name="exit_title">¿Salir de la partida?</string>
+    <string name="exit_body">Se pierden las respuestas de esta ronda.</string>
+    <string name="exit_confirm">Salir</string>
+
+    <string name="result_knows">%1$s conoce a %2$s en un</string>
+    <string name="result_score">%1$d de %2$d aciertos</string>
+    <string name="result_tier_0">Recién se están conociendo</string>
+    <string name="result_tier_1">Van por buen camino</string>
+    <string name="result_tier_2">Se conocen muy bien</string>
+    <string name="result_tier_3">¡Almas gemelas!</string>
+    <string name="result_review">Repaso</string>
+    <string name="result_answered">%1$s respondió</string>
+    <string name="result_guessed">%1$s dijo</string>
+    <string name="result_switch">Cambiar roles</string>
+    <string name="result_other_pack">Otro pack</string>
+    <string name="result_share">Compartir resultado</string>
+    <string name="result_home">Inicio</string>
+    <string name="result_your_turn">Ahora te toca: desafía a %1$s</string>
+    <string name="result_send_back">Enviar mi resultado a %1$s</string>
+    <string name="result_rematch">Revancha: nuevo desafío</string>
+    <string name="result_viewer_title">Resultado de %1$s</string>
+
+    <string name="share_local_result">%1$s conoce a %2$s en un %3$d%% 💞 ¿Y ustedes? Jueguen gratis: %4$s</string>
+    <string name="share_remote_result">Acerté %1$d de %2$d en tu desafío 😍 Mira mis respuestas: %3$s</string>
+    <string name="share_challenge_text">%1$s te desafía en Juego para Parejas 💘 ¿Cuánto me conoces? Adivina mis %2$d respuestas: %3$s</string>
+    <string name="share_chooser">Enviar con</string>
+
+    <string name="challenge_ready_title">¡Desafío listo!</string>
+    <string name="challenge_ready_body">Envíaselo a %1$s. Cuando termine de adivinar, te puede mandar su resultado.</string>
+    <string name="send_whatsapp">Enviar por WhatsApp</string>
+    <string name="send_other">Enviar por otra app</string>
+    <string name="copy_link">Copiar link</string>
+    <string name="link_copied">Link copiado</string>
+
+    <string name="intro_title">%1$s te desafía</string>
+    <string name="intro_body">¿Cuánto conoces a %1$s? Adivina sus %2$d respuestas del pack \"%3$s\".</string>
+    <string name="intro_start">Empezar</string>
+
+    <string name="invalid_title">No pudimos abrir este desafío</string>
+    <string name="invalid_body">Puede que el link esté incompleto o que necesites la última versión del juego.</string>
+    <string name="invalid_update">Actualizar en Google Play</string>
+
+    <string name="howto_title">¿Cómo se juega?</string>
+    <string name="howto_1_title">Uno responde</string>
+    <string name="howto_1_body">Elijan un pack. Uno responde 10 preguntas sobre sí mismo sin que el otro mire.</string>
+    <string name="howto_2_title">El otro adivina</string>
+    <string name="howto_2_body">El otro intenta adivinar cada respuesta. Cada acierto suma.</string>
+    <string name="howto_3_title">Comparen y cambien</string>
+    <string name="howto_3_body">Vean el porcentaje, repasen las respuestas y cambien de rol. ¿Están lejos? Usen el modo a distancia.</string>
+    <string name="howto_start">¡A jugar!</string>
+</resources>

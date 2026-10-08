@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.idea3d.juegoparaparejas",
+      "sha256_cert_fingerprints": [
+        "28:5A:D8:4B:ED:61:D1:DF:3B:CD:56:AE:5C:DF:E2:0D:F5:C2:89:B7:BE:18:FF:DA:26:87:DA:AB:C8:9B:3C:8E",
+        "A8:A9:47:53:15:84:59:F2:31:21:92:BC:FE:CD:1F:0F:E5:1E:7B:86:F3:51:84:7E:2D:BF:43:98:CB:5F:2E:49"
+      ]
+    }
+  }
+]

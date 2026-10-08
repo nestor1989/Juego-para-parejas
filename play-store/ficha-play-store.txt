@@ -1,0 +1,222 @@
+JUEGO PARA PAREJAS · FICHA DE GOOGLE PLAY · VERSIÓN 4.0
+
+Textos: Play Console › Crecimiento › Presencia en la tienda › Ficha principal de la tienda.
+El idioma predeterminado es es-419. Los demás se cargan en "Administrar traducciones".
+Copiá solo el texto que está debajo de cada línea "---".
+
+Imágenes (en esta misma carpeta):
+  icono.png                       ícono 512 × 512, el mismo para todos los idiomas
+  <idioma>/grafico-destacado.png  1024 × 500
+  <idioma>/1_…png a 8_…png        capturas de teléfono, en ese orden
+  es-ES no tiene imágenes propias: Play muestra las de es-419.
+
+
+======================================================================
+ESPAÑOL (LATINOAMÉRICA) · es-419 · idioma predeterminado
+======================================================================
+
+--- Nombre de la app (30/30) ---
+Juego para Parejas a Distancia
+
+--- Descripción breve (75/80) ---
+Preguntas para parejas: adivina sus respuestas y descubre cuánto se conocen
+
+--- Descripción completa (1550/4000) ---
+¿Cuánto me conoces? Descúbranlo con este juego para parejas a distancia o en el mismo celular: uno responde preguntas sobre sí mismo y el otro intenta adivinar sus respuestas. Al final ven su porcentaje de compatibilidad y repasan una por una en qué coincidieron.
+
+CÓMO SE JUEGA
+• Elijan un pack de preguntas para parejas.
+• Uno responde 10 preguntas sin que el otro mire.
+• El otro adivina: cada acierto suma.
+• Vean el resultado, cambien de rol y comparen quién conoce más a quién.
+
+JUEGO PARA PAREJAS A DISTANCIA
+¿Están lejos? Responde tus preguntas y envía el desafío por WhatsApp, Telegram o Instagram. Tu pareja abre el link, adivina tus respuestas y los dos ven el resultado. Sin crear cuenta ni registrarse.
+
+SIN INTERNET, EN EL MISMO CELULAR
+Un juego para dos ideal para una cita en casa, un viaje o una salida: pásense el teléfono y jueguen sin conexión.
+
+PACKS PARA CADA MOMENTO
+• Etapas de la relación: desde "Me gustas" y la primera cita hasta las bodas de oro.
+• Amigos: el test de cuánto me conoces para jugar con tu mejor amigo o amiga.
+• Picante: preguntas atrevidas, solo para adultos.
+Cada partida elige preguntas al azar, así que nunca se repite igual.
+
+PERFECTO PARA
+• Novios que recién empiezan y parejas de muchos años
+• Relaciones a distancia
+• Noches de cita, aniversarios y San Valentín
+• Juntadas con amigos
+
+PREMIUM DE POR VIDA
+Un solo pago, sin suscripción: quita los anuncios y desbloquea todos los packs. También puedes desbloquear un pack para una partida viendo un anuncio.
+
+Disponible en español, inglés y portugués.
+
+
+======================================================================
+ESPAÑOL (ESPAÑA) · es-ES · usa las imágenes de es-419
+======================================================================
+
+--- Nombre de la app (30/30) ---
+Juego para Parejas a Distancia
+
+--- Descripción breve (76/80) ---
+Preguntas para parejas: adivina sus respuestas y descubre cuánto os conocéis
+
+--- Descripción completa (1557/4000) ---
+¿Cuánto me conoces? Descubridlo con este juego para parejas a distancia o en el mismo móvil: uno responde preguntas sobre sí mismo y el otro intenta adivinar sus respuestas. Al final veis vuestro porcentaje de compatibilidad y repasáis una por una en qué habéis coincidido.
+
+CÓMO SE JUEGA
+• Elegid un pack de preguntas para parejas.
+• Uno responde 10 preguntas sin que el otro mire.
+• El otro adivina: cada acierto suma.
+• Mirad el resultado, cambiad de rol y comparad quién conoce más a quién.
+
+JUEGO PARA PAREJAS A DISTANCIA
+¿Estáis lejos? Responde tus preguntas y envía el reto por WhatsApp, Telegram o Instagram. Tu pareja abre el enlace, adivina tus respuestas y los dos veis el resultado. Sin crear cuenta ni registrarse.
+
+SIN INTERNET, EN EL MISMO MÓVIL
+Un juego para dos ideal para una cita en casa, un viaje o una escapada: pasaos el teléfono y jugad sin conexión.
+
+PACKS PARA CADA MOMENTO
+• Etapas de la relación: desde "Me gustas" y la primera cita hasta las bodas de oro.
+• Amigos: el test de cuánto me conoces para jugar con tu mejor amigo o amiga.
+• Picante: preguntas atrevidas, solo para adultos.
+Cada partida elige preguntas al azar, así que nunca se repite.
+
+PERFECTO PARA
+• Novios que acaban de empezar y parejas de toda la vida
+• Relaciones a distancia
+• Noches de cita, aniversarios y San Valentín
+• Quedadas con amigos
+
+PREMIUM PARA SIEMPRE
+Un solo pago, sin suscripción: quita los anuncios y desbloquea todos los packs. También puedes desbloquear un pack para una partida viendo un anuncio.
+
+Disponible en español, inglés y portugués.
+
+
+======================================================================
+PORTUGUÉS (BRASIL) · pt-BR · imágenes en pt-BR/
+======================================================================
+
+--- Nombre de la app (27/30) ---
+Jogo para Casal a Distância
+
+--- Descripción breve (77/80) ---
+Perguntas para casal: adivinhe as respostas e veja o quanto vocês se conhecem
+
+--- Descripción completa (1577/4000) ---
+O quanto você me conhece? Descubram com este jogo para casal a distância ou no mesmo celular: um responde perguntas sobre si mesmo e o outro tenta adivinhar as respostas. No final vocês veem a porcentagem de compatibilidade e revisam, uma por uma, em que acertaram.
+
+COMO JOGAR
+• Escolham um pacote de perguntas para casal.
+• Um responde 10 perguntas sem o outro ver.
+• O outro adivinha: cada acerto conta ponto.
+• Vejam o resultado, troquem de papel e comparem quem conhece mais quem.
+
+JOGO PARA CASAL A DISTÂNCIA
+Estão longe? Responda suas perguntas e envie o desafio pelo WhatsApp, Telegram ou Instagram. Seu amor abre o link, adivinha suas respostas e vocês dois veem o resultado. Sem criar conta nem cadastro.
+
+SEM INTERNET, NO MESMO CELULAR
+Um jogo para dois perfeito para um encontro em casa, uma viagem ou um passeio: passem o celular e joguem offline.
+
+PACOTES PARA CADA MOMENTO
+• Fases do relacionamento: do "Gosto de você" e o primeiro encontro até as bodas de ouro.
+• Amigos: o teste de o quanto você me conhece para jogar com seu melhor amigo ou amiga.
+• Picante: perguntas ousadas, só para adultos.
+Cada partida sorteia perguntas, então nunca se repete igual.
+
+PERFEITO PARA
+• Namorados que estão começando e casais de muitos anos
+• Namoro a distância
+• Noites a dois, aniversários de namoro e Dia dos Namorados
+• Encontros com amigos
+
+PREMIUM VITALÍCIO
+Pagamento único, sem assinatura: remove os anúncios e desbloqueia todos os pacotes. Você também pode desbloquear um pacote para uma partida assistindo a um anúncio.
+
+Disponível em português, espanhol e inglês.
+
+
+======================================================================
+INGLÉS (ESTADOS UNIDOS) · en-US · imágenes en en-US/
+======================================================================
+
+--- Nombre de la app (27/30) ---
+Couples Quiz: Long Distance
+
+--- Descripción breve (76/80) ---
+How well do you know me? Couples questions to play together or long distance
+
+--- Descripción completa (1510/4000) ---
+How well do you know me? Find out with this couples quiz you can play long distance or on one phone: one of you answers questions about yourself, the other tries to guess the answers. At the end you see your compatibility score and review, one by one, where you matched.
+
+HOW TO PLAY
+• Pick a pack of questions for couples.
+• One player answers 10 questions without the other looking.
+• The other guesses: every match scores.
+• See the result, switch roles and find out who knows whom better.
+
+LONG DISTANCE COUPLE GAME
+Apart right now? Answer your questions and send the challenge on WhatsApp, Telegram or Instagram. Your partner opens the link, guesses your answers and you both see the result. No account, no sign-up.
+
+OFFLINE, ON ONE PHONE
+A game for two that's perfect for date night at home, a trip or a night out: pass the phone and play without internet.
+
+PACKS FOR EVERY MOMENT
+• Relationship stages: from "I like you" and the first date all the way to golden anniversaries.
+• Friends: the how well do you know me test for you and your best friend.
+• Spicy: daring questions, adults only.
+Every round picks random questions, so no two games are the same.
+
+PERFECT FOR
+• New couples and long-time partners
+• Long distance relationships
+• Date nights, anniversaries and Valentine's Day
+• Hanging out with friends
+
+LIFETIME PREMIUM
+One payment, no subscription: removes ads and unlocks every pack. You can also unlock a pack for one round by watching an ad.
+
+Available in English, Spanish and Portuguese.
+
+
+======================================================================
+NOTAS DE LA VERSIÓN 4.0 · se pegan todas juntas, con las etiquetas
+======================================================================
+Play Console › Prueba y publicación › Producción › Crear versión › Notas de la versión.
+
+<es-419>
+Versión 4.0, renovada:
+• Juego a distancia: envía tu desafío por WhatsApp y tu pareja adivina desde su celular.
+• Repaso pregunta por pregunta al final de cada partida.
+• Preguntas al azar en cada ronda.
+• Packs nuevos para jugar con amigos.
+• Premium de por vida, sin suscripción, y menos anuncios.
+</es-419>
+<es-ES>
+Versión 4.0, renovada:
+• Juego a distancia: envía tu desafío por WhatsApp y tu pareja adivina desde su móvil.
+• Repaso pregunta por pregunta al final de cada partida.
+• Preguntas al azar en cada ronda.
+• Packs nuevos para jugar con amigos.
+• Premium de por vida, sin suscripción, y menos anuncios.
+</es-ES>
+<pt-BR>
+Versão 4.0, renovada:
+• Jogo a distância: envie seu desafio pelo WhatsApp e seu amor adivinha no celular dele.
+• Revisão pergunta por pergunta no final de cada partida.
+• Perguntas sorteadas em cada rodada.
+• Pacotes novos para jogar com amigos.
+• Premium vitalício, sem assinatura, e menos anúncios.
+</pt-BR>
+<en-US>
+Version 4.0, rebuilt:
+• Long distance mode: send your challenge on WhatsApp and your partner guesses from their phone.
+• Question-by-question review after every round.
+• Random questions every round.
+• New packs to play with friends.
+• Lifetime premium, no subscription, and fewer ads.
+</en-US>
