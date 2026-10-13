@@ -11,6 +11,12 @@
     <string name="home_how_to">How to play</string>
     <string name="home_premium">Lifetime premium</string>
     <string name="home_premium_active">Premium active</string>
+    <string name="home_privacy_policy">Privacy policy</string>
+    <string name="home_privacy_options">Privacy options</string>
+    <string name="privacy_options_error">Couldn\'t open the privacy options, try again later</string>
+    <string name="privacy_policy_error">Couldn\'t load the privacy policy. Check your connection.</string>
+    <string name="retry">Try again</string>
+    <string name="open_in_browser">Open in browser</string>
 
     <string name="back">Back</string>
     <string name="continue_">Continue</string>

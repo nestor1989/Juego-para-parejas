@@ -11,6 +11,12 @@
     <string name="home_how_to">Como jogar</string>
     <string name="home_premium">Premium vitalício</string>
     <string name="home_premium_active">Premium ativo</string>
+    <string name="home_privacy_policy">Política de privacidade</string>
+    <string name="home_privacy_options">Opções de privacidade</string>
+    <string name="privacy_options_error">Não foi possível abrir as opções de privacidade, tente mais tarde</string>
+    <string name="privacy_policy_error">Não foi possível carregar a política de privacidade. Verifique sua conexão.</string>
+    <string name="retry">Tentar de novo</string>
+    <string name="open_in_browser">Abrir no navegador</string>
 
     <string name="back">Voltar</string>
     <string name="continue_">Continuar</string>

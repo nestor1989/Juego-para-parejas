@@ -8,6 +8,17 @@ plugins {
 
 def challengeHost = (project.findProperty("CHALLENGE_HOST") ?: "juego-para-parejas-3ea2c.web.app").toString()
 
+// Pruebas de consentimiento (UMP) en debug. Se configuran en local.properties, que no se sube a git:
+//   ump.debugGeography=EEA | US_STATE | OTHER   (vacío = ubicación real)
+//   ump.testDeviceId=<hash que imprime Logcat>   (los emuladores ya cuentan como dispositivo de prueba)
+//   ump.resetOnLaunch=true                       (borra el consentimiento guardado en cada arranque)
+def localProps = new Properties()
+def localPropsFile = rootProject.file("local.properties")
+if (localPropsFile.exists()) localPropsFile.withInputStream { localProps.load(it) }
+def umpDebugGeography = localProps.getProperty("ump.debugGeography", "").trim()
+def umpTestDeviceId = localProps.getProperty("ump.testDeviceId", "").trim()
+def umpResetOnLaunch = localProps.getProperty("ump.resetOnLaunch", "false").trim().toBoolean()
+
 android {
     namespace = "com.idea3d.juegoparaparejas"
     compileSdk = 36
@@ -22,14 +33,24 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "CHALLENGE_HOST", "\"${challengeHost}\""
+        buildConfigField "String", "PRIVACY_POLICY_URL", "\"https://${challengeHost}/privacidad/\""
         manifestPlaceholders = [challengeHost: challengeHost]
     }
 
     buildTypes {
+        debug {
+            buildConfigField "String", "UMP_DEBUG_GEOGRAPHY", "\"${umpDebugGeography}\""
+            buildConfigField "String", "UMP_TEST_DEVICE_ID", "\"${umpTestDeviceId}\""
+            buildConfigField "boolean", "UMP_RESET_ON_LAUNCH", "${umpResetOnLaunch}"
+        }
         release {
             minifyEnabled = true
             shrinkResources = true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // En release nunca se fuerza la región ni se borra el consentimiento.
+            buildConfigField "String", "UMP_DEBUG_GEOGRAPHY", "\"\""
+            buildConfigField "String", "UMP_TEST_DEVICE_ID", "\"\""
+            buildConfigField "boolean", "UMP_RESET_ON_LAUNCH", "false"
         }
     }
 
@@ -72,7 +93,7 @@ dependencies {
     // Monetización
     implementation 'com.android.billingclient:billing-ktx:8.3.0'
     implementation 'com.google.android.gms:play-services-ads:23.2.0'
-    implementation 'com.google.android.ump:user-messaging-platform:3.1.0'
+    implementation 'com.google.android.ump:user-messaging-platform:4.0.0'
 
     // Crecimiento: deep link diferido y pedido de reseña
     implementation 'com.android.installreferrer:installreferrer:2.2'

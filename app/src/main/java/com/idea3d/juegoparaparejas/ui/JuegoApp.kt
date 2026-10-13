@@ -8,6 +8,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.idea3d.juegoparaparejas.App
+import com.idea3d.juegoparaparejas.BuildConfig
 import com.idea3d.juegoparaparejas.R
 import com.idea3d.juegoparaparejas.game.ChallengeLinks
 import com.idea3d.juegoparaparejas.game.Mode
@@ -23,6 +24,7 @@ import com.idea3d.juegoparaparejas.ui.screens.InvalidChallengeScreen
 import com.idea3d.juegoparaparejas.ui.screens.PackPickerScreen
 import com.idea3d.juegoparaparejas.ui.screens.PaywallDialog
 import com.idea3d.juegoparaparejas.ui.screens.PlayScreen
+import com.idea3d.juegoparaparejas.ui.screens.PrivacyPolicyScreen
 import com.idea3d.juegoparaparejas.ui.screens.ResultActions
 import com.idea3d.juegoparaparejas.ui.screens.ResultScreen
 import com.idea3d.juegoparaparejas.ui.screens.SetupScreen
@@ -41,6 +43,7 @@ fun JuegoApp(vm: GameViewModel) {
     val isPremium by app.billing.isPremium.collectAsStateWithLifecycle()
     val price by app.billing.price.collectAsStateWithLifecycle()
     val purchaseEvent by app.billing.purchaseEvents.collectAsStateWithLifecycle()
+    val privacyOptionsRequired by app.ads.privacyOptionsRequired.collectAsStateWithLifecycle()
 
     fun toast(resId: Int) = Toast.makeText(context, context.getString(resId), Toast.LENGTH_SHORT).show()
 
@@ -85,9 +88,20 @@ fun JuegoApp(vm: GameViewModel) {
             onPlayRemote = { vm.openSetup(Mode.REMOTE) },
             onHowTo = vm::openHowTo,
             onPremium = { vm.openPaywall(null) },
+            showPrivacyOptions = privacyOptionsRequired,
+            onPrivacyOptions = {
+                activity?.let { app.ads.showPrivacyOptions(it) { toast(R.string.privacy_options_error) } }
+            },
+            onPrivacyPolicy = vm::openPrivacyPolicy,
         )
 
         Screen.HowTo -> HowToScreen(onBack = vm::goHome, onStart = { vm.openSetup(Mode.LOCAL) })
+
+        Screen.PrivacyPolicy -> PrivacyPolicyScreen(
+            url = BuildConfig.PRIVACY_POLICY_URL,
+            onBack = vm::goHome,
+            onOpenExternal = { link -> Share.openUrl(context, link) },
+        )
 
         is Screen.Setup -> SetupScreen(
             mode = screen.mode,

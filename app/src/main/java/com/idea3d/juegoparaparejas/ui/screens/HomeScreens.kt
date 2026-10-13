@@ -44,6 +44,9 @@ fun HomeScreen(
     onPlayRemote: () -> Unit,
     onHowTo: () -> Unit,
     onPremium: () -> Unit,
+    showPrivacyOptions: Boolean,
+    onPrivacyOptions: () -> Unit,
+    onPrivacyPolicy: () -> Unit,
 ) {
     Box(
         modifier = Modifier
@@ -124,6 +127,16 @@ fun HomeScreen(
                     TextButton(onClick = onPremium) {
                         Text("★ " + stringResource(R.string.home_premium), color = Color.White, fontWeight = FontWeight.SemiBold)
                     }
+                }
+            }
+            Spacer(Modifier.height(8.dp))
+            // Siempre accesibles desde el inicio, también con Premium (sin anuncios).
+            TextButton(onClick = onPrivacyPolicy) {
+                Text(stringResource(R.string.home_privacy_policy), color = Color.White.copy(alpha = 0.8f), fontSize = 13.sp)
+            }
+            if (showPrivacyOptions) {
+                TextButton(onClick = onPrivacyOptions) {
+                    Text(stringResource(R.string.home_privacy_options), color = Color.White.copy(alpha = 0.8f), fontSize = 13.sp)
                 }
             }
         }

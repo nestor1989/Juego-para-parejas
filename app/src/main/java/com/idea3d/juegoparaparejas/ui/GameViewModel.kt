@@ -24,6 +24,7 @@ import kotlinx.coroutines.launch
 sealed interface Screen {
     data object Home : Screen
     data object HowTo : Screen
+    data object PrivacyPolicy : Screen
     data class Setup(val mode: Mode) : Screen
     data class Packs(val mode: Mode) : Screen
     data class Handoff(val phase: Phase) : Screen
@@ -91,6 +92,8 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
 
     fun openHowTo() = _state.update { it.copy(screen = Screen.HowTo) }
 
+    fun openPrivacyPolicy() = _state.update { it.copy(screen = Screen.PrivacyPolicy) }
+
     fun openSetup(mode: Mode) = _state.update { it.copy(screen = Screen.Setup(mode)) }
 
     /** Devuelve false si la app debería cerrarse (atrás en el inicio). */
@@ -98,7 +101,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
         val current = _state.value
         when (val screen = current.screen) {
             Screen.Home -> return false
-            Screen.HowTo, is Screen.Setup, Screen.ChallengeReady,
+            Screen.HowTo, Screen.PrivacyPolicy, is Screen.Setup, Screen.ChallengeReady,
             Screen.ChallengeIntro, Screen.InvalidChallenge, Screen.Result -> goHome()
             is Screen.Packs -> _state.update { it.copy(screen = Screen.Setup(screen.mode)) }
             is Screen.Handoff, is Screen.Play -> _state.update { it.copy(confirmExit = true) }

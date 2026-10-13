@@ -25,6 +25,18 @@ esa carpeta: queda en el historial de git.
 6. **Compras:** solo funcionan con la app subida a un track de Play. Subí el AAB a **Prueba interna**,
    agregá tu cuenta en **Configuración › Pruebas de licencia** y creá el producto `premium_lifetime`.
 7. **Tests:** `./gradlew testDebugUnitTest` (codec de desafíos, links, motor y `packs.json`).
+8. **Consentimiento (UMP):** en debug se puede simular la región agregando a `local.properties`
+   (no se sube a git) y volviendo a compilar:
+   ```
+   ump.debugGeography=EEA        # EEA, US_STATE u OTHER; vacío = ubicación real
+   ump.resetOnLaunch=true        # borra el consentimiento guardado en cada arranque
+   ump.testDeviceId=XXXXXXXX     # solo en un teléfono físico: el hash que imprime Logcat
+   ```
+   - `EEA`: al abrir aparece el formulario de GDPR; después, en el inicio, "Opciones de privacidad".
+   - `US_STATE`: no aparece nada al abrir; el mensaje de estados de EE. UU. se abre desde
+     "Opciones de privacidad".
+   - En un teléfono físico, la primera vez buscá en Logcat `addTestDeviceHashedId` y copiá el hash.
+     Los emuladores ya cuentan como dispositivo de prueba.
 
 ## Qué cambia
 
@@ -36,7 +48,9 @@ esa carpeta: queda en el historial de git.
 - **Monetización:** compra única `premium_lifetime`, rewarded para jugar un pack premium una vez,
   interstitial solo entre partidas y espaciado, sin banners. `premium_monthly` / `premium_yearly`
   se siguen reconociendo como premium.
-- Consentimiento GDPR (UMP), pedido de reseña in-app y eventos de Firebase Analytics.
+- Consentimiento con UMP (GDPR y estados de EE. UU.): formulario al abrir cuando corresponde y
+  "Opciones de privacidad" + "Política de privacidad" siempre en el inicio, también con Premium.
+- Pedido de reseña in-app y eventos de Firebase Analytics.
 - Los packs adultos 11-16 de la 3.x no se migraron (texto explícito y preguntas con edades de menores).
 
 ## Antes de publicar
@@ -52,7 +66,10 @@ esa carpeta: queda en el historial de git.
    - Verificá que abran `https://juego-para-parejas-3ea2c.web.app/.well-known/assetlinks.json` y
      `https://juego-para-parejas-3ea2c.web.app/j/`.
    - Opcional: `web/j/og.png` (1200 × 630) para la vista previa en WhatsApp.
-3. AdMob › Privacidad y mensajes: crear el mensaje de GDPR.
+3. **Política de privacidad**: la app abre `https://juego-para-parejas-3ea2c.web.app/privacidad/`
+   (`PRIVACY_POLICY_URL` en `app/build.gradle`). Tiene que estar en `web/privacidad/index.html` y
+   publicada con el deploy de Hosting; poné la misma URL en Play Console › Política de privacidad.
+   (Los mensajes de GDPR y de estados de EE. UU. ya están publicados en AdMob.)
 4. Play Console › Seguridad de los datos: declarar ID de dispositivo/publicidad, ubicación aproximada,
    interacciones, diagnósticos y compras (publicidad, estadísticas, prevención de fraude).
 5. Ficha nueva: `play-store/ficha-play-store.txt` + imágenes de `play-store/`.

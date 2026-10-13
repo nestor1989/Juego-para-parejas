@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Política de privacidad de Juego para Parejas (com.idea3d.juegoparaparejas). Privacy policy · Política de privacidade.">
+<link rel="canonical" href="https://juego-para-parejas-3ea2c.web.app/privacidad/">
+<title>Privacidad · Juego para Parejas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: una columna de lectura (~68ch), cabecera con el degradado del ícono, tabla resumen y secciones numeradas porque así se citan. */
+:root{
+  --bg:#FBF8FC; --surface:#FFFFFF; --fg:#24192B; --muted:#6A5C72; --line:#E9DFEE;
+  --pink:#E02A62; --violet:#7D41D3; --chip:#F5EAFB;
+  --display:"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body:"Figtree", "Segoe UI", system-ui, sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17111C; --surface:#211A27; --fg:#F1E9F5; --muted:#B4A6BC; --line:#3A2F42;
+  --pink:#FF6B95; --violet:#B48CFF; --chip:#2C2235; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#17111C; --surface:#211A27; --fg:#F1E9F5; --muted:#B4A6BC; --line:#3A2F42;
+  --pink:#FF6B95; --violet:#B48CFF; --chip:#2C2235; color-scheme:dark }
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+[hidden]{display:none!important}
+img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16.5px;line-height:1.62;padding-inline:16px;padding-block:0 64px}
+.wrap{max-width:720px;margin:0 auto}
+header{padding-block:40px 28px;display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.app{display:flex;align-items:center;gap:12px}
+.icon{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#F2386F,#7D41D3);display:grid;place-items:center;flex:none}
+.icon svg{width:26px;height:26px}
+.app b{font-family:var(--display);font-size:17px;letter-spacing:.01em}
+.lang{display:flex;gap:4px;background:var(--chip);border-radius:999px;padding:4px}
+.lang a{font-size:13px;font-weight:600;text-decoration:none;color:var(--muted);padding:5px 12px;border-radius:999px;letter-spacing:.04em}
+.lang a[aria-current="true"]{background:var(--surface);color:var(--fg)}
+.lang a:focus-visible,a:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,6vw,42px);line-height:1.08;margin:6px 0 0;text-wrap:balance}
+.meta{color:var(--muted);font-size:14.5px;display:flex;gap:6px 18px;flex-wrap:wrap}
+.lead{font-size:18px;margin:22px 0 0}
+h2{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.25;margin:40px 0 10px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+h2 .n{color:var(--pink);font-size:15px;font-variant-numeric:tabular-nums;min-width:1.4em}
+h3{font-size:16.5px;margin:22px 0 4px}
+p,li{max-width:68ch}
+ul{padding-left:1.2em;margin:8px 0}
+li{margin:4px 0}
+a{color:var(--violet)}
+.tbl{overflow-x:auto;margin:16px 0 8px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+.note{background:var(--chip);border-radius:12px;padding:14px 16px;margin:16px 0}
+.note p{margin:0}
+.mail{font-family:ui-monospace,Menlo,monospace;font-size:15px;user-select:all;background:var(--chip);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="top">
+    <div class="app">
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 4.4 2.5.8-1.3 2.3-2.5 4.4-2.5 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z"/><path fill="#9B3FA6" d="M11.1 13.6v-.5c0-.9.4-1.4 1.1-1.9.6-.4.9-.7.9-1.2 0-.6-.5-1-1.1-1-.7 0-1.1.4-1.2 1.1h-1.6c.1-1.6 1.2-2.5 2.9-2.5 1.6 0 2.7.9 2.7 2.3 0 .9-.4 1.5-1.2 2-.6.4-.8.7-.8 1.2v.5h-1.7zm.9 2.9c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/></svg></span>
+      <b>Juego para Parejas</b>
+    </div>
+    <nav class="lang" aria-label="Idioma / Language / Idioma">
+      <a href="#es" id="tab-es" aria-current="true">ES</a>
+      <a href="#en" id="tab-en" aria-current="false">EN</a>
+      <a href="#pt" id="tab-pt" aria-current="false">PT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== ESPAÑOL ===================== -->
+<article id="es" lang="es">
+  <h1>Política de privacidad</h1>
+  <div class="meta"><span>Vigente desde el 13 de octubre de 2026</span><span>App: com.idea3d.juegoparaparejas</span></div>
+
+  <p class="lead">Juego para Parejas es un juego de preguntas para dos personas: una responde sobre sí misma y la otra adivina. No necesitás crear una cuenta y la app no guarda tus respuestas en ningún servidor. Para financiarse, mostrar anuncios y corregir errores usa servicios de Google que sí procesan algunos datos del dispositivo. Acá explicamos cuáles, para qué y cómo controlarlos.</p>
+
+  <h2><span class="n">1</span>Quién es responsable</h2>
+  <p>El responsable de la app y de esta política es Néstor del Río, desarrollador independiente con domicilio en Argentina. Para cualquier consulta sobre privacidad escribí a <span class="mail">nestordelrio1989@gmail.com</span>.</p>
+
+  <h2><span class="n">2</span>Resumen de datos</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Dato</th><th>Dónde queda</th><th>Para qué</th><th>Quién lo procesa</th></tr></thead>
+    <tbody>
+      <tr><td>Nombres de los jugadores</td><td>Solo en tu teléfono</td><td>Mostrarlos en el juego</td><td>Nadie más</td></tr>
+      <tr><td>Respuestas y puntajes</td><td>En tu teléfono; en el modo a distancia, dentro del link que vos compartís</td><td>Jugar y calcular la compatibilidad</td><td>Nadie más</td></tr>
+      <tr><td>ID de publicidad, IP, modelo y sistema del dispositivo, interacciones con anuncios</td><td>Servidores de Google</td><td>Mostrar anuncios, medirlos y prevenir fraude</td><td>Google AdMob</td></tr>
+      <tr><td>Eventos de uso (rondas jugadas, desafíos enviados, compras), ID de instancia, país aproximado</td><td>Servidores de Google</td><td>Estadísticas para mejorar la app</td><td>Google Analytics para Firebase</td></tr>
+      <tr><td>Informes de fallos (registro del error, modelo, versión de Android)</td><td>Servidores de Google</td><td>Detectar y corregir errores</td><td>Firebase Crashlytics</td></tr>
+      <tr><td>Estado de la compra Premium</td><td>Google Play y tu teléfono</td><td>Habilitar Premium</td><td>Google Play</td></tr>
+    </tbody>
+  </table></div>
+  <p>La app no pide ningún permiso que requiera tu autorización: no accede a tu ubicación, contactos, cámara, micrófono, fotos ni almacenamiento. Sí declara permisos técnicos que Android otorga sin preguntar: acceso a internet y al estado de la red, ID de publicidad y APIs de publicidad de Android, compras de Google Play, install referrer, y servicio en primer plano y mantener activo el dispositivo. Estos dos últimos los usan internamente las bibliotecas de Google.</p>
+
+  <h2><span class="n">3</span>Lo que se guarda en tu teléfono</h2>
+  <p>Los nombres que escribís, el progreso, si confirmaste ser mayor de 18 años para los packs picantes y si tenés Premium se guardan en el almacenamiento interno de la app. No se envían al desarrollador. Si desinstalás la app o borrás sus datos desde Ajustes de Android, se eliminan. Android puede incluirlos en la copia de seguridad de tu cuenta de Google si la tenés activada.</p>
+
+  <h2><span class="n">4</span>Modo a distancia y links de desafío</h2>
+  <p>Cuando creás un desafío para jugar a distancia, la app arma un link que contiene, codificados, tu nombre, el de la otra persona, el pack elegido y tus respuestas. Ese contenido va después del signo <code>#</code> del link, una parte que los navegadores no envían al servidor, así que el desarrollador no lo recibe ni lo guarda.</p>
+  <p>Vos decidís a quién mandarlo, normalmente por WhatsApp u otra app de mensajes, y en ese momento rige la política de privacidad de esa app. Cualquier persona que tenga el link puede ver lo que contiene, así que compartilo solo con quien quieras jugar.</p>
+  <p>La página que abre el link está alojada en Firebase Hosting (Google), que registra datos técnicos estándar de cada visita, como la dirección IP y el navegador, para operar y proteger el servicio. Si la otra persona todavía no tiene la app, Google Play pasa el desafío a la app recién instalada mediante la API Install Referrer.</p>
+
+  <h2><span class="n">5</span>Anuncios</h2>
+  <p>La versión gratuita muestra anuncios de Google AdMob: anuncios de pantalla completa entre rondas y anuncios con recompensa que elegís ver para desbloquear contenido. AdMob puede usar el ID de publicidad de tu dispositivo, la dirección IP y datos técnicos para elegir qué anuncio mostrar, medir su rendimiento y prevenir fraude. Con tu consentimiento, los anuncios pueden ser personalizados.</p>
+  <ul>
+    <li>Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la primera vez que abrís la app aparece el formulario de consentimiento de Google. No cargamos anuncios hasta que respondas. Después podés cambiar o retirar tu consentimiento cuando quieras desde "Opciones de privacidad", en la pantalla de inicio.</li>
+    <li>Si vivís en un estado de EE. UU. con leyes de privacidad (por ejemplo, California), al abrir la app no aparece ningún mensaje. Desde "Opciones de privacidad", en la pantalla de inicio, se abre el mensaje de Google para pedir que no se vendan ni compartan tus datos para publicidad personalizada. También podés pedirlo escribiendo a <span class="mail">nestordelrio1989@gmail.com</span>.</li>
+    <li>En los dispositivos donde estén disponibles, AdMob puede usar las APIs de publicidad de Android (Privacy Sandbox), como Temas y Atribución, para elegir anuncios y medir su rendimiento. Podés administrarlas desde los ajustes de privacidad de anuncios de Android.</li>
+    <li>Podés restablecer o eliminar tu ID de publicidad en Ajustes de Android › Privacidad › Anuncios. Sin ese ID los anuncios siguen apareciendo, pero no personalizados.</li>
+    <li>Con Premium no se muestran anuncios.</li>
+  </ul>
+  <p>El acceso "Opciones de privacidad" aparece solo en las regiones donde Google lo exige, y sigue disponible aunque tengas Premium. Más información: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">cómo usa Google los datos en publicidad</a>.</p>
+
+  <h2><span class="n">6</span>Estadísticas y errores</h2>
+  <p>Usamos Google Analytics para Firebase para saber, de forma agregada, cuántas rondas se juegan, cuántos desafíos se envían y abren, o cuántas personas pasan a Premium. Los eventos no incluyen los nombres de los jugadores ni sus respuestas. Firebase Crashlytics envía un informe técnico cuando la app se cierra por un error. Google conserva estos datos según sus propios plazos (Analytics hasta 14 meses de forma predeterminada; Crashlytics, 90 días).</p>
+
+  <h2><span class="n">7</span>Compras</h2>
+  <p>Premium se compra a través de Google Play. El pago lo procesa Google y el desarrollador no recibe tu tarjeta ni tus datos de facturación. La app solo consulta a Google Play si la compra está activa. Las suscripciones de versiones anteriores se siguen reconociendo.</p>
+
+  <h2><span class="n">8</span>Bases legales</h2>
+  <p>Tratamos los datos descritos para prestarte el juego que descargaste, por nuestro interés legítimo en mantener la app estable y mejorarla, y, cuando la ley lo exige, con tu consentimiento (por ejemplo, para anuncios personalizados en Europa). No vendemos datos personales.</p>
+
+  <h2><span class="n">9</span>Edad mínima</h2>
+  <p>La app está pensada para personas mayores de 18 años y no está dirigida a menores. No recopilamos a sabiendas datos de menores. Si creés que un menor nos envió datos, escribinos y los eliminamos.</p>
+
+  <h2><span class="n">10</span>Tus derechos</h2>
+  <p>Podés pedir acceso, rectificación, eliminación u oposición al tratamiento de tus datos. Podés retirar tu consentimiento cuando quieras desde "Opciones de privacidad", en la pantalla de inicio, si ese acceso aparece en tu región. Como el desarrollador no guarda datos que te identifiquen, también podés borrar los datos de la app o desinstalarla, y restablecer tu ID de publicidad. Para lo que procesa Google, podés usar las herramientas de tu cuenta de Google. Si escribís al correo de contacto te respondemos dentro de los 30 días.</p>
+  <p>Si vivís en Argentina, la Agencia de Acceso a la Información Pública es la autoridad de control de la Ley 25.326. En la Unión Europea podés reclamar ante tu autoridad de protección de datos, y en Brasil ante la ANPD.</p>
+
+  <h2><span class="n">11</span>Transferencias internacionales</h2>
+  <p>Google puede procesar los datos en servidores de distintos países, incluidos los Estados Unidos, con las garantías que describe en su <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad</a> y en los <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">términos de privacidad de Firebase</a>.</p>
+
+  <h2><span class="n">12</span>Seguridad</h2>
+  <p>Las comunicaciones con los servicios de Google van cifradas (HTTPS). Los datos locales quedan dentro del espacio privado de la app en Android.</p>
+
+  <h2><span class="n">13</span>Cambios</h2>
+  <p>Si cambia algo de cómo la app trata los datos, actualizamos esta página y la fecha de vigencia. Si el cambio es importante, también lo avisamos en las novedades de la versión en Google Play.</p>
+</article>
+
+<!-- ===================== ENGLISH ===================== -->
+<article id="en" lang="en" hidden>
+  <h1>Privacy policy</h1>
+  <div class="meta"><span>Effective October 13, 2026</span><span>App: com.idea3d.juegoparaparejas</span></div>
+
+  <p class="lead">Juego para Parejas (Couples Game) is a quiz for two people: one answers questions about themselves and the other guesses. You don't need an account, and the app does not store your answers on any server. To pay for itself, show ads and fix bugs, it uses Google services that do process some device data. This page explains which data, why, and how to control it.</p>
+
+  <h2><span class="n">1</span>Who is responsible</h2>
+  <p>The app and this policy are the responsibility of Néstor del Río, an independent developer based in Argentina. For any privacy question, write to <span class="mail">nestordelrio1989@gmail.com</span>.</p>
+
+  <h2><span class="n">2</span>Data at a glance</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Data</th><th>Where it stays</th><th>Purpose</th><th>Processed by</th></tr></thead>
+    <tbody>
+      <tr><td>Player names</td><td>Only on your phone</td><td>Show them in the game</td><td>No one else</td></tr>
+      <tr><td>Answers and scores</td><td>On your phone; in remote mode, inside the link you share</td><td>Play and compute compatibility</td><td>No one else</td></tr>
+      <tr><td>Advertising ID, IP address, device model and OS, ad interactions</td><td>Google servers</td><td>Serve and measure ads, prevent fraud</td><td>Google AdMob</td></tr>
+      <tr><td>Usage events (rounds played, challenges sent, purchases), app instance ID, approximate country</td><td>Google servers</td><td>Statistics to improve the app</td><td>Google Analytics for Firebase</td></tr>
+      <tr><td>Crash reports (error trace, device model, Android version)</td><td>Google servers</td><td>Find and fix bugs</td><td>Firebase Crashlytics</td></tr>
+      <tr><td>Premium purchase status</td><td>Google Play and your phone</td><td>Unlock Premium</td><td>Google Play</td></tr>
+    </tbody>
+  </table></div>
+  <p>The app does not request any permission that needs your approval: it has no access to your location, contacts, camera, microphone, photos or storage. It does declare technical permissions that Android grants without asking: internet and network state, advertising ID and Android advertising APIs, Google Play purchases, install referrer, and foreground service and keeping the device awake. The last two are used internally by Google's libraries.</p>
+
+  <h2><span class="n">3</span>What stays on your phone</h2>
+  <p>The names you type, your progress, whether you confirmed you are over 18 for the spicy packs, and whether you have Premium are kept in the app's private storage. They are not sent to the developer. Uninstalling the app or clearing its data in Android Settings deletes them. Android may include them in your Google account backup if you have it turned on.</p>
+
+  <h2><span class="n">4</span>Remote mode and challenge links</h2>
+  <p>When you create a remote challenge, the app builds a link that encodes your name, the other player's name, the chosen pack and your answers. That content sits after the <code>#</code> in the link, a part browsers do not send to the server, so the developer never receives or stores it.</p>
+  <p>You decide who gets the link, usually through WhatsApp or another messaging app, whose own privacy policy applies. Anyone who has the link can see what it contains, so share it only with the person you want to play with.</p>
+  <p>The page the link opens is hosted on Firebase Hosting (Google), which logs standard technical data for each visit, such as IP address and browser, to run and protect the service. If the other person doesn't have the app yet, Google Play passes the challenge to the newly installed app through the Install Referrer API.</p>
+
+  <h2><span class="n">5</span>Ads</h2>
+  <p>The free version shows Google AdMob ads: full-screen ads between rounds and rewarded ads you choose to watch to unlock content. AdMob may use your device's advertising ID, IP address and technical data to choose which ad to show, measure performance and prevent fraud. With your consent, ads may be personalized.</p>
+  <ul>
+    <li>If you are in the European Economic Area, the UK or Switzerland, Google's consent form appears the first time you open the app. No ads load until you answer. You can change or withdraw your consent at any time from "Privacy options" on the home screen.</li>
+    <li>If you live in a US state with a privacy law (for example, California), no message appears when you open the app. "Privacy options" on the home screen opens Google's message where you can opt out of the sale or sharing of your data for personalized ads. You can also opt out by emailing <span class="mail">nestordelrio1989@gmail.com</span>.</li>
+    <li>On devices where they are available, AdMob may use Android's advertising APIs (Privacy Sandbox), such as Topics and Attribution, to choose ads and measure their performance. You can manage them in Android's ad privacy settings.</li>
+    <li>You can reset or delete your advertising ID in Android Settings › Privacy › Ads. Without it you still see ads, but they are not personalized.</li>
+    <li>Premium removes ads.</li>
+  </ul>
+  <p>"Privacy options" only appears in regions where Google requires it, and it stays available with Premium. More information: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">how Google uses data in advertising</a>.</p>
+
+  <h2><span class="n">6</span>Statistics and crashes</h2>
+  <p>We use Google Analytics for Firebase to learn, in aggregate, how many rounds are played, how many challenges are sent and opened, and how many people upgrade to Premium. Events never include player names or answers. Firebase Crashlytics sends a technical report when the app closes because of an error. Google keeps this data on its own schedule (Analytics up to 14 months by default; Crashlytics, 90 days).</p>
+
+  <h2><span class="n">7</span>Purchases</h2>
+  <p>Premium is bought through Google Play. Google processes the payment and the developer never receives your card or billing details. The app only asks Google Play whether the purchase is active. Subscriptions from earlier versions are still honored.</p>
+
+  <h2><span class="n">8</span>Legal bases</h2>
+  <p>We process the data described here to provide the game you downloaded, for our legitimate interest in keeping the app stable and improving it, and, where the law requires it, with your consent (for example, personalized ads in Europe). We do not sell personal data.</p>
+
+  <h2><span class="n">9</span>Minimum age</h2>
+  <p>The app is intended for people over 18 and is not directed at children. We do not knowingly collect data from minors. If you believe a minor has sent us data, write to us and we will delete it.</p>
+
+  <h2><span class="n">10</span>Your rights</h2>
+  <p>You can request access, correction, deletion or objection to the processing of your data. You can withdraw consent at any time from "Privacy options" on the home screen, if it appears in your region. Because the developer keeps no data that identifies you, you can also clear the app's data or uninstall it and reset your advertising ID. For data processed by Google, use your Google account tools. If you email the contact address, we reply within 30 days.</p>
+  <p>In Argentina, the Agencia de Acceso a la Información Pública oversees Law 25.326. In the European Union you can complain to your data protection authority, and in Brazil to the ANPD. California residents have the rights granted by the CCPA; we do not sell or share personal information for cross-context behavioral advertising beyond the Google ad services described above.</p>
+
+  <h2><span class="n">11</span>International transfers</h2>
+  <p>Google may process data on servers in several countries, including the United States, under the safeguards described in its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a> and the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy terms</a>.</p>
+
+  <h2><span class="n">12</span>Security</h2>
+  <p>Traffic to Google services is encrypted (HTTPS). Local data stays inside the app's private space on Android.</p>
+
+  <h2><span class="n">13</span>Changes</h2>
+  <p>If anything changes in how the app handles data, we update this page and its effective date. For significant changes we also mention it in the release notes on Google Play.</p>
+</article>
+
+<!-- ===================== PORTUGUÊS (BRASIL) ===================== -->
+<article id="pt" lang="pt-BR" hidden>
+  <h1>Política de privacidade</h1>
+  <div class="meta"><span>Em vigor desde 13 de outubro de 2026</span><span>App: com.idea3d.juegoparaparejas</span></div>
+
+  <p class="lead">Juego para Parejas (Jogo para Casais) é um jogo de perguntas para duas pessoas: uma responde sobre si mesma e a outra tenta adivinhar. Você não precisa criar uma conta, e o app não guarda suas respostas em nenhum servidor. Para se manter, exibir anúncios e corrigir erros, ele usa serviços do Google que processam alguns dados do dispositivo. Aqui explicamos quais, para quê e como controlá-los.</p>
+
+  <h2><span class="n">1</span>Quem é o responsável</h2>
+  <p>O responsável pelo app e por esta política é Néstor del Río, desenvolvedor independente com domicílio na Argentina. Para qualquer dúvida sobre privacidade, escreva para <span class="mail">nestordelrio1989@gmail.com</span>.</p>
+
+  <h2><span class="n">2</span>Resumo dos dados</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Dado</th><th>Onde fica</th><th>Para quê</th><th>Quem processa</th></tr></thead>
+    <tbody>
+      <tr><td>Nomes dos jogadores</td><td>Só no seu celular</td><td>Exibi-los no jogo</td><td>Ninguém mais</td></tr>
+      <tr><td>Respostas e pontuações</td><td>No seu celular; no modo a distância, dentro do link que você compartilha</td><td>Jogar e calcular a compatibilidade</td><td>Ninguém mais</td></tr>
+      <tr><td>ID de publicidade, IP, modelo e sistema do dispositivo, interações com anúncios</td><td>Servidores do Google</td><td>Exibir anúncios, medi-los e evitar fraudes</td><td>Google AdMob</td></tr>
+      <tr><td>Eventos de uso (rodadas jogadas, desafios enviados, compras), ID da instância, país aproximado</td><td>Servidores do Google</td><td>Estatísticas para melhorar o app</td><td>Google Analytics para Firebase</td></tr>
+      <tr><td>Relatórios de falhas (registro do erro, modelo, versão do Android)</td><td>Servidores do Google</td><td>Detectar e corrigir erros</td><td>Firebase Crashlytics</td></tr>
+      <tr><td>Status da compra Premium</td><td>Google Play e seu celular</td><td>Liberar o Premium</td><td>Google Play</td></tr>
+    </tbody>
+  </table></div>
+  <p>O app não pede nenhuma permissão que exija sua autorização: não acessa sua localização, contatos, câmera, microfone, fotos nem armazenamento. Ele declara permissões técnicas que o Android concede sem perguntar: acesso à internet e ao estado da rede, ID de publicidade e APIs de publicidade do Android, compras do Google Play, install referrer, e serviço em primeiro plano e manter o dispositivo ativo. Estas duas últimas são usadas internamente pelas bibliotecas do Google.</p>
+
+  <h2><span class="n">3</span>O que fica salvo no seu celular</h2>
+  <p>Os nomes que você digita, o progresso, se você confirmou ter mais de 18 anos para os pacotes picantes e se você tem Premium ficam salvos no armazenamento interno do app. Eles não são enviados ao desenvolvedor. Se você desinstalar o app ou apagar os dados dele nas Configurações do Android, eles são excluídos. O Android pode incluí-los no backup da sua conta do Google, se ele estiver ativado.</p>
+
+  <h2><span class="n">4</span>Modo a distância e links de desafio</h2>
+  <p>Quando você cria um desafio para jogar a distância, o app monta um link que contém, codificados, seu nome, o nome da outra pessoa, o pacote escolhido e suas respostas. Esse conteúdo fica depois do sinal <code>#</code> do link, uma parte que os navegadores não enviam ao servidor, então o desenvolvedor não o recebe nem o guarda.</p>
+  <p>Você decide para quem enviar, normalmente pelo WhatsApp ou outro app de mensagens, e nesse momento vale a política de privacidade desse app. Qualquer pessoa que tenha o link pode ver o que ele contém, então compartilhe só com quem você quer jogar.</p>
+  <p>A página que o link abre fica hospedada no Firebase Hosting (Google), que registra dados técnicos padrão de cada visita, como o endereço IP e o navegador, para operar e proteger o serviço. Se a outra pessoa ainda não tiver o app, o Google Play passa o desafio para o app recém-instalado por meio da API Install Referrer.</p>
+
+  <h2><span class="n">5</span>Anúncios</h2>
+  <p>A versão gratuita exibe anúncios do Google AdMob: anúncios em tela cheia entre as rodadas e anúncios premiados que você escolhe assistir para liberar conteúdo. O AdMob pode usar o ID de publicidade do seu dispositivo, o endereço IP e dados técnicos para escolher qual anúncio exibir, medir o desempenho e evitar fraudes. Com o seu consentimento, os anúncios podem ser personalizados.</p>
+  <ul>
+    <li>Se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o formulário de consentimento do Google aparece na primeira vez que você abre o app. Nenhum anúncio é carregado até você responder. Depois, você pode alterar ou retirar seu consentimento a qualquer momento em "Opções de privacidade", na tela inicial.</li>
+    <li>Se você mora em um estado dos EUA com leis de privacidade (por exemplo, a Califórnia), nenhuma mensagem aparece ao abrir o app. Em "Opções de privacidade", na tela inicial, abre-se a mensagem do Google para pedir que seus dados não sejam vendidos nem compartilhados para publicidade personalizada. Você também pode pedir isso escrevendo para <span class="mail">nestordelrio1989@gmail.com</span>.</li>
+    <li>Nos dispositivos em que estiverem disponíveis, o AdMob pode usar as APIs de publicidade do Android (Privacy Sandbox), como Tópicos e Atribuição, para escolher anúncios e medir o desempenho deles. Você pode gerenciá-las nas configurações de privacidade de anúncios do Android.</li>
+    <li>Você pode redefinir ou excluir seu ID de publicidade em Configurações do Android › Privacidade › Anúncios. Sem esse ID, os anúncios continuam aparecendo, mas não são personalizados.</li>
+    <li>Com o Premium, nenhum anúncio é exibido.</li>
+  </ul>
+  <p>O acesso "Opções de privacidade" aparece apenas nas regiões em que o Google exige, e continua disponível mesmo com o Premium. Mais informações: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">como o Google usa dados em publicidade</a>.</p>
+
+  <h2><span class="n">6</span>Estatísticas e erros</h2>
+  <p>Usamos o Google Analytics para Firebase para saber, de forma agregada, quantas rodadas são jogadas, quantos desafios são enviados e abertos ou quantas pessoas passam para o Premium. Os eventos não incluem os nomes dos jogadores nem suas respostas. O Firebase Crashlytics envia um relatório técnico quando o app fecha por causa de um erro. O Google guarda esses dados conforme seus próprios prazos (Analytics por até 14 meses por padrão; Crashlytics, 90 dias).</p>
+
+  <h2><span class="n">7</span>Compras</h2>
+  <p>O Premium é comprado pelo Google Play. O pagamento é processado pelo Google, e o desenvolvedor não recebe seu cartão nem seus dados de cobrança. O app apenas consulta o Google Play para saber se a compra está ativa. As assinaturas de versões anteriores continuam sendo reconhecidas.</p>
+
+  <h2><span class="n">8</span>Bases legais</h2>
+  <p>Tratamos os dados descritos para oferecer o jogo que você baixou, com base no nosso legítimo interesse em manter o app estável e melhorá-lo e, quando a lei exige, com o seu consentimento (por exemplo, para anúncios personalizados na Europa). Não vendemos dados pessoais.</p>
+
+  <h2><span class="n">9</span>Idade mínima</h2>
+  <p>O app é destinado a pessoas com mais de 18 anos e não é direcionado a menores. Não coletamos intencionalmente dados de menores. Se você acredita que um menor nos enviou dados, escreva para nós e vamos excluí-los.</p>
+
+  <h2><span class="n">10</span>Seus direitos</h2>
+  <p>Você pode solicitar acesso, correção, exclusão ou oposição ao tratamento dos seus dados. Você pode retirar seu consentimento a qualquer momento em "Opções de privacidade", na tela inicial, se esse acesso aparecer na sua região. Como o desenvolvedor não guarda dados que identifiquem você, também é possível apagar os dados do app ou desinstalá-lo e redefinir seu ID de publicidade. Para os dados processados pelo Google, use as ferramentas da sua conta do Google. Se você escrever para o e-mail de contato, respondemos em até 30 dias.</p>
+  <p>No Brasil, você pode apresentar reclamação à ANPD (Autoridade Nacional de Proteção de Dados), conforme a LGPD. Na Argentina, a Agencia de Acceso a la Información Pública é a autoridade de controle da Lei 25.326, e na União Europeia você pode reclamar à sua autoridade de proteção de dados.</p>
+
+  <h2><span class="n">11</span>Transferências internacionais</h2>
+  <p>O Google pode processar os dados em servidores de vários países, incluindo os Estados Unidos, com as garantias descritas na sua <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidade</a> e nos <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">termos de privacidade do Firebase</a>.</p>
+
+  <h2><span class="n">12</span>Segurança</h2>
+  <p>As comunicações com os serviços do Google são criptografadas (HTTPS). Os dados locais ficam dentro do espaço privado do app no Android.</p>
+
+  <h2><span class="n">13</span>Alterações</h2>
+  <p>Se algo mudar na forma como o app trata os dados, atualizamos esta página e a data de vigência. Se a mudança for importante, também avisamos nas novidades da versão no Google Play.</p>
+</article>
+
+<footer>Juego para Parejas · Néstor del Río · <span class="mail">nestordelrio1989@gmail.com</span></footer>
+</div>
+
+<script>
+(function(){
+  var langs=['es','en','pt'];
+  var htmlLang={es:'es',en:'en',pt:'pt-BR'};
+  var titles={es:'Privacidad · Juego para Parejas',en:'Privacy · Juego para Parejas',pt:'Privacidade · Juego para Parejas'};
+  function show(l){
+    langs.forEach(function(k){
+      var on=k===l;
+      document.getElementById(k).hidden=!on;
+      document.getElementById('tab-'+k).setAttribute('aria-current',on?'true':'false');
+    });
+    document.documentElement.lang=htmlLang[l];
+    document.title=titles[l];
+  }
+  function fromHash(){
+    var h=(location.hash||'').replace('#','').toLowerCase();
+    if(langs.indexOf(h)>=0){show(h);return true;}
+    return false;
+  }
+  function fromBrowser(){
+    var list=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||''];
+    for(var i=0;i<list.length;i++){
+      var c=String(list[i]||'').toLowerCase().slice(0,2);
+      if(c==='es'||c==='en'||c==='pt'){return c;}
+    }
+    return 'en';
+  }
+  langs.forEach(function(k){
+    document.getElementById('tab-'+k).addEventListener('click',function(e){
+      e.preventDefault();show(k);
+      try{history.replaceState(null,'','#'+k);}catch(_){}
+    });
+  });
+  window.addEventListener('hashchange',fromHash);
+  if(!fromHash()){show(fromBrowser());}
+})();
+</script>
+</body>
+</html>
