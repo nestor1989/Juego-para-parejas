@@ -47,12 +47,14 @@ fun JuegoApp(vm: GameViewModel) {
 
     fun toast(resId: Int) = Toast.makeText(context, context.getString(resId), Toast.LENGTH_SHORT).show()
 
-    /** Interstitial (si corresponde por las reglas de AdsManager) y después la acción. */
+    /** Intersticial (si corresponde según AdsManager) y después la acción. Solo al salir del resultado. */
     fun afterInterstitial(action: () -> Unit) {
         if (activity == null) action() else app.ads.maybeShowInterstitial(activity, action)
     }
 
-    BackHandler(enabled = state.screen != Screen.Home) { vm.back() }
+    BackHandler(enabled = state.screen != Screen.Home) {
+        if (state.screen == Screen.Result) afterInterstitial { vm.back() } else vm.back()
+    }
 
     LaunchedEffect(purchaseEvent) {
         when (purchaseEvent) {
@@ -149,7 +151,7 @@ fun JuegoApp(vm: GameViewModel) {
                     onOtherPack = { afterInterstitial(vm::otherPack) },
                     onHome = { afterInterstitial(vm::goHome) },
                     onChallengeBack = { afterInterstitial(vm::challengeBack) },
-                    onRematch = vm::otherPack,
+                    onRematch = { afterInterstitial(vm::otherPack) },
                     onShare = {
                         val text = when (session.kind) {
                             ResultKind.RECEIVER -> context.getString(

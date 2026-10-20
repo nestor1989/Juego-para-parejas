@@ -2,6 +2,9 @@ package com.idea3d.juegoparaparejas.monetization
 
 import android.app.Activity
 import android.content.Context
+import android.os.Handler
+import android.os.Looper
+import android.os.SystemClock
 import android.util.Log
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
@@ -20,32 +23,50 @@ import com.google.android.ump.UserMessagingPlatform
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.idea3d.juegoparaparejas.BuildConfig
 import com.idea3d.juegoparaparejas.data.Prefs
+import com.idea3d.juegoparaparejas.util.Analytics
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 /**
- * Reglas de anuncios de la 4.0:
- *  - Sin banners.
+ * Anuncios de la app:
+ *  - Intersticial al salir de la pantalla de resultado (cualquier botón o Atrás), desde la segunda
+ *    ronda de la instalación y con al menos 90 s entre uno y otro. La primera ronda nunca tiene
+ *    anuncios: también es la de quien llega por un link de desafío.
  *  - Rewarded opcional: desbloquea un pack premium para una partida.
- *  - Interstitial solo al salir de un resultado, como máximo cada 2 partidas,
- *    con 4 minutos de separación y nunca antes de la segunda partida.
- *  - Nada de anuncios para premium.
+ *  - Sin banners. Nada de anuncios para premium.
+ *  - Si un anuncio no carga, se reintenta con espera creciente (30 s, 1 min, 2 min… hasta 10 min)
+ *    y el error queda en Analytics (`ad_load_failed`). Se vuelve a pedir al terminar cada ronda.
  *
  * Consentimiento (UMP): ningún anuncio se pide antes de que canRequestAds() sea verdadero.
  * El flujo corre también para premium, y el acceso "Opciones de privacidad" sigue disponible
  * aunque no haya anuncios.
  */
-class AdsManager(private val context: Context, private val prefs: Prefs) {
+class AdsManager(
+    private val context: Context,
+    private val prefs: Prefs,
+    private val analytics: Analytics,
+) {
 
     companion object {
         private const val TAG = "AdsManager"
-        private const val MIN_ROUNDS_BEFORE_FIRST = 2
-        private const val ROUNDS_BETWEEN = 2
-        private const val MIN_INTERVAL_MS = 4 * 60 * 1000L
 
-        // IDs de prueba de Google en debug; reales en release.
+        /** Rondas sin anuncios al empezar a usar la app. */
+        private const val FREE_ROUNDS = 1
+
+        /** Separación mínima entre intersticiales. */
+        private const val MIN_INTERVAL_MS = 90_000L
+
+        /** Un anuncio cargado vence a la hora; se descarta un poco antes. */
+        private const val AD_MAX_AGE_MS = 55 * 60_000L
+
+        /** Reintentos de carga: 30 s, 1 min, 2 min… con tope de 10 min. */
+        private const val RETRY_BASE_MS = 30_000L
+        private const val RETRY_MAX_MS = 10 * 60_000L
+
+        // IDs de prueba de Google en debug; reales en release
+        // (AdMob › Couples Quiz: Long Distance › "rewarded_adults" e "Inters 12Resp").
         private val REWARDED_ID = if (BuildConfig.DEBUG) "ca-app-pub-3940256099942544/5224354917"
         else "ca-app-pub-4930505659937183/3093275577"
         private val INTERSTITIAL_ID = if (BuildConfig.DEBUG) "ca-app-pub-3940256099942544/1033173712"
@@ -67,10 +88,15 @@ class AdsManager(private val context: Context, private val prefs: Prefs) {
      */
     val privacyOptionsRequired: StateFlow<Boolean> = _privacyOptionsRequired.asStateFlow()
 
+    private val handler = Handler(Looper.getMainLooper())
     private var rewarded: RewardedAd? = null
-    private var interstitial: InterstitialAd? = null
+    private var rewardedLoadedAt = 0L
     private var loadingRewarded = false
+    private var rewardedFailures = 0
+    private var interstitial: InterstitialAd? = null
+    private var interstitialLoadedAt = 0L
     private var loadingInterstitial = false
+    private var interstitialFailures = 0
 
     /**
      * Se llama en cada inicio (MainActivity.onCreate):
@@ -158,62 +184,82 @@ class AdsManager(private val context: Context, private val prefs: Prefs) {
         preload()
     }
 
+    /** Deja listos un intersticial y un rewarded, si se pueden pedir anuncios y no es premium. */
     fun preload() {
         if (!initialized.get() || isPremium()) return
         loadRewarded()
         loadInterstitial()
     }
 
+    private fun isFresh(ad: Any?, loadedAt: Long): Boolean =
+        ad != null && SystemClock.elapsedRealtime() - loadedAt < AD_MAX_AGE_MS
+
     private fun loadRewarded() {
-        if (rewarded != null || loadingRewarded) return
+        if (isFresh(rewarded, rewardedLoadedAt) || loadingRewarded) return
+        rewarded = null
         loadingRewarded = true
         RewardedAd.load(context, REWARDED_ID, AdRequest.Builder().build(), object : RewardedAdLoadCallback() {
             override fun onAdLoaded(ad: RewardedAd) {
                 rewarded = ad
+                rewardedLoadedAt = SystemClock.elapsedRealtime()
+                rewardedFailures = 0
                 loadingRewarded = false
             }
 
             override fun onAdFailedToLoad(error: LoadAdError) {
-                rewarded = null
                 loadingRewarded = false
+                rewardedFailures++
+                onLoadFailed("rewarded", error, rewardedFailures) { loadRewarded() }
             }
         })
     }
 
     private fun loadInterstitial() {
-        if (interstitial != null || loadingInterstitial) return
+        if (isFresh(interstitial, interstitialLoadedAt) || loadingInterstitial) return
+        interstitial = null
         loadingInterstitial = true
         InterstitialAd.load(context, INTERSTITIAL_ID, AdRequest.Builder().build(), object : InterstitialAdLoadCallback() {
             override fun onAdLoaded(ad: InterstitialAd) {
                 interstitial = ad
+                interstitialLoadedAt = SystemClock.elapsedRealtime()
+                interstitialFailures = 0
                 loadingInterstitial = false
             }
 
             override fun onAdFailedToLoad(error: LoadAdError) {
-                interstitial = null
                 loadingInterstitial = false
+                interstitialFailures++
+                onLoadFailed("interstitial", error, interstitialFailures) { loadInterstitial() }
             }
         })
     }
 
+    /** Registra por qué no cargó (Logcat + Analytics) y reintenta con espera creciente. */
+    private fun onLoadFailed(format: String, error: LoadAdError, attempt: Int, retry: () -> Unit) {
+        Log.w(TAG, "No cargó $format (intento $attempt): ${error.code} ${error.message}")
+        analytics.log("ad_load_failed", "format" to format, "code" to error.code, "attempt" to attempt)
+        val delayMs = (RETRY_BASE_MS shl (attempt - 1).coerceIn(0, 5)).coerceAtMost(RETRY_MAX_MS)
+        handler.postDelayed({ if (initialized.get() && !isPremium()) retry() }, delayMs)
+    }
+
     /** Muestra un rewarded. [onReward] solo se llama si el usuario lo vio completo. */
     fun showRewarded(activity: Activity, onReward: () -> Unit, onUnavailable: () -> Unit) {
-        val ad = rewarded
+        val ad = rewarded?.takeIf { isFresh(it, rewardedLoadedAt) }
         if (ad == null) {
             preload()
             onUnavailable()
             return
         }
+        rewarded = null
         var earned = false
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
             override fun onAdDismissedFullScreenContent() {
-                rewarded = null
                 preload()
                 if (earned) onReward()
             }
 
             override fun onAdFailedToShowFullScreenContent(error: AdError) {
-                rewarded = null
+                Log.w(TAG, "No se mostró el rewarded: ${error.code} ${error.message}")
                 preload()
                 onUnavailable()
             }
@@ -221,39 +267,35 @@ class AdsManager(private val context: Context, private val prefs: Prefs) {
         ad.show(activity) { earned = true }
     }
 
-    /** Se llama cada vez que termina una ronda (pantalla de resultado). */
-    fun onRoundCompleted() {
-        prefs.roundsSinceInterstitial = prefs.roundsSinceInterstitial + 1
-    }
+    /** Al terminar cada ronda: deja un intersticial listo para cuando salgan del resultado. */
+    fun onRoundCompleted() = preload()
 
-    /** Muestra un interstitial si las reglas lo permiten; siempre termina llamando a [then]. */
+    /** Intersticial al salir del resultado, si corresponde; siempre termina llamando a [then]. */
     fun maybeShowInterstitial(activity: Activity, then: () -> Unit) {
-        val ad = interstitial
+        val ad = interstitial?.takeIf { isFresh(it, interstitialLoadedAt) }
         val now = System.currentTimeMillis()
         val allowed = !isPremium() &&
-            ad != null &&
-            prefs.roundsCompleted >= MIN_ROUNDS_BEFORE_FIRST &&
-            prefs.roundsSinceInterstitial >= ROUNDS_BETWEEN &&
+            prefs.roundsCompleted > FREE_ROUNDS &&
             now - prefs.lastInterstitialAt >= MIN_INTERVAL_MS
         if (!allowed || ad == null) {
+            if (ad == null) preload()
             then()
             return
         }
+        interstitial = null
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
             override fun onAdDismissedFullScreenContent() {
-                interstitial = null
                 preload()
                 then()
             }
 
             override fun onAdFailedToShowFullScreenContent(error: AdError) {
-                interstitial = null
+                Log.w(TAG, "No se mostró el intersticial: ${error.code} ${error.message}")
                 preload()
                 then()
             }
         }
         prefs.lastInterstitialAt = now
-        prefs.roundsSinceInterstitial = 0
         ad.show(activity)
     }
 }

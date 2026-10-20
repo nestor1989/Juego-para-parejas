@@ -18,7 +18,6 @@ import androidx.compose.ui.unit.sp
 import com.idea3d.juegoparaparejas.R
 
 val Pink = Color(0xFFE01B58)
-val PinkDark = Color(0xFFB81348)
 val Purple = Color(0xFF7D41D3)
 val Paper = Color(0xFFFFF8F6)
 val Ink = Color(0xFF2B1220)

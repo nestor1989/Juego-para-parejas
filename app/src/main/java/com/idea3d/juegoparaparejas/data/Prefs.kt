@@ -21,10 +21,7 @@ class Prefs(context: Context) {
         get() = sp.getInt("rounds_completed", 0)
         set(value) = sp.edit { putInt("rounds_completed", value) }
 
-    var roundsSinceInterstitial: Int
-        get() = sp.getInt("rounds_since_interstitial", 0)
-        set(value) = sp.edit { putInt("rounds_since_interstitial", value) }
-
+    /** Hora del último intersticial (separación mínima entre anuncios). */
     var lastInterstitialAt: Long
         get() = sp.getLong("last_interstitial_at", 0L)
         set(value) = sp.edit { putLong("last_interstitial_at", value) }

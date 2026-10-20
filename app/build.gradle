@@ -27,8 +27,8 @@ android {
         applicationId = "com.idea3d.juegoparaparejas"
         minSdk = 23
         targetSdk = 36
-        versionCode = 19
-        versionName = "4.0.0"
+        versionCode = 20
+        versionName = "4.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 

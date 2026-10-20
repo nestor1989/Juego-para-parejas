@@ -1,10 +1,10 @@
-# Juego para Parejas 4.0 (Compose)
+# Juego para Parejas 4.x (Compose)
 
 Reescritura completa de la app. Mismo `applicationId` (`com.idea3d.juegoparaparejas`), así que se
-publica como actualización de la ficha actual. `versionCode 19`, `versionName 4.0.0`.
+publica como actualización de la ficha actual. La versión está en `app/build.gradle`.
 
-El código 3.x quedó en `legacy-3x/` (no se compila). Cuando hagas el commit de la 4.0 podés borrar
-esa carpeta: queda en el historial de git.
+El código de la 3.x se borró del repo; si hace falta consultarlo, está en el historial de git
+(commit `4.1.0` o anteriores, carpeta `legacy-3x/`).
 
 ## Cómo probarla
 
@@ -46,8 +46,10 @@ esa carpeta: queda en el historial de git.
 - 10 preguntas al azar por ronda, repaso pregunta por pregunta al final, cambio de roles.
 - **Modo a distancia** por link, sin backend; Install Referrer para abrir el desafío después de instalar.
 - **Monetización:** compra única `premium_lifetime`, rewarded para jugar un pack premium una vez,
-  interstitial solo entre partidas y espaciado, sin banners. `premium_monthly` / `premium_yearly`
-  se siguen reconociendo como premium.
+  intersticial al salir del resultado (desde la 2.ª ronda, mínimo 90 s entre anuncios), sin banners.
+  Si un anuncio no carga se reintenta con espera creciente y queda el evento `ad_load_failed` en
+  Analytics. Bloques en AdMob: `rewarded_adults` (…/3093275577) e `Inters 12Resp` (…/6385055420).
+  `premium_monthly` / `premium_yearly` se siguen reconociendo como premium.
 - Consentimiento con UMP (GDPR y estados de EE. UU.): formulario al abrir cuando corresponde y
   "Opciones de privacidad" + "Política de privacidad" siempre en el inicio, también con Premium.
 - Pedido de reseña in-app y eventos de Firebase Analytics.
@@ -83,6 +85,5 @@ Los generadores del ícono y de las capturas están en `tools/store/`.
 
 ## Contenido
 
-`tools/build_packs.py` generó `packs.json` desde `legacy-3x/scripts/generate_question_strings.py`.
-Desde la 4.0, `packs.json` es la fuente de verdad: para sumar un pack, agregalo al JSON con `id` nuevo.
+`app/src/main/assets/packs.json` es la fuente de verdad: para sumar un pack, agregalo al JSON con `id` nuevo.
 **No reutilices ni renumeres los `id` de preguntas**: los links de desafío guardan esos ids.

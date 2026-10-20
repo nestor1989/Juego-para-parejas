@@ -27,7 +27,7 @@ class App : Application() {
         packs = PackRepository(this)
         analytics = Analytics(this)
         billing = BillingManager(this, prefs)
-        ads = AdsManager(this, prefs).also { manager ->
+        ads = AdsManager(this, prefs, analytics).also { manager ->
             manager.isPremium = { billing.isPremium.value }
         }
         billing.start()
